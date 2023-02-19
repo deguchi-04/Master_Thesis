@@ -8,7 +8,8 @@
                 "/home/thaidy/Luxonis/depthai-core/**",
                 "/home/thaidy/Luxonis/depthai-core/include",
                 "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include",
-                "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include"
+                "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include",
+                "/home/thaidy/Luxonis/depthai-core/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
