@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/opencv4",
+                "/home/thaidy/Luxonis/depthai-core/**",
+                "/home/thaidy/Luxonis/depthai-core/include",
+                "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include",
+                "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
