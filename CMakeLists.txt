@@ -7,5 +7,4 @@ find_package(OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable(segmentation src/segmentation.cpp )
 
-target_link_libraries(segmentation PUBLIC ${OpenCV_LIBS} )
-target_link_libraries(segmentation PRIVATE depthai::opencv)
+target_link_libraries(segmentation PUBLIC ${OpenCV_LIBS} PRIVATE depthai::opencv)
