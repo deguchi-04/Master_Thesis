@@ -111,7 +111,7 @@ int main() {
         imshow("rgb", frame);
         imshow("track", frame_threshold);
 
-        moveWindow("track", 300, 100);
+        moveWindow("track", 100, 100);
         moveWindow("rgb", 1000, 100);
         resizeWindow("rgb", 700, 700);
         resizeWindow("track", 700, 700);
