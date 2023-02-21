@@ -4,18 +4,29 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/opencv4",
                 "/home/thaidy/Luxonis/depthai-core/**",
                 "/home/thaidy/Luxonis/depthai-core/include",
                 "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include",
                 "/home/thaidy/Luxonis/depthai-core/shared/depthai-shared/include",
-                "/home/thaidy/Luxonis/depthai-core/include"
+                "/home/thaidy/Luxonis/depthai-core/include",
+                "/usr/local/include/opencv4",
+                "/usr/include/mlpack/**",
+                "/usr/include/include/**",
+                "/home/thaidy/ensmallen/**",
+                "/home/thaidy/ensmallen/include",
+                "/home/thaidy/ensmallen/include",
+                "/usr/include/python3.10"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "c++14",
-            "intelliSenseMode": "linux-clang-x64"
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerArgs": [
+                "-fopenmp",
+                "-I/home/thaidy/ensmallen/include",
+                "-larmadillo"
+            ]
         }
     ],
     "version": 4

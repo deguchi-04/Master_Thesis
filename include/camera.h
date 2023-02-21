@@ -14,6 +14,9 @@
 //DepthAi includes (for the native camera functions)
 #include <depthai/depthai.hpp> //This include works but appear here to be wrong
 
+//matplotlib interpreter for c++
+#include "matplotlibcpp.h"
+
 //namespace declarations
 using namespace cv;
 using namespace std;
