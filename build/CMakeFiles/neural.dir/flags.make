@@ -6,5 +6,5 @@ CXX_DEFINES = -DDEPTHAI_TARGET_CORE -DDEPTHAI_TARGET_OPENCV -DJSON_USE_IMPLICIT_
 
 CXX_INCLUDES = -I/usr/include/python3.10 -isystem /usr/local/include/opencv4 -isystem /include -isystem /include/depthai-shared/3rdparty -isystem /usr/lib/cmake/depthai/dependencies/include
 
-CXX_FLAGS = -fopenmp
+CXX_FLAGS = -g
 

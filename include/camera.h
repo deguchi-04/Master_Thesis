@@ -17,9 +17,8 @@
 //matplotlib interpreter for c++
 #include "matplotlibcpp.h"
 
-//namespace declarations
-using namespace cv;
-using namespace std;
+//Deep Learning bib
+#include <mlpack.hpp>
 
 
 //constant values declaration

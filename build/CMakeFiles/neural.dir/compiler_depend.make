@@ -3,9 +3,8 @@
 
 CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/stdc-predef.h \
-  /usr/local/include/mlpack.hpp \
-  /usr/local/include/mlpack/base.hpp \
-  /usr/include/c++/11/cmath \
+  ../include/cnn.h \
+  /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -18,64 +17,45 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
-  /usr/include/c++/11/bits/cpp_type_traits.h \
-  /usr/include/c++/11/ext/type_traits.h \
-  /usr/include/math.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/11/bits/std_abs.h \
-  /usr/include/stdlib.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/c++/11/bits/specfun.h \
-  /usr/include/c++/11/bits/stl_algobase.h \
-  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/exception_defines.h \
-  /usr/include/c++/11/ext/numeric_traits.h \
-  /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/new \
   /usr/include/c++/11/bits/move.h \
   /usr/include/c++/11/type_traits \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/functexcept.h \
+  /usr/include/c++/11/bits/cpp_type_traits.h \
+  /usr/include/c++/11/ext/type_traits.h \
+  /usr/include/c++/11/ext/numeric_traits.h \
+  /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/concept_check.h \
@@ -84,81 +64,60 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/tr1/gamma.tcc \
-  /usr/include/c++/11/tr1/special_function_util.h \
-  /usr/include/c++/11/tr1/bessel_function.tcc \
-  /usr/include/c++/11/tr1/beta_function.tcc \
-  /usr/include/c++/11/tr1/ell_integral.tcc \
-  /usr/include/c++/11/tr1/exp_integral.tcc \
-  /usr/include/c++/11/tr1/hypergeometric.tcc \
-  /usr/include/c++/11/tr1/legendre_function.tcc \
-  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/11/tr1/poly_hermite.tcc \
-  /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/c++/11/cfloat \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/postypes.h \
-  /usr/include/c++/11/cwchar \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
@@ -166,23 +125,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
   /usr/include/c++/11/bits/stl_construct.h \
@@ -190,6 +132,27 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -200,43 +163,10 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/numeric \
-  /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/bit \
-  /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/queue \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_queue.h \
-  /usr/include/c++/11/any \
-  /usr/local/include/mlpack/core/arma_extend/arma_extend.hpp \
-  /usr/include/armadillo \
-  /usr/include/armadillo_bits/config.hpp \
-  /usr/include/armadillo_bits/compiler_check.hpp \
-  /usr/include/c++/11/cstddef \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/basic_ios.h \
@@ -252,20 +182,52 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/dirent.h \
+  /usr/include/x86_64-linux-gnu/bits/dirent.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
+  /usr/local/include/opencv4/opencv2/core.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/include/opencv4/opencv2/core/version.hpp \
+  /usr/include/c++/11/limits \
+  /usr/local/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/include/c++/11/cstddef \
+  /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/local/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
@@ -276,24 +238,208 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
+  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
+  /usr/include/assert.h \
+  /usr/local/include/opencv4/opencv2/core/check.hpp \
+  /usr/local/include/opencv4/opencv2/core/traits.hpp \
+  /usr/local/include/opencv4/opencv2/core/matx.hpp \
+  /usr/local/include/opencv4/opencv2/core/saturate.hpp \
+  /usr/local/include/opencv4/opencv2/core/fast_math.hpp \
+  /usr/local/include/opencv4/opencv2/core/types.hpp \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/local/include/opencv4/opencv2/core/mat.hpp \
+  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp \
+  /usr/local/include/opencv4/opencv2/core/mat.inl.hpp \
+  /usr/local/include/opencv4/opencv2/core/persistence.hpp \
+  /usr/local/include/opencv4/opencv2/core/operations.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp \
   /usr/include/c++/11/complex \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/local/include/opencv4/opencv2/core/utility.hpp \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
+  /usr/local/include/opencv4/opencv2/core/optim.hpp \
+  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/include/opencv4/opencv2/videoio.hpp \
+  /usr/local/include/opencv4/opencv2/highgui.hpp \
+  /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
+  /usr/local/include/opencv4/opencv2/opencv.hpp \
+  /usr/local/include/opencv4/opencv2/calib3d.hpp \
+  /usr/local/include/opencv4/opencv2/features2d.hpp \
+  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp \
+  /usr/local/include/opencv4/opencv2/flann/defines.h \
+  /usr/local/include/opencv4/opencv2/flann/config.h \
+  /usr/local/include/opencv4/opencv2/core/affine.hpp \
+  /usr/local/include/opencv4/opencv2/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/core/async.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/version.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dict.hpp \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/flann.hpp \
+  /usr/local/include/opencv4/opencv2/flann/flann_base.hpp \
+  /usr/local/include/opencv4/opencv2/flann/general.h \
+  /usr/local/include/opencv4/opencv2/flann/matrix.h \
+  /usr/local/include/opencv4/opencv2/flann/params.h \
+  /usr/local/include/opencv4/opencv2/flann/any.h \
+  /usr/local/include/opencv4/opencv2/flann/defines.h \
+  /usr/local/include/opencv4/opencv2/flann/saving.h \
+  /usr/local/include/opencv4/opencv2/flann/nn_index.h \
+  /usr/local/include/opencv4/opencv2/flann/result_set.h \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/local/include/opencv4/opencv2/flann/all_indices.h \
+  /usr/local/include/opencv4/opencv2/flann/kdtree_index.h \
+  /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
+  /usr/local/include/opencv4/opencv2/flann/dist.h \
+  /usr/local/include/opencv4/opencv2/flann/heap.h \
+  /usr/local/include/opencv4/opencv2/flann/allocator.h \
+  /usr/local/include/opencv4/opencv2/flann/random.h \
+  /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h \
+  /usr/local/include/opencv4/opencv2/flann/kmeans_index.h \
+  /usr/local/include/opencv4/opencv2/flann/logger.h \
+  /usr/local/include/opencv4/opencv2/flann/composite_index.h \
+  /usr/local/include/opencv4/opencv2/flann/linear_index.h \
+  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+  /usr/local/include/opencv4/opencv2/flann/lsh_index.h \
+  /usr/local/include/opencv4/opencv2/flann/lsh_table.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/math.h \
+  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
+  /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
+  /usr/local/include/opencv4/opencv2/flann/index_testing.h \
+  /usr/local/include/opencv4/opencv2/flann/timer.h \
+  /usr/local/include/opencv4/opencv2/flann/sampling.h \
+  /usr/local/include/opencv4/opencv2/imgproc.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
+  /usr/local/include/opencv4/opencv2/ml.hpp \
+  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/face.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp \
+  /usr/local/include/opencv4/opencv2/photo.hpp \
+  /usr/local/include/opencv4/opencv2/stitching.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda_types.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/local/include/opencv4/opencv2/video.hpp \
+  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
+  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/mlpack.hpp \
+  /usr/local/include/mlpack/base.hpp \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/any \
+  /usr/local/include/mlpack/core/arma_extend/arma_extend.hpp \
+  /usr/include/armadillo \
+  /usr/include/armadillo_bits/config.hpp \
+  /usr/include/armadillo_bits/compiler_check.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/random \
   /usr/include/c++/11/bits/random.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/mutex \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/atomic \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -303,7 +449,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/armadillo_bits/compiler_setup.hpp \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   /usr/include/armadillo_bits/include_atlas.hpp \
   /usr/include/armadillo_bits/include_hdf5.hpp \
   /usr/include/armadillo_bits/include_superlu.hpp \
@@ -907,17 +1052,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/local/include/mlpack/base.hpp \
   /usr/include/cereal/archives/binary.hpp \
   /usr/include/cereal/cereal.hpp \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
   /usr/include/cereal/macros.hpp \
@@ -974,7 +1108,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/cereal/archives/xml.hpp \
   /usr/include/cereal/external/rapidxml/rapidxml.hpp \
   /usr/include/c++/11/cassert \
-  /usr/include/assert.h \
   /usr/include/cereal/external/rapidxml/rapidxml_print.hpp \
   /usr/include/cereal/external/rapidxml/rapidxml.hpp \
   /usr/include/cereal/types/array.hpp \
@@ -993,9 +1126,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/include/cereal/types/memory.hpp \
   /usr/include/cereal/types/polymorphic.hpp \
   /usr/include/cereal/details/polymorphic_impl.hpp \
-  /usr/include/c++/11/set \
-  /usr/include/c++/11/bits/stl_set.h \
-  /usr/include/c++/11/bits/stl_multiset.h \
   /usr/local/include/mlpack/core/cereal/pointer_wrapper.hpp \
   /usr/local/include/mlpack/core/data/has_serialize.hpp \
   /usr/local/include/mlpack/core/util/sfinae_utility.hpp \
@@ -1007,20 +1137,8 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/local/include/mlpack/core/util/log_impl.hpp \
   /usr/local/include/mlpack/core/util/log.hpp \
   /usr/local/include/mlpack/core/util/io.hpp \
-  /usr/include/c++/11/list \
-  /usr/include/c++/11/bits/stl_list.h \
-  /usr/include/c++/11/bits/list.tcc \
   /usr/local/include/mlpack/prereqs.hpp \
   /usr/local/include/mlpack/core/util/timers.hpp \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
@@ -1124,8 +1242,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/local/include/mlpack/core/data/split_data.hpp \
   /usr/local/include/mlpack/core/math/math.hpp \
   /usr/local/include/mlpack/core/math/clamp.hpp \
-  /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/math.h \
   /usr/local/include/mlpack/core/math/columns_to_blocks.hpp \
   /usr/local/include/mlpack/core/math/columns_to_blocks_impl.hpp \
   /usr/local/include/mlpack/core/math/digamma.hpp \
@@ -1975,7 +2091,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/local/include/mlpack/methods/ann/loss_functions/negative_log_likelihood.hpp \
   /usr/local/include/mlpack/methods/ann/loss_functions/negative_log_likelihood_impl.hpp \
   /usr/local/include/mlpack/methods/ann/loss_functions/negative_log_likelihood.hpp \
-  /usr/local/include/mlpack/methods/ann/layer/serialization.hpp \
   /usr/local/include/mlpack/methods/ann/init_rules/nguyen_widrow_init.hpp \
   /usr/local/include/mlpack/methods/ann/init_rules/oivs_init.hpp \
   /usr/local/include/mlpack/methods/ann/init_rules/orthogonal_init.hpp \
@@ -2432,303 +2547,8 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
   /usr/local/include/mlpack/methods/sparse_coding/sparse_coding.hpp \
   /usr/local/include/mlpack/methods/svdplusplus.hpp \
   /usr/local/include/mlpack/methods/svdplusplus/svdplusplus.hpp \
-  /usr/local/include/mlpack/namespace_compat.hpp \
-  /usr/local/include/matplotlibcpp.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/include/python3.10/numpy/arrayobject.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /usr/include/python3.10/numpy/npy_interrupt.h \
-  /usr/include/setjmp.h \
-  /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
-  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
-  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
-  /usr/include/x86_64-linux-gnu/bits/signal_ext.h
+  /usr/local/include/mlpack/namespace_compat.hpp
 
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/python3.10/numpy/__multiarray_api.h:
-
-/usr/include/python3.10/numpy/npy_cpu.h:
-
-/usr/include/python3.10/numpy/npy_endian.h:
-
-/usr/include/python3.10/numpy/numpyconfig.h:
-
-/usr/include/python3.10/numpy/arrayobject.h:
-
-/usr/include/python3.10/cpython/fileutils.h:
-
-/usr/include/python3.10/pystrtod.h:
-
-/usr/include/python3.10/cpython/import.h:
-
-/usr/include/python3.10/osmodule.h:
-
-/usr/include/python3.10/sysmodule.h:
-
-/usr/include/python3.10/cpython/ceval.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/python3.10/ceval.h:
-
-/usr/include/python3.10/pylifecycle.h:
-
-/usr/include/python3.10/cpython/pythonrun.h:
-
-/usr/include/python3.10/modsupport.h:
-
-/usr/include/python3.10/pythread.h:
-
-/usr/include/python3.10/numpy/utils.h:
-
-/usr/include/python3.10/pyerrors.h:
-
-/usr/include/python3.10/cpython/pytime.h:
-
-/usr/include/python3.10/cpython/picklebufobject.h:
-
-/usr/include/python3.10/structseq.h:
-
-/usr/include/python3.10/cpython/pystate.h:
-
-/usr/include/python3.10/pystate.h:
-
-/usr/include/python3.10/genobject.h:
-
-/usr/include/python3.10/cpython/fileobject.h:
-
-/usr/include/python3.10/funcobject.h:
-
-/usr/include/python3.10/moduleobject.h:
-
-/usr/include/python3.10/setobject.h:
-
-/usr/include/python3.10/cpython/listobject.h:
-
-/usr/include/python3.10/listobject.h:
-
-/usr/include/python3.10/cpython/tupleobject.h:
-
-/usr/include/python3.10/memoryobject.h:
-
-/usr/include/python3.10/complexobject.h:
-
-/usr/include/python3.10/boolobject.h:
-
-/usr/include/python3.10/longobject.h:
-
-/usr/include/python3.10/cpython/methodobject.h:
-
-/usr/include/python3.10/cpython/bytearrayobject.h:
-
-/usr/include/python3.10/typeslots.h:
-
-/usr/include/python3.10/cpython/object.h:
-
-/usr/include/python3.10/cpython/pymem.h:
-
-/usr/include/python3.10/methodobject.h:
-
-/usr/include/python3.10/pymath.h:
-
-/usr/include/python3.10/pymacro.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/python3.10/cpython/unicodeobject.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/include/python3.10/iterobject.h:
-
-/usr/include/python3.10/pyport.h:
-
-/usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
-
-/usr/include/python3.10/pyconfig.h:
-
-/usr/include/python3.10/Python.h:
-
-/usr/local/include/matplotlibcpp.h:
 
 /usr/local/include/mlpack/methods/sparse_coding/sparse_coding_impl.hpp:
 
@@ -2786,8 +2606,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/rann/ra_util_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
 /usr/local/include/mlpack/methods/rann/ra_query_stat.hpp:
 
 /usr/local/include/mlpack/methods/rann/ra_search.hpp:
@@ -2802,8 +2620,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/radical/radical.hpp:
 
-/usr/local/include/mlpack/methods/radical.hpp:
-
 /usr/local/include/mlpack/methods/preprocess/scaling_model_impl.hpp:
 
 /usr/local/include/mlpack/methods/preprocess/scaling_model.hpp:
@@ -2813,10 +2629,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/perceptron.hpp:
 
 /usr/local/include/mlpack/methods/pca/decomposition_policies/randomized_svd_method.hpp:
-
-/usr/include/python3.10/bytesobject.h:
-
-/usr/local/include/mlpack/methods/pca/decomposition_policies/quic_svd_method.hpp:
 
 /usr/local/include/mlpack/methods/pca.hpp:
 
@@ -2843,8 +2655,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/sparse_coding/data_dependent_random_initializer.hpp:
 
 /usr/local/include/mlpack/methods/local_coordinate_coding.hpp:
-
-/usr/include/python3.10/warnings.h:
 
 /usr/local/include/mlpack/methods/lmnn/lmnn_function.hpp:
 
@@ -2892,10 +2702,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/hoeffding_trees.hpp:
 
-/usr/local/include/mlpack/methods/reinforcement_learning/sac.hpp:
-
-/usr/local/include/mlpack/methods/hmm/hmm_impl.hpp:
-
 /usr/local/include/mlpack/methods/hmm.hpp:
 
 /usr/local/include/mlpack/methods/nca/nca_softmax_error_function_impl.hpp:
@@ -2903,8 +2709,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/gmm/diagonal_gmm_impl.hpp:
 
 /usr/local/include/mlpack/methods/gmm/diagonal_gmm.hpp:
-
-/usr/local/include/mlpack/methods/gmm/gmm_impl.hpp:
 
 /usr/local/include/mlpack/methods/kmeans/refined_start_impl.hpp:
 
@@ -2928,8 +2732,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/gmm.hpp:
 
-/usr/local/include/mlpack/methods/fastmks/fastmks_rules_impl.hpp:
-
 /usr/local/include/mlpack/methods/fastmks/fastmks_rules.hpp:
 
 /usr/local/include/mlpack/methods/fastmks/fastmks_stat.hpp:
@@ -2941,8 +2743,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/emst/dtb_impl.hpp:
 
 /usr/local/include/mlpack/methods/emst/dtb_stat.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/local/include/mlpack/methods/emst/dtb.hpp:
 
@@ -2976,8 +2776,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/quic_svd/quic_svd.hpp:
 
-/usr/include/python3.10/numpy/npy_common.h:
-
 /usr/local/include/mlpack/methods/dbscan/ordered_point_selection.hpp:
 
 /usr/local/include/mlpack/methods/svdplusplus/svdplusplus_impl.hpp:
@@ -2989,8 +2787,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/regularized_svd/regularized_svd_function_impl.hpp:
 
 /usr/local/include/mlpack/methods/regularized_svd/regularized_svd_function.hpp:
-
-/usr/local/include/mlpack/methods/regularized_svd/regularized_svd.hpp:
 
 /usr/local/include/mlpack/methods/cf/decomposition_policies/regularized_svd_method.hpp:
 
@@ -3014,13 +2810,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/neighbor_search/neighbor_search_impl.hpp:
 
-/usr/local/include/mlpack/methods/neighbor_search/sort_policies/nearest_neighbor_sort_impl.hpp:
-
 /usr/local/include/mlpack/methods/neighbor_search/sort_policies/nearest_neighbor_sort.hpp:
 
 /usr/local/include/mlpack/methods/neighbor_search/neighbor_search.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/local/include/mlpack/methods/cf/cf.hpp:
 
@@ -3032,15 +2824,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/bias_svd/bias_svd_function_impl.hpp:
 
-/usr/local/include/mlpack/methods/bias_svd.hpp:
-
 /usr/local/include/mlpack/methods/bayesian_linear_regression/bayesian_linear_regression_impl.hpp:
 
 /usr/local/include/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort_impl.hpp:
 
 /usr/local/include/mlpack/methods/approx_kfn/qdafn.hpp:
-
-/usr/local/include/mlpack/methods/approx_kfn.hpp:
 
 /usr/local/include/mlpack/methods/ann/rnn.hpp:
 
@@ -3068,8 +2856,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/ann/loss_functions/l1_loss.hpp:
 
-/usr/include/python3.10/numpy/npy_interrupt.h:
-
 /usr/local/include/mlpack/methods/ann/loss_functions/kl_divergence_impl.hpp:
 
 /usr/local/include/mlpack/methods/ann/loss_functions/kl_divergence.hpp:
@@ -3087,8 +2873,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/ann/loss_functions/loss_functions.hpp:
 
 /usr/local/include/mlpack/methods/ann/init_rules/oivs_init.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/serialization.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/softmax.hpp:
 
@@ -3118,8 +2902,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/ann/layer/dropout_impl.hpp:
 
-/usr/include/python3.10/pyframe.h:
-
 /usr/local/include/mlpack/methods/ann/layer/linear_impl.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/dropconnect.hpp:
@@ -3140,21 +2922,15 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/ann/layer/add.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/adaptive_mean_pooling_impl.hpp:
-
 /usr/local/include/mlpack/methods/ann/layer/mean_pooling_impl.hpp:
 
 /usr/local/include/mlpack/methods/cf/decomposition_policies/decomposition_policies.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/mean_pooling.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/adaptive_mean_pooling.hpp:
-
 /usr/local/include/mlpack/methods/ann/layer/adaptive_max_pooling_impl.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/max_pooling_impl.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/adaptive_max_pooling.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/recurrent_layer_impl.hpp:
 
@@ -3175,8 +2951,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/ann/init_rules/random_init.hpp:
 
 /usr/local/include/mlpack/methods/ann/init_rules/glorot_init.hpp:
-
-/usr/include/python3.10/longintrepr.h:
 
 /usr/local/include/mlpack/methods/hoeffding_trees/hoeffding_numeric_split.hpp:
 
@@ -3214,11 +2988,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/ann/activation_functions/tanh_exponential_function.hpp:
 
-/usr/local/include/mlpack/methods/ann/activation_functions/swish_function.hpp:
-
 /usr/local/include/mlpack/methods/ann/activation_functions/softsign_function.hpp:
-
-/usr/include/python3.10/numpy/ndarraytypes.h:
 
 /usr/local/include/mlpack/methods/ann/activation_functions/softplus_function.hpp:
 
@@ -3240,8 +3010,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/ann/activation_functions/activation_functions.hpp:
 
-/usr/local/include/mlpack/methods/ann/make_alias.hpp:
-
 /usr/local/include/mlpack/methods/reinforcement_learning/q_learning_impl.hpp:
 
 /usr/local/include/mlpack/methods/ann/ann.hpp:
@@ -3254,10 +3022,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/amf/termination_policies/simple_residue_termination.hpp:
 
-/usr/local/include/mlpack/methods/svdplusplus.hpp:
-
-/usr/local/include/mlpack/methods/amf/termination_policies/complete_incremental_termination.hpp:
-
 /usr/local/include/mlpack/methods/amf/init_rules/random_init.hpp:
 
 /usr/local/include/mlpack/methods/amf/init_rules/random_acol_init.hpp:
@@ -3265,8 +3029,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/amf/init_rules/given_init.hpp:
 
 /usr/local/include/mlpack/methods/amf/init_rules/init_rules.hpp:
-
-/usr/local/include/mlpack/methods/amf/update_rules/svd_complete_incremental_learning.hpp:
 
 /usr/local/include/mlpack/methods/amf/update_rules/svd_incomplete_incremental_learning.hpp:
 
@@ -3342,13 +3104,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/ensmallen_bits/svrg/svrg_impl.hpp:
 
-/usr/local/include/ensmallen_bits/svrg/svrg_update.hpp:
-
 /usr/local/include/ensmallen_bits/svrg/svrg.hpp:
 
 /usr/local/include/ensmallen_bits/spsa/spsa_impl.hpp:
-
-/usr/include/python3.10/sliceobject.h:
 
 /usr/local/include/ensmallen_bits/smorms3/smorms3_impl.hpp:
 
@@ -3418,11 +3176,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/ensmallen_bits/fw/frank_wolfe_impl.hpp:
 
-/usr/include/python3.10/pystrcmp.h:
-
 /usr/local/include/ensmallen_bits/fw/constr_lpball.hpp:
-
-/usr/include/python3.10/fileutils.h:
 
 /usr/local/include/ensmallen_bits/fw/update_span.hpp:
 
@@ -3432,13 +3186,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/ensmallen_bits/fw/proximal/proximal_impl.hpp:
 
-/usr/local/include/ensmallen_bits/fw/proximal/proximal.hpp:
-
 /usr/local/include/ensmallen_bits/fw/atoms.hpp:
 
 /usr/local/include/ensmallen_bits/fw/update_full_correction.hpp:
-
-/usr/include/python3.10/code.h:
 
 /usr/local/include/ensmallen_bits/ftml/ftml_update.hpp:
 
@@ -3512,25 +3262,17 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/ensmallen_bits/ada_grad/ada_grad_impl.hpp:
 
-/usr/include/python3.10/tupleobject.h:
-
 /usr/local/include/mlpack/methods/ann/layer/dropconnect_impl.hpp:
 
 /usr/local/include/ensmallen_bits/ada_grad/ada_grad.hpp:
 
 /usr/local/include/ensmallen_bits/ada_bound/ams_bound_update.hpp:
 
-/usr/include/python3.10/import.h:
-
 /usr/local/include/ensmallen_bits/ada_bound/ada_bound_update.hpp:
 
 /usr/local/include/ensmallen_bits/ada_belief/ada_belief_update.hpp:
 
 /usr/local/include/ensmallen_bits/sgd/update_policies/quasi_hyperbolic_update.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/negative_log_likelihood.hpp:
-
-/usr/local/include/ensmallen_bits/sgd/decay_policies/no_decay.hpp:
 
 /usr/local/include/ensmallen_bits/sgd/update_policies/momentum_update.hpp:
 
@@ -3539,8 +3281,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/regularized_svd/regularized_svd_impl.hpp:
 
 /usr/local/include/ensmallen_bits/problems/zdt/zdt3_function.hpp:
-
-/usr/local/include/ensmallen_bits/problems/zdt/zdt2_function.hpp:
 
 /usr/local/include/ensmallen_bits/problems/three_hump_camel_function_impl.hpp:
 
@@ -3610,8 +3350,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/ensmallen_bits/problems/drop_wave_function_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
 /usr/local/include/ensmallen_bits/problems/cross_in_tray_function_impl.hpp:
 
 /usr/local/include/mlpack/methods/random_forest.hpp:
@@ -3625,8 +3363,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/ensmallen_bits/problems/gradient_descent_test_function_impl.hpp:
 
 /usr/local/include/ensmallen_bits/callbacks/timer_stop.hpp:
-
-/usr/local/include/ensmallen_bits/callbacks/store_best_coordinates.hpp:
 
 /usr/local/include/ensmallen_bits/callbacks/report.hpp:
 
@@ -3664,21 +3400,15 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/hpt/fixed.hpp:
 
-/usr/local/include/mlpack/core/hpt/deduce_hp_types.hpp:
-
 /usr/local/include/mlpack/methods/ann/regularizer/orthogonal_regularizer.hpp:
 
 /usr/local/include/mlpack/core/cv/k_fold_cv_impl.hpp:
-
-/usr/include/python3.10/object.h:
 
 /usr/local/include/mlpack/core/cv/k_fold_cv.hpp:
 
 /usr/local/include/mlpack/core/cv/simple_cv.hpp:
 
 /usr/local/include/mlpack/core/cv/cv_base.hpp:
-
-/usr/include/python3.10/cpython/dictobject.h:
 
 /usr/local/include/mlpack/core/cv/metrics/silhouette_score_impl.hpp:
 
@@ -3703,8 +3433,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/core/cv/metrics/accuracy.hpp:
 
 /usr/local/include/mlpack/core/cv/metrics/facilities.hpp:
-
-/usr/include/python3.10/descrobject.h:
 
 /usr/local/include/mlpack/core/cv/metrics/metrics.hpp:
 
@@ -3762,12 +3490,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_split_impl.hpp:
 
-/usr/local/include/ensmallen_bits/problems/sphere_function.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_split.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/minimal_splits_number_sweep_impl.hpp:
-
 /usr/local/include/mlpack/core/tree/rectangle_tree/minimal_splits_number_sweep.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/minimal_coverage_sweep_impl.hpp:
@@ -3785,10 +3507,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/ensmallen_bits/problems/rastrigin_function_impl.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_descent_heuristic_impl.hpp:
-
-/usr/local/include/mlpack/methods/hoeffding_trees/hoeffding_categorical_split_impl.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_descent_heuristic.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/x_tree_auxiliary_information.hpp:
 
@@ -3808,8 +3526,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/r_tree_split_impl.hpp:
 
-/usr/include/setjmp.h:
-
 /usr/local/include/mlpack/methods/cf/interpolation_policies/similarity_interpolation.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/rectangle_tree.hpp:
@@ -3822,21 +3538,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/tree/octree/single_tree_traverser_impl.hpp:
 
-/usr/local/include/mlpack/methods/logistic_regression/logistic_regression.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/hinge_embedding_loss_impl.hpp:
-
-/usr/local/include/ensmallen_bits/sdp/sdp_impl.hpp:
-
-/usr/local/include/mlpack/core/tree/octree/single_tree_traverser.hpp:
-
 /usr/local/include/mlpack/core/tree/octree/traits.hpp:
 
 /usr/local/include/mlpack/methods/cf/normalization/no_normalization.hpp:
 
 /usr/local/include/mlpack/core/tree/octree/octree_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/local/include/mlpack/core/tree/octree/octree.hpp:
 
@@ -3845,10 +3551,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/ann/regularizer/lregularizer.hpp:
 
 /usr/local/include/mlpack/core/tree/cover_tree/typedef.hpp:
-
-/usr/local/include/mlpack/methods/cf/decomposition_policies/svd_complete_method.hpp:
-
-/usr/local/include/mlpack/core/tree/cover_tree/dual_tree_traverser_impl.hpp:
 
 /usr/local/include/mlpack/methods/ann/dists/dists.hpp:
 
@@ -3866,11 +3568,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/tree/cover_tree/first_point_is_root.hpp:
 
-/usr/include/python3.10/numpy/_numpyconfig.h:
-
 /usr/local/include/mlpack/core/tree/binary_space_tree/typedef.hpp:
-
-/usr/include/python3.10/pythonrun.h:
 
 /usr/local/include/mlpack/methods/kernel_pca/kernel_rules/naive_method.hpp:
 
@@ -3904,8 +3602,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/tree/binary_space_tree/midpoint_split_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/perform_split.hpp:
-
 /usr/local/include/mlpack/methods/softmax_regression/softmax_regression_function_impl.hpp:
 
 /usr/local/include/mlpack/core/tree/binary_space_tree/midpoint_split.hpp:
@@ -3913,8 +3609,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/core/tree/binary_space_tree.hpp:
 
 /usr/local/include/mlpack/core/tree/address.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/local/include/mlpack/core/tree/hollow_ball_bound.hpp:
 
@@ -3927,8 +3621,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/core/tree/hrectbound.hpp:
 
 /usr/local/include/mlpack/core/tree/bound_traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
 /usr/local/include/mlpack/core/tree/bounds.hpp:
 
@@ -3992,8 +3684,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/dists/regression_distribution_impl.hpp:
 
-/usr/include/python3.10/pycapsule.h:
-
 /usr/local/include/mlpack/methods/linear_regression/linear_regression.hpp:
 
 /usr/local/include/mlpack/core/dists/laplace_distribution.hpp:
@@ -4009,8 +3699,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/methods/ann/convolution_rules/border_modes.hpp:
 
 /usr/local/include/mlpack/core/dists/gamma_distribution_impl.hpp:
-
-/usr/include/python3.10/cpython/pydebug.h:
 
 /usr/local/include/mlpack/core/dists/gamma_distribution.hpp:
 
@@ -4046,241 +3734,215 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/math/random_basis.hpp:
 
-/usr/include/armadillo_bits/diskio_bones.hpp:
+/usr/local/include/mlpack/core/math/quantile.hpp:
 
-/usr/include/armadillo_bits/diagview_meat.hpp:
+/usr/local/include/mlpack/core/math/multiply_slices.hpp:
+
+/usr/local/include/mlpack/core/math/make_alias.hpp:
+
+/usr/local/include/mlpack/core/math/log_add_impl.hpp:
+
+/usr/local/include/mlpack/methods/lsh/lsh_search.hpp:
+
+/usr/local/include/mlpack/core/math/log_add.hpp:
+
+/usr/local/include/mlpack/core/math/digamma.hpp:
+
+/usr/local/include/ensmallen_bits/problems/logistic_regression_function.hpp:
+
+/usr/local/include/mlpack/core/math/columns_to_blocks.hpp:
+
+/usr/local/include/mlpack/methods/neighbor_search/neighbor_search_rules_impl.hpp:
+
+/usr/local/include/mlpack/core/math/math.hpp:
+
+/usr/local/include/mlpack/core/data/split_data.hpp:
+
+/usr/local/include/mlpack/core/data/one_hot_encoding_impl.hpp:
+
+/usr/local/include/mlpack/core/data/one_hot_encoding.hpp:
+
+/usr/local/include/mlpack/core/cv/metrics/f1.hpp:
+
+/usr/local/include/mlpack/core/data/normalize_labels_impl.hpp:
+
+/usr/local/include/mlpack/core/data/normalize_labels.hpp:
+
+/usr/local/include/mlpack/core/data/confusion_matrix_impl.hpp:
+
+/usr/local/include/mlpack/core/data/confusion_matrix.hpp:
+
+/usr/local/include/mlpack/core/data/binarize.hpp:
+
+/usr/local/include/mlpack/core/data/tokenizers/split_by_any_of.hpp:
+
+/usr/local/include/mlpack/core/data/tokenizers/char_extract.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding_policies/dictionary_encoding_policy.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding_dictionary.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding_policies/policy_traits.hpp:
+
+/usr/local/include/mlpack/methods/kernel_pca.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding_policies/bag_of_words_encoding_policy.hpp:
+
+/usr/local/include/mlpack/core/data/string_encoding_policies/string_encoding_policies.hpp:
+
+/usr/local/include/mlpack/core/data/scaler_methods/standard_scaler.hpp:
+
+/usr/local/include/mlpack/core/math/lin_alg_impl.hpp:
+
+/usr/local/include/mlpack/core/cv/metrics/accuracy_impl.hpp:
+
+/usr/local/include/mlpack/core/math/random.hpp:
+
+/usr/local/include/mlpack/core/math/ccov_impl.hpp:
+
+/usr/local/include/mlpack/core/math/ccov.hpp:
+
+/usr/local/include/mlpack/core/data/scaler_methods/pca_whitening.hpp:
+
+/usr/local/include/mlpack/core/data/scaler_methods/scaler_methods.hpp:
+
+/usr/local/include/mlpack/core/data/map_policies/missing_policy.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/concatenate_impl.hpp:
 
 /usr/local/include/mlpack/core/data/imputation_methods/custom_imputation.hpp:
 
-/usr/local/include/ensmallen_bits/sgd/update_policies/vanilla_update.hpp:
+/usr/local/include/mlpack/core/data/imputation_methods/mean_imputation.hpp:
 
-/usr/include/armadillo_bits/def_blas.hpp:
+/usr/local/include/mlpack/methods/decision_tree.hpp:
 
-/usr/include/armadillo_bits/newarp_EigsSelect.hpp:
+/usr/local/include/mlpack/core/data/imputation_methods/imputation_methods.hpp:
 
-/usr/include/armadillo_bits/glue_quantile_bones.hpp:
+/usr/local/include/mlpack/core/data/data.hpp:
 
-/usr/include/armadillo_bits/glue_mixed_bones.hpp:
+/usr/local/include/mlpack/core/math/clamp.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/types.h:
+/usr/local/include/mlpack/core/util/size_checks.hpp:
 
-/usr/local/include/mlpack/core/kernels/example_kernel.hpp:
+/usr/local/include/ensmallen_bits/ftml/ftml_impl.hpp:
 
-/usr/local/include/mlpack/core/dists/regression_distribution.hpp:
+/usr/local/include/mlpack/core/util/timers_impl.hpp:
 
-/usr/include/armadillo_bits/glue_join_meat.hpp:
+/usr/local/include/mlpack/methods/nmf.hpp:
 
-/usr/include/python3.10/unicodeobject.h:
+/usr/local/include/mlpack/core/util/hyphenate_string.hpp:
 
-/usr/local/include/mlpack/methods/matrix_completion/matrix_completion_impl.hpp:
+/usr/local/include/mlpack/core/util/io_impl.hpp:
 
-/usr/include/armadillo_bits/spop_mean_meat.hpp:
+/usr/local/include/mlpack/core/util/program_doc.hpp:
 
-/usr/local/include/ensmallen_bits/adam/optimisticadam_update.hpp:
+/usr/local/include/mlpack/methods/bayesian_linear_regression/bayesian_linear_regression.hpp:
 
-/usr/include/armadillo_bits/spglue_min_bones.hpp:
+/usr/local/include/ensmallen_bits/katyusha/katyusha.hpp:
 
-/usr/local/include/mlpack/core/util/log_impl.hpp:
+/usr/local/include/mlpack/core/data/save_impl.hpp:
 
-/usr/include/armadillo_bits/spop_vectorise_bones.hpp:
+/usr/local/include/mlpack/core/data/save_image_impl.hpp:
 
-/usr/include/armadillo_bits/newarp_DenseGenMatProd_bones.hpp:
+/usr/local/include/mlpack/core/data/load_vec_impl.hpp:
 
-/usr/include/armadillo_bits/fn_interp2.hpp:
+/usr/local/include/mlpack/core/tree/rectangle_tree/dual_tree_traverser_impl.hpp:
 
-/usr/local/include/mlpack/methods/det/dtree_impl.hpp:
+/usr/local/include/mlpack/core/data/load_model_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/cover_tree/traits.hpp:
+/usr/local/include/mlpack/core/data/load_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/binary_space_tree/binary_space_tree.hpp:
+/usr/local/include/ensmallen_bits/function/arma_traits.hpp:
 
-/usr/include/armadillo_bits/spop_var_bones.hpp:
+/usr/local/include/mlpack/core/data/load_image_impl.hpp:
 
-/usr/include/armadillo_bits/spop_strans_bones.hpp:
+/usr/local/include/mlpack/core/data/load_image.hpp:
 
-/usr/include/armadillo_bits/gmm_full_bones.hpp:
+/usr/local/include/ensmallen_bits/nsga2/nsga2.hpp:
 
-/usr/local/include/ensmallen_bits/sarah/sarah.hpp:
+/usr/local/include/mlpack/core/tree/spill_tree/spill_tree.hpp:
 
-/usr/include/armadillo_bits/arma_config.hpp:
+/usr/local/include/mlpack/core/data/load_arff_impl.hpp:
 
-/usr/include/armadillo_bits/glue_intersect_bones.hpp:
+/usr/local/include/mlpack/core/data/load_arff.hpp:
 
-/usr/local/include/ensmallen_bits/function/add_evaluate_with_gradient.hpp:
+/usr/local/include/mlpack/core/data/load_categorical_csv.hpp:
 
-/usr/include/armadillo_bits/glue_polyval_bones.hpp:
+/usr/local/include/mlpack/core/data/load_numeric_csv.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/usr/local/include/mlpack/core/data/load_csv.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/linear3d.hpp:
+/usr/local/include/mlpack/core/data/image_info_impl.hpp:
 
-/usr/include/armadillo_bits/glue_polyfit_bones.hpp:
+/usr/local/include/mlpack/core/data/image_info.hpp:
 
-/usr/include/armadillo_bits/operator_minus.hpp:
+/usr/local/include/mlpack/core/tree/cosine_tree/cosine_tree.hpp:
 
-/usr/local/include/mlpack/core/tree/cellbound_impl.hpp:
+/usr/local/include/mlpack/core/data/string_algorithms.hpp:
 
-/usr/include/armadillo_bits/op_index_max_meat.hpp:
+/usr/local/include/mlpack/core/tree/binary_space_tree/traits.hpp:
 
-/usr/include/armadillo_bits/op_reshape_meat.hpp:
+/usr/local/include/mlpack/core/data/extension.hpp:
 
-/usr/local/include/mlpack/methods/sparse_coding/nothing_initializer.hpp:
+/usr/local/include/mlpack/core/data/detect_file_type_impl.hpp:
 
-/usr/include/armadillo_bits/eOpCube_bones.hpp:
+/usr/local/include/mlpack/core/data/types_impl.hpp:
 
-/usr/include/cereal/details/polymorphic_impl.hpp:
+/usr/local/include/mlpack/core/data/types.hpp:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_plus_tree_descent_heuristic.hpp:
+/usr/local/include/mlpack/core/cv/metrics/mse_impl.hpp:
 
-/usr/include/armadillo_bits/glue_toeplitz_bones.hpp:
+/usr/local/include/mlpack/core/data/detect_file_type.hpp:
 
-/usr/include/armadillo_bits/mtSpGlue_bones.hpp:
+/usr/local/include/mlpack/core/data/load.hpp:
 
-/usr/include/armadillo_bits/fn_repmat.hpp:
+/usr/local/include/mlpack/core/data/dataset_mapper_impl.hpp:
 
-/usr/include/python3.10/eval.h:
+/usr/local/include/mlpack/core/util/params_impl.hpp:
 
-/usr/include/armadillo_bits/glue_conv_bones.hpp:
-
-/usr/local/include/mlpack/core/tree/tree.hpp:
-
-/usr/include/armadillo_bits/glue_solve_bones.hpp:
-
-/usr/include/armadillo_bits/glue_relational_bones.hpp:
-
-/usr/local/include/ensmallen_bits/adam/nadam_update.hpp:
-
-/usr/include/armadillo_bits/glue_join_bones.hpp:
-
-/usr/local/include/ensmallen_bits/sgdr/cyclical_decay.hpp:
-
-/usr/include/armadillo_bits/fn_dot.hpp:
-
-/usr/include/armadillo_bits/op_logmat_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/local/include/mlpack/core/tree/cover_tree/cover_tree.hpp:
-
-/usr/include/armadillo_bits/op_sqrtmat_bones.hpp:
-
-/usr/include/armadillo_bits/spop_trimat_bones.hpp:
-
-/usr/include/armadillo_bits/BaseCube_meat.hpp:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/local/include/mlpack/methods/reinforcement_learning/policy/greedy_policy.hpp:
-
-/usr/include/string.h:
-
-/usr/include/armadillo_bits/op_normalise_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/armadillo_bits/op_toeplitz_bones.hpp:
-
-/usr/local/include/mlpack/methods/kmeans/dual_tree_kmeans_rules_impl.hpp:
-
-/usr/include/armadillo_bits/op_find_unique_bones.hpp:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/include/armadillo_bits/glue_kron_bones.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/local/include/ensmallen_bits/problems/himmelblau_function.hpp:
-
-/usr/include/armadillo_bits/op_sp_plus_meat.hpp:
-
-/usr/include/armadillo_bits/op_relational_bones.hpp:
-
-/usr/local/include/mlpack/methods/ann/augmented/tasks/sort.hpp:
-
-/usr/include/armadillo_bits/op_misc_bones.hpp:
+/usr/local/include/mlpack/core/util/params.hpp:
 
 /usr/local/include/mlpack/methods/ann/loss_functions/cosine_embedding_loss.hpp:
 
 /usr/local/include/mlpack/core/util/version.hpp:
 
-/usr/include/armadillo_bits/subview_elem2_bones.hpp:
+/usr/local/include/mlpack/methods/ann/loss_functions/dice_loss_impl.hpp:
 
-/usr/include/armadillo_bits/op_shuffle_bones.hpp:
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
-/usr/include/armadillo_bits/op_cond_bones.hpp:
+/usr/include/c++/11/bits/std_thread.h:
 
-/usr/local/include/mlpack/core/data/format.hpp:
+/usr/include/c++/11/thread:
 
-/usr/include/armadillo_bits/op_cor_bones.hpp:
+/usr/local/include/mlpack/core/util/timers.hpp:
 
-/usr/include/wctype.h:
+/usr/local/include/mlpack/core/util/log_impl.hpp:
 
-/usr/include/armadillo_bits/op_resize_bones.hpp:
+/usr/local/include/mlpack/methods/ann/loss_functions/hinge_loss.hpp:
 
-/usr/include/c++/11/ext/type_traits.h:
+/usr/local/include/mlpack/core/util/nulloutstream.hpp:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_absolute_percentage_error_impl.hpp:
+/usr/local/include/mlpack/methods/ann/layer/noisylinear_impl.hpp:
 
-/usr/include/armadillo_bits/mtSpGlue_meat.hpp:
+/usr/local/include/mlpack/core/util/prefixedoutstream_impl.hpp:
 
-/usr/include/c++/11/bits/list.tcc:
+/usr/local/include/mlpack/methods/local_coordinate_coding/lcc_impl.hpp:
 
-/usr/include/armadillo_bits/spop_mean_bones.hpp:
+/usr/local/include/mlpack/core/util/log.hpp:
 
-/usr/local/include/mlpack/methods/pca/decomposition_policies/randomized_block_krylov_method.hpp:
+/usr/local/include/mlpack/core/data/has_serialize.hpp:
 
-/usr/include/c++/11/iosfwd:
+/usr/include/cereal/details/polymorphic_impl.hpp:
 
-/usr/include/c++/11/memory:
+/usr/include/cereal/types/polymorphic.hpp:
 
-/usr/local/include/mlpack/methods/reinforcement_learning/worker/n_step_q_learning_worker.hpp:
-
-/usr/include/armadillo_bits/op_stddev_bones.hpp:
-
-/usr/include/armadillo_bits/op_det_meat.hpp:
-
-/usr/include/armadillo_bits/op_hist_bones.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/triplet_margin_loss.hpp:
-
-/usr/include/armadillo_bits/op_mean_bones.hpp:
-
-/usr/include/cereal/archives/json.hpp:
-
-/usr/include/armadillo_bits/op_htrans_bones.hpp:
-
-/usr/local/include/mlpack/methods/neighbor_search/neighbor_search_rules.hpp:
-
-/usr/include/armadillo_bits/typedef_elem.hpp:
-
-/usr/include/armadillo_bits/op_fft_meat.hpp:
-
-/usr/local/include/mlpack/methods/cf/interpolation_policies/average_interpolation.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/armadillo_bits/spglue_minus_bones.hpp:
-
-/usr/include/c++/11/ios:
-
-/usr/include/armadillo_bits/fn_princomp.hpp:
-
-/usr/include/c++/11/cmath:
-
-/usr/include/cereal/external/rapidjson/internal/diyfp.h:
+/usr/include/cereal/types/memory.hpp:
 
 /usr/include/armadillo_bits/eGlue_bones.hpp:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/usr/include/armadillo_bits/spglue_times_bones.hpp:
-
-/usr/include/armadillo_bits/SpGlue_bones.hpp:
-
-/usr/local/include/mlpack/core/arma_extend/arma_extend.hpp:
 
 /usr/include/armadillo_bits/Glue_bones.hpp:
 
@@ -4290,13 +3952,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/subview_each_meat.hpp:
 
-/usr/local/include/mlpack/methods/sparse_autoencoder/maximal_inputs.hpp:
-
-/usr/include/armadillo_bits/eglue_core_bones.hpp:
-
 /usr/include/armadillo_bits/eOp_bones.hpp:
 
 /usr/include/armadillo_bits/SpToDOp_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/local/include/mlpack/methods/mean_shift/mean_shift_impl.hpp:
 
@@ -4306,31 +3966,15 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/bits/std_function.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/armadillo_bits/fn_randn.hpp:
-
 /usr/include/armadillo_bits/running_stat_vec_bones.hpp:
 
-/usr/local/include/mlpack/methods/gmm/em_fit_impl.hpp:
+/usr/include/armadillo_bits/diskio_bones.hpp:
 
-/usr/include/armadillo_bits/running_stat_bones.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/concat.hpp:
-
-/usr/include/armadillo_bits/wall_clock_bones.hpp:
+/usr/include/armadillo_bits/diagview_meat.hpp:
 
 /usr/local/include/mlpack/methods/reinforcement_learning/environment/cart_pole.hpp:
 
 /usr/include/armadillo_bits/Col_meat.hpp:
-
-/usr/include/armadillo_bits/glue_hist_bones.hpp:
-
-/usr/include/armadillo_bits/subview_cube_each_bones.hpp:
-
-/usr/local/include/mlpack/core/data/string_encoding.hpp:
 
 /usr/local/include/mlpack/core/tree/traversal_info.hpp:
 
@@ -4354,43 +3998,31 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/bits/unordered_map.h:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/hinge_loss.hpp:
-
-/usr/local/include/mlpack/core/util/nulloutstream.hpp:
-
 /usr/include/armadillo_bits/subview_elem1_bones.hpp:
 
 /usr/include/armadillo_bits/glue_solve_meat.hpp:
 
-/usr/include/armadillo_bits/subview_bones.hpp:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/local/include/mlpack/methods/nystroem_method/nystroem_method.hpp:
-
-/usr/include/armadillo_bits/op_unique_bones.hpp:
-
-/usr/local/include/mlpack/methods/cf/neighbor_search_policies/neighbor_search_policies.hpp:
-
-/usr/include/armadillo_bits/op_pinv_meat.hpp:
-
 /usr/include/armadillo_bits/typedef_mat_fixed.hpp:
-
-/usr/include/armadillo_bits/op_cov_bones.hpp:
 
 /usr/local/include/ensmallen_bits/aug_lagrangian/aug_lagrangian_function_impl.hpp:
 
 /usr/include/armadillo_bits/SpSubview_col_list_bones.hpp:
 
+/usr/local/include/opencv4/opencv2/videoio.hpp:
+
 /usr/include/armadillo_bits/op_powmat_bones.hpp:
 
+/usr/local/include/mlpack/core/math/multiply_slices_impl.hpp:
+
+/usr/include/armadillo_bits/spglue_max_meat.hpp:
+
+/usr/local/include/mlpack/methods/ann/ffn_impl.hpp:
+
+/usr/local/include/mlpack/core/data/map_policies/datatype.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/armadillo_bits/operator_times.hpp:
-
-/usr/include/armadillo_bits/SpValProxy_bones.hpp:
-
-/usr/include/python3.10/cpython/pyfpe.h:
 
 /usr/local/include/mlpack/core/cv/metrics/average_strategy.hpp:
 
@@ -4400,75 +4032,25 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/SizeMat_bones.hpp:
 
-/usr/include/cereal/external/rapidjson/stringbuffer.h:
-
 /usr/include/armadillo_bits/fn_hist.hpp:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /usr/include/armadillo_bits/glue_mvnrnd_meat.hpp:
 
-/usr/include/armadillo_bits/subview_cube_slices_bones.hpp:
-
-/usr/include/armadillo_bits/injector_bones.hpp:
-
-/usr/include/armadillo_bits/sp_auxlib_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/armadillo_bits/GlueCube_bones.hpp:
-
 /usr/include/cereal/external/rapidjson/allocators.h:
-
-/usr/local/include/mlpack/methods/cf/normalization/item_mean_normalization.hpp:
-
-/usr/include/armadillo_bits/fn_symmat.hpp:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/armadillo_bits/fn_solve.hpp:
-
-/usr/include/armadillo_bits/op_reshape_bones.hpp:
-
-/usr/include/c++/11/bits/unordered_set.h:
-
-/usr/include/armadillo_bits/podarray_bones.hpp:
 
 /usr/local/include/mlpack/methods/amf/init_rules/merge_init.hpp:
 
 /usr/include/armadillo_bits/cond_rel_bones.hpp:
 
-/usr/local/include/mlpack/core/data/image_info.hpp:
-
-/usr/local/include/mlpack/methods/pca/decomposition_policies/decomposition_policies.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_bias_error_impl.hpp:
-
-/usr/include/armadillo_bits/op_shift_bones.hpp:
-
-/usr/local/include/mlpack/core/tree/space_split/mean_space_split.hpp:
-
-/usr/include/armadillo_bits/fn_kmeans.hpp:
-
-/usr/include/cereal/external/rapidjson/internal/itoa.h:
-
-/usr/include/armadillo_bits/fn_trunc_log.hpp:
-
-/usr/local/include/mlpack/methods/kernel_pca.hpp:
-
-/usr/local/include/mlpack/core/data/string_encoding_policies/bag_of_words_encoding_policy.hpp:
-
-/usr/local/include/mlpack/core/data/normalize_labels.hpp:
-
-/usr/include/python3.10/cpython/code.h:
-
 /usr/local/include/ensmallen_bits/ada_bound/ada_bound_impl.hpp:
 
 /usr/include/armadillo_bits/def_hdf5.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
 /usr/include/c++/11/complex:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/armadillo_bits/op_median_meat.hpp:
 
@@ -4482,6 +4064,8 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/def_lapack.hpp:
 
+/usr/local/include/opencv4/opencv2/core/affine.hpp:
+
 /usr/include/armadillo_bits/arma_rng.hpp:
 
 /usr/local/include/mlpack/core/cv/cv_base_impl.hpp:
@@ -4493,12 +4077,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/armadillo_bits/constants_old.hpp:
 
 /usr/include/armadillo_bits/op_normalise_meat.hpp:
-
-/usr/local/include/mlpack/methods/cf/interpolation_policies/regression_interpolation.hpp:
-
-/usr/include/armadillo_bits/op_vectorise_bones.hpp:
-
-/usr/include/armadillo_bits/constants.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/r_star_tree_split.hpp:
 
@@ -4516,31 +4094,23 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/arma_str.hpp:
 
-/usr/include/armadillo_bits/mtSpOp_bones.hpp:
-
-/usr/include/armadillo_bits/mp_misc.hpp:
-
-/usr/local/include/mlpack/core/tree/binary_space_tree/single_tree_traverser_impl.hpp:
-
-/usr/include/armadillo_bits/typedef_elem_check.hpp:
-
 /usr/include/armadillo_bits/hdf5_name.hpp:
 
-/usr/include/c++/11/thread:
+/usr/local/include/mlpack/methods/gmm/no_constraint.hpp:
 
-/usr/local/include/ensmallen_bits/problems/bukin_function.hpp:
+/usr/local/include/mlpack/core/data/map_policies/increment_policy.hpp:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_auxiliary_information.hpp:
+/usr/include/armadillo_bits/arma_static_check.hpp:
 
-/usr/include/armadillo_bits/unwrap_spmat.hpp:
+/usr/include/dirent.h:
 
 /usr/include/superlu/superlu_enum_consts.h:
-
-/usr/include/python3.10/traceback.h:
 
 /usr/local/include/mlpack/methods/ann/loss_functions/mean_squared_logarithmic_error_impl.hpp:
 
 /usr/include/superlu/supermatrix.h:
+
+/usr/local/include/opencv4/opencv2/flann/all_indices.h:
 
 /usr/local/include/mlpack/methods/range_search.hpp:
 
@@ -4556,81 +4126,23 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_spones.hpp:
 
-/usr/local/include/mlpack/core/cv/metrics/mse_impl.hpp:
-
-/usr/local/include/mlpack/core/data/detect_file_type.hpp:
-
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/armadillo_bits/BaseCube_bones.hpp:
 
 /usr/include/armadillo_bits/fn_normcdf.hpp:
 
-/usr/include/armadillo_bits/newarp_SparseGenRealShiftSolve_bones.hpp:
-
-/usr/include/armadillo_bits/op_repmat_bones.hpp:
-
-/usr/local/include/mlpack/core/arma_extend/SpMat_extra_bones.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/11/bits/functexcept.h:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/binary_cross_entropy_loss_impl.hpp:
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
-/usr/include/armadillo_bits/op_chol_bones.hpp:
+/usr/local/include/ensmallen_bits/function/add_evaluate_with_gradient.hpp:
 
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/local/include/mlpack/methods/perceptron/learning_policies/learning_policies.hpp:
-
-/usr/include/armadillo_bits/SpCol_meat.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/armadillo_bits/op_find_bones.hpp:
-
-/usr/include/c++/11/bits/random.tcc:
-
-/usr/include/armadillo_bits/spop_min_meat.hpp:
+/usr/include/armadillo_bits/glue_polyval_bones.hpp:
 
 /usr/include/c++/11/atomic:
-
-/usr/include/armadillo_bits/include_superlu.hpp:
-
-/usr/local/include/mlpack/methods/gmm/em_fit.hpp:
-
-/usr/local/include/ensmallen_bits/problems/softmax_regression_function_impl.hpp:
-
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/usr/local/include/ensmallen_bits/function/arma_traits.hpp:
-
-/usr/local/include/mlpack/core/data/load_image_impl.hpp:
-
-/usr/include/c++/11/mutex:
-
-/usr/include/armadillo_bits/op_chol_meat.hpp:
-
-/usr/local/include/mlpack/methods/naive_bayes/naive_bayes_classifier.hpp:
-
-/usr/include/armadillo_bits/newarp_SymEigsSolver_bones.hpp:
-
-/usr/include/armadillo_bits/fn_randi.hpp:
-
-/usr/local/include/mlpack/core/math/range.hpp:
-
-/usr/include/armadillo_bits/auxlib_meat.hpp:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/armadillo_bits/xvec_htrans_bones.hpp:
-
-/usr/include/armadillo_bits/gmm_diag_bones.hpp:
-
-/usr/local/include/mlpack/methods/amf/init_rules/average_init.hpp:
-
-/usr/include/armadillo_bits/op_diagvec_bones.hpp:
 
 /usr/local/include/ensmallen_bits/sgdr/snapshot_ensembles.hpp:
 
@@ -4642,147 +4154,523 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/random:
 
-/usr/local/include/mlpack/methods/bias_svd/bias_svd_impl.hpp:
+/usr/local/include/mlpack/core/tree/enumerate_tree.hpp:
 
-/usr/local/include/ensmallen_bits/problems/eggholder_function_impl.hpp:
+/usr/include/c++/11/bits/fstream.tcc:
 
-/usr/include/c++/11/bits/parse_numbers.h:
+/usr/local/include/mlpack/methods/emst/emst.hpp:
 
-/usr/include/armadillo_bits/fn_vectorise.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/armadillo_bits/fn_sort_index.hpp:
+
+/usr/include/armadillo_bits/Op_meat.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/elu.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/armadillo_bits/op_powmat_meat.hpp:
+
+/usr/include/armadillo_bits/arrayops_meat.hpp:
+
+/usr/include/armadillo:
+
+/usr/local/include/ensmallen_bits/problems/sgd_test_function.hpp:
+
+/usr/local/include/mlpack/methods/linear_regression/linear_regression_impl.hpp:
+
+/usr/include/c++/11/numeric:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/poisson_nll_loss.hpp:
+
+/usr/include/armadillo_bits/newarp_GenEigsSolver_meat.hpp:
+
+/usr/local/include/mlpack/methods/kmeans/kmeans_impl.hpp:
+
+/usr/local/include/ensmallen_bits/yogi/yogi_update.hpp:
+
+/usr/local/include/mlpack/base.hpp:
+
+/usr/local/include/mlpack.hpp:
+
+/usr/local/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/local/include/mlpack/methods/amf/update_rules/svd_complete_incremental_learning.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
+
+/usr/local/include/opencv4/opencv2/core/persistence.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
+/usr/local/include/ensmallen_bits/callbacks/early_stop_at_min_loss.hpp:
+
+/usr/local/include/mlpack/core/dists/dists.hpp:
+
+/usr/include/cereal/external/rapidjson/internal/swap.h:
+
+/usr/local/include/mlpack/methods/ann/layer/adaptive_mean_pooling.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_squared_logarithmic_error.hpp:
+
+/usr/local/include/mlpack/methods/ann/dists/bernoulli_distribution.hpp:
+
+/usr/include/armadillo_bits/CubeToMatOp_bones.hpp:
+
+/usr/include/armadillo_bits/mtOp_meat.hpp:
+
+/usr/local/include/ensmallen_bits/demon_adam/demon_adam.hpp:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/cereal/types/string.hpp:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/usr/local/include/mlpack/methods/cf/interpolation_policies/regression_interpolation.hpp:
+
+/usr/include/armadillo_bits/constants.hpp:
+
+/usr/include/armadillo_bits/op_vectorise_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_absolute_percentage_error_impl.hpp:
+
+/usr/include/armadillo_bits/mtSpGlue_meat.hpp:
+
+/usr/include/c++/11/list:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/usr/include/armadillo_bits/podarray_bones.hpp:
+
+/usr/local/include/mlpack/core/util/sfinae_utility.hpp:
+
+/usr/include/armadillo_bits/newarp_UpperHessenbergEigen_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching.hpp:
+
+/usr/local/include/ensmallen_bits/problems/sphere_function.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_split.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp:
+
+/usr/local/include/ensmallen_bits/fw/proximal/proximal.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp:
+
+/usr/include/armadillo_bits/subview_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/face.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_squared_error_impl.hpp:
+
+/usr/include/armadillo_bits/fn_trig.hpp:
+
+/usr/local/include/mlpack/methods/lsh.hpp:
+
+/usr/include/cereal/archives/portable_binary.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/local/include/mlpack/methods/hoeffding_trees/hoeffding_categorical_split_impl.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_descent_heuristic.hpp:
+
+/usr/local/include/opencv4/opencv2/ml.hpp:
+
+/usr/include/armadillo_bits/xvec_htrans_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/local/include/mlpack/methods/pca/decomposition_policies/exact_svd_method.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/cereal/external/rapidxml/rapidxml.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/index_testing.h:
+
+/usr/local/include/mlpack/methods/radical.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/usr/local/include/mlpack/core/data/format.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/usr/include/armadillo_bits/def_arpack.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/local/include/mlpack/methods/amf/termination_policies/incomplete_incremental_termination.hpp:
+
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/local/include/mlpack/methods/pca/decomposition_policies/decomposition_policies.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_bias_error_impl.hpp:
+
+/usr/include/armadillo_bits/op_shift_bones.hpp:
+
+/usr/local/include/mlpack/core/tree/space_split/mean_space_split.hpp:
+
+/usr/include/armadillo_bits/fn_kmeans.hpp:
+
+/usr/include/cereal/external/rapidjson/internal/itoa.h:
+
+/usr/include/armadillo_bits/mtSpOp_bones.hpp:
+
+/usr/include/armadillo_bits/mp_misc.hpp:
+
+/usr/local/include/mlpack/core/tree/binary_space_tree/single_tree_traverser_impl.hpp:
+
+/usr/include/armadillo_bits/typedef_elem_check.hpp:
+
+/usr/local/include/ensmallen_bits/callbacks/store_best_coordinates.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
+
+/usr/include/armadillo_bits/eGlueCube_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/activation_functions/swish_function.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/dist.h:
+
+/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
+
+/usr/local/include/mlpack/methods/gmm/gmm_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/local/include/ensmallen_bits/problems/zdt/zdt2_function.hpp:
+
+/usr/local/include/opencv4/opencv2/core/hal/interface.h:
+
+/usr/include/armadillo_bits/Gen_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/nn_index.h:
+
+/usr/include/armadillo_bits/translate_arpack.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/armadillo_bits/gmm_misc_bones.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_tree_split.hpp:
+
+/usr/include/c++/11/fstream:
+
+/usr/local/include/mlpack/methods/ann/make_alias.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/local/include/mlpack/methods/ann/layer/adaptive_mean_pooling_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/worker/n_step_q_learning_worker.hpp:
+
+/usr/include/armadillo_bits/op_stddev_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/cereal/external/rapidjson/stringbuffer.h:
+
+/usr/local/include/opencv4/opencv2/flann/random.h:
+
+/usr/include/armadillo_bits/op_sp_plus_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+
+/usr/local/include/mlpack/methods/svdplusplus.hpp:
+
+/usr/local/include/mlpack/methods/amf/termination_policies/complete_incremental_termination.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/local/include/mlpack/methods/approx_kfn/drusilla_select.hpp:
+
+/usr/include/armadillo_bits/fn_sqrtmat.hpp:
+
+/usr/local/include/mlpack/core/metrics/bleu.hpp:
+
+/usr/include/armadillo_bits/glue_relational_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/video.hpp:
 
 /usr/local/include/mlpack/methods/adaboost/adaboost_impl.hpp:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
-/usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp:
-
-/usr/include/armadillo_bits/spop_min_bones.hpp:
-
-/usr/include/c++/11/bits/stl_map.h:
-
 /usr/include/armadillo_bits/fn_det.hpp:
 
-/usr/include/armadillo_bits/eop_core_bones.hpp:
+/usr/include/armadillo_bits/sp_auxlib_bones.hpp:
 
-/usr/include/c++/11/bits/stl_tree.h:
+/usr/local/include/opencv4/opencv2/dnn/dict.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/dirent.h:
+
+/usr/include/armadillo_bits/subview_cube_each_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/armadillo_bits/fn_kron.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/local/include/opencv4/opencv2/core/cuda.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/adaptive_max_pooling.hpp:
+
+/usr/local/include/opencv4/opencv2/opencv.hpp:
 
 /usr/include/c++/11/map:
 
-/usr/local/include/mlpack/methods/reinforcement_learning/worker/one_step_q_learning_worker.hpp:
+/usr/local/include/mlpack/methods/cf/decomposition_policies/svd_complete_method.hpp:
 
-/usr/include/armadillo_bits/arma_rel_comparators.hpp:
+/usr/local/include/mlpack/core/tree/cover_tree/dual_tree_traverser_impl.hpp:
 
-/usr/include/python3.10/cpython/pyctype.h:
+/usr/local/include/opencv4/opencv2/imgcodecs.hpp:
 
-/usr/include/armadillo_bits/traits.hpp:
+/usr/local/include/mlpack/core/tree/rectangle_tree/minimal_splits_number_sweep_impl.hpp:
 
-/usr/include/armadillo_bits/fn_eps.hpp:
+/usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp:
 
-/usr/include/cereal/external/rapidjson/encodedstream.h:
+/usr/local/include/mlpack/methods/bias_svd/bias_svd_impl.hpp:
 
-/usr/include/armadillo_bits/spop_sum_bones.hpp:
+/usr/local/include/ensmallen_bits/problems/eggholder_function_impl.hpp:
 
-/usr/local/include/ensmallen_bits/problems/holder_table_function_impl.hpp:
+/usr/include/armadillo_bits/fn_vectorise.hpp:
 
-/usr/include/armadillo_bits/Row_bones.hpp:
+/usr/include/c++/11/bits/parse_numbers.h:
 
-/usr/local/include/mlpack/core/cereal/is_saving.hpp:
+/usr/include/c++/11/bits/stl_set.h:
 
-/usr/include/c++/11/backward/binders.h:
+/usr/include/armadillo_bits/spop_repmat_meat.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
+/usr/local/include/mlpack/methods/ann/loss_functions/negative_log_likelihood.hpp:
 
-/usr/include/c++/11/bits/refwrap.h:
+/usr/local/include/ensmallen_bits/sgd/decay_policies/no_decay.hpp:
 
-/usr/include/c++/11/bits/stl_tempbuf.h:
+/usr/local/include/opencv4/opencv2/highgui.hpp:
 
-/usr/include/c++/11/bits/stl_algo.h:
+/usr/local/include/mlpack/core/math/range_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/armadillo_bits/op_symmat_bones.hpp:
+/usr/local/include/mlpack/methods/ann/layer/concat.hpp:
+
+/usr/include/armadillo_bits/wall_clock_bones.hpp:
+
+/usr/include/armadillo_bits/GlueCube_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/local/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/include/cereal/external/rapidxml/rapidxml_print.hpp:
+
+/usr/include/c++/11/ctime:
+
+/usr/local/include/ensmallen_bits/ada_delta/ada_delta.hpp:
+
+/usr/include/armadillo_bits/eop_aux.hpp:
+
+/usr/include/armadillo_bits/GenCube_bones.hpp:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/armadillo_bits/include_superlu.hpp:
+
+/usr/local/include/mlpack/methods/gmm/em_fit.hpp:
+
+/usr/local/include/ensmallen_bits/problems/softmax_regression_function_impl.hpp:
+
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/11/mutex:
+
+/usr/include/armadillo_bits/op_chol_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/core/utility.hpp:
+
+/usr/local/include/mlpack/core/tree/perform_split.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/general.h:
+
+/usr/local/include/opencv4/opencv2/core/mat.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/armadillo_bits/subview_cube_slices_bones.hpp:
+
+/usr/include/armadillo_bits/injector_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/core/types.hpp:
+
+/usr/local/include/mlpack/core/tree/spill_tree/spill_dual_tree_traverser.hpp:
+
+/usr/include/armadillo_bits/spop_normalise_bones.hpp:
+
+/usr/local/include/mlpack/methods/bias_svd.hpp:
+
+/usr/local/include/opencv4/opencv2/core/check.hpp:
+
+/usr/include/armadillo_bits/op_nonzeros_bones.hpp:
+
+/usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/local/include/mlpack/methods/svdplusplus/svdplusplus_function.hpp:
+
+/usr/include/assert.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
+
+/usr/include/armadillo_bits/operator_schur.hpp:
+
+/usr/include/armadillo_bits/fn_speye.hpp:
+
+/usr/include/cereal/access.hpp:
+
+/usr/include/armadillo_bits/op_det_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/core/neon_utils.hpp:
+
+/usr/local/include/ensmallen_bits/sgd/update_policies/vanilla_update.hpp:
+
+/usr/include/armadillo_bits/def_blas.hpp:
+
+/usr/local/include/ensmallen_bits/problems/colville_function_impl.hpp:
+
+/usr/include/armadillo_bits/config.hpp:
+
+/usr/local/include/mlpack/methods/kde/kde_rules.hpp:
+
+/usr/local/include/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/softmax_impl.hpp:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/armadillo_bits/Base_meat.hpp:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/local/include/mlpack/methods/perceptron/learning_policies/learning_policies.hpp:
+
+/usr/include/armadillo_bits/SpCol_meat.hpp:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/armadillo_bits/spop_min_meat.hpp:
 
 /usr/local/include/ensmallen_bits/ada_grad/ada_grad_update.hpp:
 
 /usr/include/c++/11/queue:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/c++/11/ext/concurrence.h:
 
-/usr/include/python3.10/compile.h:
+/usr/local/include/opencv4/opencv2/flann/allocator.h:
 
-/usr/include/c++/11/bits/range_access.h:
+/usr/include/armadillo_bits/distr_param.hpp:
 
-/usr/include/armadillo_bits/diskio_meat.hpp:
+/usr/include/c++/11/any:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+/usr/include/armadillo_bits/mtSpGlue_bones.hpp:
 
-/usr/local/include/mlpack/methods/reinforcement_learning/environment/continuous_mountain_car.hpp:
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_plus_tree_descent_heuristic.hpp:
 
-/usr/include/armadillo_bits/mtOpCube_bones.hpp:
+/usr/include/armadillo_bits/glue_toeplitz_bones.hpp:
 
-/usr/include/armadillo_bits/op_min_bones.hpp:
+/usr/include/armadillo_bits/fn_repmat.hpp:
 
-/usr/include/c++/11/cstdio:
+/usr/include/c++/11/bit:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/usr/local/include/opencv4/opencv2/flann/any.h:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/usr/local/include/mlpack/methods/ann/augmented/tasks/sort.hpp:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_split_policy.hpp:
+/usr/include/armadillo_bits/op_misc_bones.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+/usr/local/include/ensmallen_bits/parallel_sgd/parallel_sgd_impl.hpp:
 
-/usr/local/include/ensmallen_bits/fw/func_sq.hpp:
+/usr/include/c++/11/bits/align.h:
 
-/usr/local/include/ensmallen_bits/problems/rosenbrock_wood_function_impl.hpp:
+/usr/local/include/mlpack/core/util/binding_details.hpp:
 
-/usr/include/linux/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/armadillo_bits/op_strans_bones.hpp:
+/usr/include/armadillo_bits/op_max_meat.hpp:
 
-/usr/include/armadillo_bits/fn_quantile.hpp:
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
-
-/usr/include/c++/11/bits/sstream.tcc:
-
-/usr/local/include/mlpack/methods/local_coordinate_coding/local_coordinate_coding.hpp:
-
-/usr/include/c++/11/new:
-
-/usr/include/armadillo_bits/GenSpecialiser.hpp:
-
-/usr/include/c++/11/climits:
+/usr/include/c++/11/memory:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
-/usr/include/armadillo_bits/op_max_bones.hpp:
+/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
-/usr/local/include/ensmallen_bits/sa/exponential_schedule.hpp:
+/usr/local/include/mlpack/core/metrics/iou_metric.hpp:
 
-/usr/include/c++/11/algorithm:
+/usr/include/c++/11/bits/std_mutex.h:
 
-/usr/include/armadillo_bits/op_var_bones.hpp:
+/usr/local/include/mlpack/core/data/save.hpp:
 
-/usr/include/armadillo_bits/spglue_relational_meat.hpp:
+/usr/include/cereal/external/rapidjson/memorystream.h:
 
-/usr/local/include/mlpack/methods/ann/convolution_rules/convolution_rules.hpp:
+/usr/local/include/mlpack/core/arma_extend/arma_extend.hpp:
 
-/usr/include/armadillo_bits/OpCube_bones.hpp:
+/usr/include/armadillo_bits/SpGlue_bones.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/padding.hpp:
+/usr/include/armadillo_bits/spglue_times_bones.hpp:
 
-/usr/include/armadillo_bits/spglue_plus_bones.hpp:
+/usr/include/armadillo_bits/SpValProxy_bones.hpp:
 
-/usr/include/c++/11/bits/localefwd.h:
+/usr/include/armadillo_bits/operator_times.hpp:
 
-/usr/local/include/mlpack/methods/kmeans/pelleg_moore_kmeans_rules.hpp:
+/usr/local/include/mlpack/methods/ann/loss_functions/cosine_embedding_loss_impl.hpp:
 
-/usr/local/include/mlpack/methods/perceptron/perceptron_impl.hpp:
+/usr/include/armadillo_bits/op_flip_meat.hpp:
 
-/usr/include/cereal/external/rapidjson/writer.h:
+/usr/local/include/mlpack/methods/neighbor_search/sort_policies/nearest_neighbor_sort_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/local/include/ensmallen_bits/sarah/sarah.hpp:
+
+/usr/include/armadillo_bits/arma_config.hpp:
+
+/usr/include/armadillo_bits/gmm_full_bones.hpp:
+
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -4790,89 +4678,59 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
-/usr/local/include/mlpack/methods/ann/layer/grouped_convolution_impl.hpp:
+/usr/local/include/mlpack/core/data/dataset_mapper.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/batch_norm_impl.hpp:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/armadillo_bits/spop_reverse_bones.hpp:
+/usr/local/include/mlpack/methods/block_krylov_svd/randomized_block_krylov_svd_impl.hpp:
 
-/usr/include/armadillo_bits/op_diagmat_bones.hpp:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/armadillo_bits/fn_cumsum.hpp:
+/usr/include/c++/11/bits/stl_deque.h:
 
-/usr/include/c++/11/tr1/ell_integral.tcc:
+/usr/local/include/mlpack/core/cereal/is_saving.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+/usr/include/c++/11/backward/binders.h:
 
-/usr/local/include/mlpack/core/metrics/iou_metric.hpp:
+/usr/local/include/ensmallen_bits/problems/holder_table_function_impl.hpp:
 
-/usr/include/c++/11/bits/std_mutex.h:
+/usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
+/usr/include/armadillo_bits/Row_bones.hpp:
 
-/usr/local/include/mlpack/methods/emst/union_find.hpp:
+/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
 
-/usr/include/armadillo_bits/spop_misc_bones.hpp:
+/usr/local/include/mlpack/core/metrics/ip_metric.hpp:
 
-/usr/include/c++/11/bit:
+/usr/include/c++/11/bits/ios_base.h:
 
-/usr/include/armadillo_bits/xtrans_mat_bones.hpp:
+/usr/include/armadillo_bits/op_wishrnd_bones.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+/usr/local/include/ensmallen_bits/moead/decomposition_policies/tchebycheff_decomposition.hpp:
 
-/usr/local/include/mlpack/core/data/load_image.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/python3.10/namespaceobject.h:
+/usr/local/include/mlpack/methods/neighbor_search.hpp:
 
-/usr/local/include/mlpack/methods/det/dt_utils.hpp:
+/usr/include/c++/11/bits/exception_ptr.h:
 
-/usr/local/include/ensmallen_bits/function/sfinae_utility.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
+/usr/local/include/mlpack/methods/ann/activation_functions/gaussian_function.hpp:
 
-/usr/include/c++/11/array:
+/usr/local/include/mlpack/methods/amf/termination_policies/termination_policies.hpp:
 
-/usr/local/include/mlpack/core/math/lin_alg_impl.hpp:
+/usr/include/armadillo_bits/op_diagmat_meat.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+/usr/include/c++/11/bits/charconv.h:
 
-/usr/include/cereal/external/rapidjson/internal/strfunc.h:
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_descent_heuristic.hpp:
 
-/usr/include/armadillo_bits/op_range_bones.hpp:
+/usr/include/math.h:
 
-/usr/include/c++/11/tuple:
+/usr/local/include/opencv4/opencv2/features2d.hpp:
 
-/usr/include/armadillo_bits/mul_syrk.hpp:
-
-/usr/include/cereal/external/rapidjson/reader.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/local/include/ensmallen_bits/problems/rosenbrock_function_impl.hpp:
-
-/usr/local/include/mlpack/core/tree/hollow_ball_bound_impl.hpp:
-
-/usr/include/armadillo_bits/Mat_bones.hpp:
-
-/usr/include/armadillo_bits/fn_diagvec.hpp:
-
-/usr/local/include/ensmallen_bits/sdp/sdp.hpp:
-
-/usr/include/armadillo_bits/glue_cor_bones.hpp:
-
-/usr/local/include/mlpack/methods/cf/decomposition_policies/svdplusplus_method.hpp:
-
-/usr/include/armadillo_bits/fn_histc.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/rectangle_tree_impl.hpp:
-
-/usr/include/armadillo_bits/Base_bones.hpp:
-
-/usr/include/armadillo_bits/SpOp_meat.hpp:
-
-/usr/include/alloca.h:
+/usr/include/armadillo_bits/SpValProxy_meat.hpp:
 
 /usr/local/include/mlpack/methods/range_search/range_search.hpp:
 
@@ -4884,13 +4742,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/cereal/external/rapidjson/prettywriter.h:
 
-/usr/local/include/mlpack/methods/naive_bayes.hpp:
+/usr/include/c++/11/bits/postypes.h:
 
-/usr/include/c++/11/cassert:
-
-/usr/include/cereal/types/array.hpp:
-
-/usr/include/armadillo_bits/MapMat_meat.hpp:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/local/include/mlpack/methods/linear_svm/linear_svm.hpp:
 
@@ -4904,49 +4758,189 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_princomp_bones.hpp:
 
-/usr/include/armadillo_bits/def_arpack.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/local/include/ensmallen_bits/ftml/ftml_impl.hpp:
-
-/usr/local/include/mlpack/core/util/timers_impl.hpp:
-
 /usr/local/include/mlpack/methods/ann/augmented/tasks/sort_impl.hpp:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
-/usr/local/include/mlpack/core/tree/cosine_tree/cosine_tree.hpp:
-
-/usr/local/include/mlpack/core/data/string_algorithms.hpp:
-
-/usr/local/include/ensmallen_bits/padam/padam_update.hpp:
-
-/usr/include/armadillo_bits/glue_histc_bones.hpp:
-
-/usr/include/armadillo_bits/compiler_check.hpp:
-
-/usr/include/armadillo_bits/arrayops_meat.hpp:
-
-/usr/include/armadillo_bits/translate_superlu.hpp:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/armadillo_bits/unwrap.hpp:
-
-/usr/include/armadillo_bits/spglue_relational_bones.hpp:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
 /usr/include/armadillo_bits/mtGlue_meat.hpp:
 
-/usr/include/c++/11/bits/stl_list.h:
+/usr/include/armadillo_bits/translate_atlas.hpp:
 
-/usr/local/include/mlpack/core/util/program_doc_impl.hpp:
+/usr/local/include/mlpack/methods/approx_kfn/qdafn_impl.hpp:
+
+/usr/local/include/mlpack/methods/perceptron/perceptron.hpp:
+
+/usr/include/cereal/external/rapidjson/istreamwrapper.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/local/include/opencv4/opencv2/core/saturate.hpp:
+
+/usr/include/armadillo_bits/spop_repmat_bones.hpp:
+
+/usr/local/include/mlpack/core/data/imputation_methods/listwise_deletion.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/local/include/mlpack/core/data/is_naninf.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/local/include/mlpack/core/data/string_encoding_policies/tf_idf_encoding_policy.hpp:
+
+/usr/include/armadillo_bits/fn_inplace_strans.hpp:
+
+/usr/include/time.h:
+
+/usr/local/include/ensmallen_bits/de/de.hpp:
+
+/usr/local/include/ensmallen_bits/utility/any.hpp:
+
+/usr/include/pthread.h:
+
+/usr/include/armadillo_bits/fn_expmat.hpp:
+
+/usr/local/include/ensmallen_bits/svrg/svrg_update.hpp:
+
+/usr/local/include/opencv4/opencv2/opencv_modules.hpp:
+
+/usr/local/include/ensmallen_bits/sdp/lrsdp_function_impl.hpp:
+
+/usr/local/include/mlpack/core/cv/simple_cv_impl.hpp:
+
+/usr/include/armadillo_bits/SpMat_iterators_meat.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/vr_class_reward.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/local/include/mlpack/core/data/map_policies/map_policies.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/locale.h:
+
+/usr/local/include/mlpack/methods/ann/convolution_rules/convolution_rules.hpp:
+
+/usr/include/armadillo_bits/OpCube_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/padding.hpp:
+
+/usr/include/armadillo_bits/spglue_plus_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/core/traits.hpp:
+
+/usr/include/armadillo_bits/op_cov_meat.hpp:
+
+/usr/include/c++/11/bits/localefwd.h:
+
+/usr/local/include/mlpack/core/math/lin_alg.hpp:
+
+/usr/include/armadillo_bits/debug.hpp:
+
+/usr/local/include/mlpack/methods/kmeans/pelleg_moore_kmeans_rules.hpp:
+
+/usr/local/include/mlpack/methods/perceptron/perceptron_impl.hpp:
+
+/usr/include/cereal/external/rapidjson/writer.h:
+
+/usr/include/armadillo_bits/fft_engine.hpp:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/local/include/opencv4/opencv2/dnn.hpp:
+
+/usr/local/include/mlpack/core/kernels/cosine_distance.hpp:
+
+/usr/include/armadillo_bits/spglue_plus_meat.hpp:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/local/include/mlpack/methods/naive_bayes/naive_bayes_classifier.hpp:
+
+/usr/include/armadillo_bits/newarp_SymEigsSolver_bones.hpp:
+
+/usr/include/armadillo_bits/fn_randi.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_tree_descent_heuristic.hpp:
+
+/usr/include/armadillo_bits/unwrap_cube.hpp:
+
+/usr/local/include/ensmallen_bits/problems/bukin_function.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_auxiliary_information.hpp:
+
+/usr/include/armadillo_bits/unwrap_spmat.hpp:
+
+/usr/local/include/mlpack/methods/pca/decomposition_policies/quic_svd_method.hpp:
+
+../include/cnn.h:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/worker/one_step_q_learning_worker.hpp:
+
+/usr/include/armadillo_bits/arma_rel_comparators.hpp:
+
+/usr/include/armadillo_bits/traits.hpp:
+
+/usr/include/armadillo_bits/fn_eps.hpp:
+
+/usr/local/include/mlpack/methods/regularized_svd/regularized_svd.hpp:
+
+/usr/local/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/local/include/mlpack/methods/cf/decomposition_policies/block_krylov_svd_method.hpp:
+
+/usr/local/include/mlpack/methods/ann/init_rules/init_rules.hpp:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/usr/local/include/mlpack/methods/ann/layer/alpha_dropout_impl.hpp:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/armadillo_bits/SpCol_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/iomanip:
+
+/usr/include/armadillo_bits/restrictors.hpp:
+
+/usr/include/c++/11/ostream:
+
+/usr/local/include/mlpack/core/util/io.hpp:
+
+/usr/include/armadillo_bits/fn_range.hpp:
+
+/usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/local/include/mlpack/methods/approx_kfn/approx_kfn.hpp:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/armadillo_bits/glue_cross_bones.hpp:
+
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/local/include/mlpack/methods/decision_tree/all_categorical_split.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/no_auxiliary_information.hpp:
+
+/usr/local/include/mlpack/core/data/scaler_methods/zca_whitening.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/local/include/mlpack/methods/ann/layer/concat_impl.hpp:
 
@@ -4954,115 +4948,163 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/local/include/mlpack/methods/ann/activation_functions/poisson1_function.hpp:
+
+/usr/local/include/mlpack/core/tree/binary_space_tree/breadth_first_dual_tree_traverser_impl.hpp:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/local/include/ensmallen_bits/ftml/ftml.hpp:
+
+/usr/include/armadillo_bits/operator_cube_plus.hpp:
+
+/usr/local/include/mlpack/methods/neighbor_search/neighbor_search_rules.hpp:
+
+/usr/include/armadillo_bits/typedef_elem.hpp:
+
+/usr/include/armadillo_bits/op_htrans_bones.hpp:
+
+/usr/include/armadillo_bits/op_fft_meat.hpp:
+
+/usr/local/include/mlpack/core/tree/binary_space_tree/rp_tree_mean_split_impl.hpp:
+
+/usr/local/include/mlpack/core/data/scaler_methods/min_max_scaler.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/tuple:
+
+/usr/include/armadillo_bits/mul_syrk.hpp:
+
+/usr/include/cereal/external/rapidjson/reader.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/local/include/mlpack/methods/cf/normalization/user_mean_normalization.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/armadillo_bits/op_symmat_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/c++/11/exception:
+
+/usr/local/include/mlpack/methods/ann/layer/max_pooling.hpp:
+
+/usr/include/armadillo_bits/typedef_mat.hpp:
+
+/usr/local/include/mlpack/methods/pca/pca.hpp:
+
+/usr/local/include/ensmallen_bits/fw/line_search/line_search_impl.hpp:
+
+/usr/include/c++/11/bits/invoke.h:
+
+/usr/include/c++/11/cstdint:
+
+/usr/include/armadillo_bits/ProxyCube.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/local/include/ensmallen_bits/problems/generalized_rosenbrock_function.hpp:
+
+/usr/include/armadillo_bits/fn_trimat_ind.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_split_impl.hpp:
+
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/local/include/mlpack/core/data/scaler_methods/max_abs_scaler.hpp:
+
+/usr/include/armadillo_bits/op_find_meat.hpp:
+
+/usr/include/armadillo_bits/glue_kron_meat.hpp:
+
 /usr/local/include/mlpack/methods/preprocess.hpp:
 
 /usr/local/include/ensmallen_bits/function/add_gradient.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp:
 
-/usr/local/include/ensmallen_bits/sgdr/snapshot_sgdr.hpp:
+/usr/local/include/mlpack/methods/decision_tree/multiple_random_dimension_select.hpp:
 
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/include/armadillo_bits/glue_affmul_meat.hpp:
 
-/usr/local/include/ensmallen_bits/problems/sgd_test_function.hpp:
+/usr/include/c++/11/bits/stl_function.h:
 
-/usr/local/include/mlpack/methods/linear_regression/linear_regression_impl.hpp:
+../src/cnn_train.cpp:
 
-/usr/include/c++/11/numeric:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/local/include/mlpack/core/kernels/cosine_distance.hpp:
+/usr/local/include/ensmallen_bits/iqn/iqn.hpp:
 
-/usr/include/c++/11/unordered_map:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/armadillo_bits/spglue_plus_meat.hpp:
+/usr/include/armadillo_bits/fn_log_normpdf.hpp:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/poisson_nll_loss.hpp:
+/usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/usr/include/armadillo_bits/newarp_GenEigsSolver_meat.hpp:
+/usr/include/c++/11/bits/memoryfwd.h:
 
-/usr/local/include/mlpack/methods/kmeans/kmeans_impl.hpp:
+/usr/include/armadillo_bits/fn_polyval.hpp:
 
-/usr/local/include/ensmallen_bits/yogi/yogi_update.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/local/include/mlpack/base.hpp:
+/usr/local/include/mlpack/methods/ann/loss_functions/hinge_embedding_loss.hpp:
 
-/usr/include/limits.h:
+/usr/include/armadillo_bits/fn_nonzeros.hpp:
 
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
+/usr/local/include/mlpack/methods/ann/layer/radial_basis_function_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/hrectbound_impl.hpp:
-
-/usr/include/armadillo_bits/newarp_UpperHessenbergQR_bones.hpp:
-
-/usr/local/include/ensmallen_bits/ada_bound/ada_bound.hpp:
-
-/usr/local/include/ensmallen_bits/callbacks/grad_clip_by_value.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/x_tree_split_impl.hpp:
-
-/usr/include/armadillo_bits/op_repmat_meat.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/local/include/mlpack/methods/kernel_pca/kernel_rules/nystroem_method.hpp:
-
-/usr/include/unistd.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/predefined_ops.h:
-
-/usr/local/include/ensmallen_bits/sgd/update_policies/gradient_clipping.hpp:
-
-/usr/local/include/ensmallen_bits/scd/scd_impl.hpp:
-
-/usr/include/armadillo_bits/op_pinv_bones.hpp:
-
-/usr/include/armadillo_bits/op_index_min_bones.hpp:
-
-/usr/local/include/mlpack/core/math/range_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/local/include/mlpack/methods/quic_svd.hpp:
 
 /usr/include/armadillo_bits/op_hist_meat.hpp:
 
-/usr/include/armadillo_bits/op_rank_bones.hpp:
+/usr/local/include/opencv4/opencv2/core/cvdef.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/local/include/ensmallen_bits/problems/ackley_function_impl.hpp:
 
-/usr/include/armadillo_bits/op_log_det_meat.hpp:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/armadillo_bits/spglue_minus_meat.hpp:
+/usr/local/include/mlpack/methods/logistic_regression/logistic_regression.hpp:
 
-/usr/local/include/ensmallen_bits/moead/decomposition_policies/tchebycheff_decomposition.hpp:
+/usr/local/include/mlpack/methods/ann/loss_functions/hinge_embedding_loss_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+/usr/local/include/ensmallen_bits/sdp/sdp_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_descent_heuristic.hpp:
+/usr/local/include/mlpack/core/tree/octree/single_tree_traverser.hpp:
 
-/usr/include/math.h:
+/usr/local/include/opencv4/opencv2/core/fast_math.hpp:
 
-/usr/local/include/mlpack/methods/neighbor_search.hpp:
+/usr/include/armadillo_bits/op_find_unique_meat.hpp:
 
-/usr/include/c++/11/bits/exception_ptr.h:
+/usr/include/armadillo_bits/SpBase_bones.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/local/include/mlpack/methods/amf/amf.hpp:
 
-/usr/local/include/mlpack/methods/hoeffding_trees/hoeffding_trees.hpp:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/armadillo_bits/op_roots_bones.hpp:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/cosine_embedding_loss_impl.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
-/usr/include/armadillo_bits/op_flip_meat.hpp:
+/usr/local/include/mlpack/core/tree/rectangle_tree/discrete_hilbert_value_impl.hpp:
 
-/usr/include/armadillo_bits/op_cx_scalar_bones.hpp:
+/usr/include/armadillo_bits/op_any_bones.hpp:
+
+/usr/include/armadillo_bits/subview_field_meat.hpp:
 
 /usr/include/armadillo_bits/mtGlue_bones.hpp:
 
@@ -5074,131 +5116,33 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/local/include/mlpack/methods/bias_svd/bias_svd_function.hpp:
+/usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/c++/11/bits/exception_defines.h:
+/usr/include/armadillo_bits/op_resize_bones.hpp:
 
-/usr/local/include/mlpack/methods/block_krylov_svd/randomized_block_krylov_svd_impl.hpp:
+/usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/usr/include/features.h:
 
-/usr/include/c++/11/bits/basic_string.h:
+/usr/local/include/mlpack/methods/naive_bayes.hpp:
 
-../src/cnn_train.cpp:
+/usr/include/c++/11/cassert:
 
-/usr/local/include/mlpack/methods/ann/init_rules/orthogonal_init.hpp:
+/usr/local/include/opencv4/opencv2/dnn/version.hpp:
 
-/usr/local/include/ensmallen_bits/problems/cross_in_tray_function.hpp:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/c++/11/ext/atomicity.h:
+/usr/local/include/mlpack/methods/softmax_regression/softmax_regression.hpp:
 
-/usr/include/c++/11/bits/stl_iterator.h:
+/usr/local/include/mlpack/methods/perceptron/initialization_methods/initialization_methods.hpp:
 
-/usr/include/python3.10/pymacconfig.h:
+/usr/local/include/ensmallen_bits/problems/drop_wave_function.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/include/c++/11/tr1/legendre_function.tcc:
 
-/usr/include/armadillo_bits/glue_cross_bones.hpp:
-
-/usr/local/include/mlpack.hpp:
-
-/usr/include/armadillo_bits/op_trimat_bones.hpp:
-
-/usr/local/include/mlpack/methods/mean_shift/mean_shift.hpp:
-
-/usr/local/include/mlpack/methods/linear_svm/linear_svm_impl.hpp:
-
-/usr/local/include/ensmallen_bits/parallel_sgd/parallel_sgd.hpp:
-
-/usr/include/armadillo_bits/def_superlu.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_absolute_percentage_error.hpp:
-
-/usr/include/armadillo_bits/fn_randg.hpp:
-
-/usr/include/armadillo_bits/fn_wishrnd.hpp:
-
-/usr/local/include/mlpack/methods/approx_kfn/approx_kfn.hpp:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/11/bits/ostream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/armadillo_bits/glue_trapz_bones.hpp:
-
-/usr/local/include/mlpack/methods/decision_tree/utils.hpp:
-
-/usr/local/include/ensmallen_bits/fw/update_linesearch.hpp:
-
-/usr/include/c++/11/string:
-
-/usr/local/include/ensmallen_bits/de/de.hpp:
-
-/usr/local/include/ensmallen_bits/utility/any.hpp:
-
-/usr/include/pthread.h:
-
-/usr/include/armadillo_bits/fn_expmat.hpp:
-
-/usr/include/armadillo_bits/fn_log_normpdf.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/local/include/mlpack/methods/ann/activation_functions/poisson1_function.hpp:
-
-/usr/local/include/mlpack/core/tree/binary_space_tree/breadth_first_dual_tree_traverser_impl.hpp:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/local/include/ensmallen_bits/ftml/ftml.hpp:
-
-/usr/include/armadillo_bits/operator_cube_plus.hpp:
-
-/usr/local/include/mlpack/core/data/string_encoding_dictionary.hpp:
-
-/usr/include/armadillo_bits/op_find_unique_meat.hpp:
-
-/usr/include/armadillo_bits/SpBase_bones.hpp:
-
-/usr/local/include/mlpack/core/cv/metrics/roc_auc_score.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/armadillo_bits/fn_regspace.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/armadillo_bits/op_prod_bones.hpp:
-
-/usr/local/include/mlpack/core/cv/metrics/silhouette_score.hpp:
-
-/usr/include/armadillo_bits/fn_cond.hpp:
-
-/usr/include/armadillo_bits/arma_rng_cxx11.hpp:
-
-/usr/include/python3.10/cpython/pylifecycle.h:
-
-/usr/include/python3.10/cpython/objimpl.h:
-
-/usr/local/include/mlpack/methods/neighbor_search/unmap.hpp:
-
-/usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/local/include/mlpack/methods/reinforcement_learning/q_networks/categorical_dqn.hpp:
-
-/usr/include/armadillo_bits/spop_max_bones.hpp:
-
-/usr/local/include/ensmallen_bits/ada_sqrt/ada_sqrt_update.hpp:
-
-/usr/include/armadillo_bits/subview_elem2_meat.hpp:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -5216,75 +5160,71 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_median.hpp:
 
-/usr/include/armadillo_bits/diagmat_proxy.hpp:
+/usr/local/include/mlpack/methods/neighbor_search/unmap.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/c++/11/pstl/pstl_config.h:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_tree_descent_heuristic.hpp:
+/usr/local/include/ensmallen_bits/problems/beale_function_impl.hpp:
 
-/usr/include/armadillo_bits/unwrap_cube.hpp:
+/usr/local/include/mlpack/core/data/imputer.hpp:
 
-/usr/include/armadillo_bits/op_det_bones.hpp:
+/usr/include/armadillo_bits/arma_rng_cxx98.hpp:
 
-/usr/include/armadillo_bits/glue_intersect_meat.hpp:
+/usr/local/include/ensmallen_bits/ada_sqrt/ada_sqrt_update.hpp:
 
-/usr/include/armadillo_bits/eOpCube_meat.hpp:
+/usr/include/armadillo_bits/subview_elem2_meat.hpp:
 
-/usr/include/armadillo_bits/fn_pinv.hpp:
+/usr/include/c++/11/cmath:
 
-/usr/include/armadillo_bits/operator_div.hpp:
+/usr/include/c++/11/bits/stl_tree.h:
 
-/usr/include/c++/11/cfloat:
+/usr/include/armadillo_bits/eop_core_bones.hpp:
 
-/usr/include/armadillo_bits/spglue_max_bones.hpp:
+/usr/include/cereal/external/rapidjson/internal/diyfp.h:
 
-/usr/include/c++/11/set:
+/usr/include/c++/11/pstl/glue_memory_defs.h:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/log_cosh_loss.hpp:
+/usr/local/include/opencv4/opencv2/flann/logger.h:
 
-/usr/include/ctype.h:
+/usr/local/include/mlpack/methods/fastmks/fastmks_rules_impl.hpp:
 
-/usr/include/armadillo_bits/glue_min_meat.hpp:
+/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
-/usr/include/armadillo_bits/fn_schur.hpp:
+/usr/include/armadillo_bits/glue_times_bones.hpp:
 
-/usr/include/armadillo_bits/distr_param.hpp:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/11/ext/concurrence.h:
+/usr/include/armadillo_bits/fn_clamp.hpp:
 
-/usr/local/include/mlpack/core/math/digamma.hpp:
+/usr/include/armadillo_bits/fn_var.hpp:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_auxiliary_information_impl.hpp:
+/usr/local/include/ensmallen_bits/fw/func_sq.hpp:
 
-/usr/include/armadillo_bits/glue_affmul_bones.hpp:
+/usr/local/include/ensmallen_bits/problems/rosenbrock_wood_function_impl.hpp:
 
-/usr/include/endian.h:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/11/bits/streambuf.tcc:
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_tree_split_policy.hpp:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/vr_class_reward.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/local/include/mlpack/methods/reinforcement_learning/replay/prioritized_replay.hpp:
 
-/usr/local/include/mlpack/core/metrics/ip_metric.hpp:
+/usr/local/include/mlpack/methods/nystroem_method/nystroem_method_impl.hpp:
 
-/usr/include/armadillo_bits/op_wishrnd_bones.hpp:
+/usr/include/stdc-predef.h:
 
-/usr/include/c++/11/bits/ios_base.h:
+/usr/include/c++/11/bits/alloc_traits.h:
 
-/usr/include/armadillo_bits/newarp_SparseGenMatProd_bones.hpp:
+/usr/local/include/mlpack/methods/lmnn/constraints_impl.hpp:
 
-/usr/include/features.h:
+/usr/include/errno.h:
 
-/usr/include/armadillo_bits/op_median_bones.hpp:
+/usr/local/include/mlpack/methods/decision_tree/all_categorical_split_impl.hpp:
 
-/usr/local/include/mlpack/methods/amf/amf.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/local/include/mlpack/methods/amf/termination_policies/simple_tolerance_termination.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/local/include/mlpack/methods/ann/layer/linear_no_bias.hpp:
 
@@ -5300,26 +5240,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/mul_gemm_mixed.hpp:
 
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/armadillo_bits/op_nonzeros_bones.hpp:
-
-/usr/include/c++/11/pstl/execution_defs.h:
-
-/usr/local/include/mlpack/methods/ann/rnn_impl.hpp:
-
-/usr/local/include/mlpack/core/metrics/bleu_impl.hpp:
-
-/usr/include/stdlib.h:
-
-/usr/local/include/mlpack/methods/reinforcement_learning/worker/one_step_sarsa_worker.hpp:
-
-/usr/include/armadillo_bits/fn_sylvester.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/features-time64.h:
@@ -5328,69 +5248,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/armadillo_bits/op_sort_bones.hpp:
+/usr/include/c++/11/debug/assertions.h:
 
-/usr/include/armadillo_bits/SpSubview_col_list_meat.hpp:
+/usr/local/include/mlpack/methods/kmeans/dual_tree_kmeans_rules_impl.hpp:
 
-/usr/local/include/mlpack/core/data/types_impl.hpp:
-
-/usr/local/include/ensmallen_bits/problems/ackley_function_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/armadillo_bits/arma_ostream_bones.hpp:
-
-/usr/include/c++/11/functional:
-
-/usr/local/include/mlpack/methods/ann/init_rules/network_init.hpp:
-
-/usr/include/armadillo_bits/op_logmat_meat.hpp:
-
-/usr/include/armadillo_bits/MapMat_bones.hpp:
-
-/usr/include/armadillo_bits/spop_normalise_meat.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/reconstruction_loss_impl.hpp:
-
-/usr/local/include/mlpack/core/cv/metrics/precision.hpp:
-
-/usr/include/armadillo_bits/hdf5_misc.hpp:
-
-/usr/include/armadillo_bits/subview_cube_each_meat.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/armadillo_bits/fn_diff.hpp:
-
-/usr/include/armadillo_bits/newarp_SparseGenMatProd_meat.hpp:
-
-/usr/include/python3.10/pymem.h:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/discrete_hilbert_value_impl.hpp:
-
-/usr/include/armadillo_bits/op_any_bones.hpp:
-
-/usr/include/armadillo_bits/subview_field_meat.hpp:
-
-/usr/local/include/mlpack/core/util/timers.hpp:
-
-/usr/include/c++/11/ctime:
-
-/usr/local/include/ensmallen_bits/ada_delta/ada_delta.hpp:
-
-/usr/include/armadillo_bits/eop_aux.hpp:
-
-/usr/include/armadillo_bits/GenCube_bones.hpp:
-
-/usr/include/python3.10/cpython/abstract.h:
-
-/usr/local/include/mlpack/methods/reinforcement_learning/environment/reward_clipping.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/armadillo_bits/op_find_unique_bones.hpp:
 
 /usr/local/include/ensmallen_bits/demon_sgd/demon_sgd_update.hpp:
 
@@ -5412,27 +5274,225 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/local/include/mlpack/core/tree/binary_space_tree/rp_tree_mean_split_impl.hpp:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/armadillo_bits/diagmat_proxy.hpp:
 
-/usr/local/include/mlpack/core/data/scaler_methods/min_max_scaler.hpp:
+/usr/local/include/mlpack/core/hpt/deduce_hp_types.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/armadillo_bits/fn_n_unique.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/local/include/mlpack/methods/kernel_pca/kernel_rules/nystroem_method.hpp:
+
+/usr/include/unistd.h:
+
+/usr/local/include/mlpack/core/util/prefixedoutstream.hpp:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/local/include/mlpack/core/metrics/non_maximal_suppression_impl.hpp:
+
+/usr/local/include/mlpack/core/util/version_impl.hpp:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+/usr/include/cereal/external/rapidjson/internal/ieee754.h:
+
+/usr/local/include/mlpack/methods/ann/init_rules/orthogonal_init.hpp:
+
+/usr/local/include/ensmallen_bits/problems/cross_in_tray_function.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/local/include/opencv4/opencv2/core/version.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/cereal/external/rapidjson/internal/strfunc.h:
+
+/usr/local/include/mlpack/methods/sparse_coding/nothing_initializer.hpp:
+
+/usr/include/armadillo_bits/eOpCube_bones.hpp:
+
+/usr/local/include/ensmallen_bits/padam/padam_update.hpp:
+
+/usr/include/armadillo_bits/compiler_check.hpp:
+
+/usr/include/armadillo_bits/glue_histc_bones.hpp:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/local/include/mlpack/methods/ann/activation_functions/identity_function.hpp:
+
+/usr/include/c++/11/bits/stl_queue.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/local/include/opencv4/opencv2/video/background_segm.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/armadillo_bits/op_rank_bones.hpp:
+
+/usr/include/armadillo_bits/op_log_det_meat.hpp:
+
+/usr/include/armadillo_bits/spglue_minus_meat.hpp:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/armadillo_bits/diskio_meat.hpp:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/local/include/ensmallen_bits/problems/rosenbrock_function_impl.hpp:
+
+/usr/local/include/mlpack/core/tree/hollow_ball_bound_impl.hpp:
+
+/usr/include/armadillo_bits/Mat_bones.hpp:
+
+/usr/include/armadillo_bits/fn_diagvec.hpp:
+
+/usr/include/armadillo_bits/include_atlas.hpp:
+
+/usr/include/armadillo_bits/Cube_meat.hpp:
+
+/usr/local/include/ensmallen_bits/sgdr/snapshot_sgdr.hpp:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/margin_ranking_loss.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/local/include/mlpack/methods/bias_svd/bias_svd_function.hpp:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/local/include/opencv4/opencv2/flann/ground_truth.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/include/c++/11/bits/move.h:
+
+/usr/local/include/mlpack/core/hpt/hpt.hpp:
+
+/usr/include/cereal/types/base_class.hpp:
+
+/usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/c++/11/bits/concept_check.h:
 
-/usr/include/python3.10/fileobject.h:
+/usr/local/include/mlpack/methods/pca/decomposition_policies/randomized_block_krylov_method.hpp:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/include/armadillo_bits/spop_mean_bones.hpp:
+
+/usr/local/include/mlpack/methods/amf/termination_policies/max_iteration_termination.hpp:
+
+/usr/include/c++/11/initializer_list:
+
+/usr/include/c++/11/streambuf:
+
+/usr/local/include/opencv4/opencv2/core/matx.hpp:
+
+/usr/local/include/mlpack/methods/approx_kfn.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/timer.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/c++/11/locale:
+
+/usr/local/include/ensmallen_bits/sarah/sarah_impl.hpp:
+
+/usr/local/include/ensmallen_bits/problems/fonseca_fleming_function.hpp:
+
+/usr/include/armadillo_bits/op_chi2rnd_meat.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/log_cosh_loss.hpp:
+
+/usr/include/ctype.h:
+
+/usr/include/armadillo_bits/glue_min_meat.hpp:
+
+/usr/include/armadillo_bits/fn_schur.hpp:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
+/usr/include/c++/11/bits/functional_hash.h:
+
+/usr/local/include/mlpack/methods/ann/rnn_impl.hpp:
+
+/usr/local/include/mlpack/core/metrics/bleu_impl.hpp:
+
+/usr/include/stdlib.h:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/worker/one_step_sarsa_worker.hpp:
+
+/usr/include/armadillo_bits/fn_sylvester.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/armadillo_bits/mul_gemm.hpp:
 
 /usr/include/armadillo_bits/op_strans_meat.hpp:
 
-/usr/include/stdint.h:
+/usr/local/include/mlpack/methods/reinforcement_learning/environment/reward_clipping.hpp:
 
-/usr/include/armadillo_bits/mtOp_bones.hpp:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/include/armadillo_bits/subview_elem2_bones.hpp:
+
+/usr/local/include/ensmallen_bits/sgd/update_policies/gradient_clipping.hpp:
+
+/usr/local/include/ensmallen_bits/scd/scd_impl.hpp:
+
+/usr/include/armadillo_bits/op_index_min_bones.hpp:
+
+/usr/include/armadillo_bits/op_pinv_bones.hpp:
+
+/usr/include/armadillo_bits/MapMat_meat.hpp:
+
+/usr/include/cereal/types/array.hpp:
+
+/usr/local/include/mlpack/core/cv/metrics/roc_auc_score.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/armadillo_bits/fn_regspace.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/rectangle_tree_impl.hpp:
+
+/usr/include/armadillo_bits/Base_bones.hpp:
+
+/usr/include/armadillo_bits/SpOp_meat.hpp:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/11/cstdio:
 
 /usr/local/include/mlpack/methods/nmf/nmf.hpp:
 
@@ -5440,69 +5500,237 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/stdio.h:
 
-/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_split_impl.hpp:
+/usr/include/c++/11/cerrno:
 
-/usr/include/c++/11/tr1/special_function_util.h:
+/usr/local/include/mlpack/methods/pca/pca_impl.hpp:
 
-/usr/include/armadillo_bits/op_orth_null_bones.hpp:
+/usr/include/c++/11/bits/locale_classes.h:
 
-/usr/local/include/mlpack/core/data/image_info_impl.hpp:
+/usr/include/armadillo_bits/op_stddev_meat.hpp:
 
-/usr/include/c++/11/cstdint:
+/usr/local/include/mlpack/methods/hoeffding_trees/categorical_split_info.hpp:
 
-/usr/include/armadillo_bits/op_sp_minus_bones.hpp:
+/usr/local/include/mlpack/methods/ann/layer/lstm.hpp:
 
-/usr/include/armadillo_bits/trimat_helper.hpp:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/local/include/ensmallen_bits/problems/generalized_rosenbrock_function.hpp:
+/usr/include/sched.h:
 
-/usr/include/armadillo_bits/fn_trimat_ind.hpp:
+/usr/include/wctype.h:
 
-/usr/include/armadillo_bits/glue_max_bones.hpp:
+/usr/include/armadillo_bits/op_cor_bones.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/local/include/mlpack/methods/ann/loss_functions/vr_class_reward_impl.hpp:
 
-/usr/include/c++/11/bits/postypes.h:
+/usr/include/armadillo_bits/op_toeplitz_meat.hpp:
 
-/usr/local/include/mlpack/core/tree/spill_tree/spill_dual_tree_traverser.hpp:
+/usr/local/include/mlpack/methods/sparse_coding.hpp:
 
-/usr/include/armadillo_bits/spop_normalise_bones.hpp:
+/usr/include/armadillo_bits/op_dotext_bones.hpp:
 
-/usr/local/include/mlpack/methods/ann/layer/base_layer.hpp:
+/usr/include/asm-generic/errno.h:
 
-/usr/include/armadillo_bits/spop_symmat_bones.hpp:
+/usr/include/stdint.h:
 
-/usr/include/c++/11/deque:
+/usr/include/armadillo_bits/mtOp_bones.hpp:
 
-/usr/include/cereal/types/string.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/usr/local/include/opencv4/opencv2/objdetect.hpp:
 
-/usr/local/include/mlpack/methods/hoeffding_trees/binary_numeric_split_info.hpp:
+/usr/include/armadillo_bits/eGlueCube_meat.hpp:
 
-/usr/include/armadillo_bits/mtGlueCube_bones.hpp:
+/usr/include/c++/11/bits/stl_multiset.h:
 
-/usr/include/armadillo_bits/op_cumprod_bones.hpp:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/local/include/mlpack/core/data/is_naninf.hpp:
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/local/include/mlpack/methods/gmm/diagonal_constraint.hpp:
 
-/usr/local/include/mlpack/core/util/params.hpp:
+/usr/include/armadillo_bits/op_all_meat.hpp:
 
-/usr/include/armadillo_bits/newarp_DoubleShiftQR_bones.hpp:
+/usr/include/armadillo_bits/access.hpp:
 
-/usr/include/locale.h:
+/usr/include/c++/11/cstddef:
 
-/usr/include/armadillo_bits/spop_repmat_bones.hpp:
+/usr/include/c++/11/ios:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+/usr/include/armadillo_bits/spglue_minus_bones.hpp:
 
-/usr/include/armadillo_bits/op_dot_bones.hpp:
+/usr/include/armadillo_bits/fn_princomp.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/armadillo_bits/spop_htrans_bones.hpp:
+
+/usr/include/c++/11/utility:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/usr/local/include/mlpack/core/math/columns_to_blocks_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/c++/11/stdexcept:
+
+/usr/include/armadillo_bits/field_bones.hpp:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11/bits/exception.h:
+
+/usr/local/include/mlpack/core/tree/cover_tree/cover_tree.hpp:
+
+/usr/include/armadillo_bits/op_sqrtmat_bones.hpp:
+
+/usr/include/armadillo_bits/spop_trimat_bones.hpp:
+
+/usr/include/armadillo_bits/BaseCube_meat.hpp:
+
+/usr/include/c++/11/bits/locale_facets.h:
+
+/usr/include/c++/11/cwctype:
+
+/usr/local/include/mlpack/methods/mean_shift/mean_shift.hpp:
+
+/usr/local/include/mlpack/methods/linear_svm/linear_svm_impl.hpp:
+
+/usr/local/include/ensmallen_bits/parallel_sgd/parallel_sgd.hpp:
+
+/usr/include/armadillo_bits/def_superlu.hpp:
+
+/usr/include/armadillo_bits/op_trimat_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_absolute_percentage_error.hpp:
+
+/usr/include/armadillo_bits/fn_randg.hpp:
+
+/usr/include/armadillo_bits/fn_wishrnd.hpp:
+
+/usr/local/include/mlpack/methods/kmeans/elkan_kmeans.hpp:
+
+/usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/armadillo_bits/op_fft_bones.hpp:
+
+/usr/include/c++/11/vector:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/armadillo_bits/glue_intersect_meat.hpp:
+
+/usr/include/armadillo_bits/fn_pinv.hpp:
+
+/usr/include/armadillo_bits/eOpCube_meat.hpp:
+
+/usr/include/armadillo_bits/op_det_bones.hpp:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/armadillo_bits/spglue_join_bones.hpp:
+
+/usr/local/include/mlpack/methods/hoeffding_trees/binary_numeric_split.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/mean_bias_error.hpp:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/include/armadillo_bits/xtrans_mat_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/dirent_ext.h:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_plus_tree_descent_heuristic_impl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/sac.hpp:
+
+/usr/local/include/mlpack/methods/hmm/hmm_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
+
+/usr/local/include/mlpack/methods/gmm/em_fit_impl.hpp:
+
+/usr/include/armadillo_bits/running_stat_bones.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/local/include/mlpack/methods/cf/interpolation_policies/average_interpolation.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/local/include/opencv4/opencv2/photo.hpp:
+
+/usr/include/armadillo_bits/fn_cumsum.hpp:
+
+/usr/include/armadillo_bits/op_repelem_meat.hpp:
+
+/usr/include/c++/11/stdlib.h:
+
+/usr/local/include/mlpack/methods/det/dt_utils.hpp:
+
+/usr/local/include/ensmallen_bits/function/sfinae_utility.hpp:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/usr/local/include/mlpack/methods/local_coordinate_coding/local_coordinate_coding.hpp:
+
+/usr/include/c++/11/new:
+
+/usr/include/armadillo_bits/GenSpecialiser.hpp:
+
+/usr/include/c++/11/climits:
+
+/usr/include/armadillo_bits/translate_superlu.hpp:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
+
+/usr/include/limits.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/armadillo_bits/unwrap.hpp:
+
+/usr/local/include/mlpack/methods/ann/init_rules/network_init.hpp:
+
+/usr/include/armadillo_bits/op_logmat_meat.hpp:
+
+/usr/include/armadillo_bits/MapMat_bones.hpp:
+
+/usr/include/armadillo_bits/spop_normalise_meat.hpp:
+
+/usr/include/armadillo_bits/newarp_SparseGenMatProd_meat.hpp:
+
+/usr/include/armadillo_bits/fn_diff.hpp:
+
+/usr/local/include/opencv4/opencv2/core/base.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/local/include/mlpack/methods/decision_tree/utils.hpp:
+
+/usr/local/include/ensmallen_bits/fw/update_linesearch.hpp:
+
+/usr/include/c++/11/string:
+
+/usr/include/armadillo_bits/glue_trapz_bones.hpp:
 
 /usr/local/include/mlpack/core/tree/cellbound.hpp:
 
@@ -5516,333 +5744,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_flip_bones.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
-/usr/include/armadillo_bits/translate_atlas.hpp:
-
-/usr/include/armadillo_bits/fft_engine.hpp:
-
-/usr/local/include/mlpack/methods/approx_kfn/qdafn_impl.hpp:
-
-/usr/local/include/mlpack/methods/perceptron/perceptron.hpp:
-
-/usr/include/cereal/external/rapidjson/istreamwrapper.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/python3.10/intrcheck.h:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_squared_logarithmic_error.hpp:
-
-/usr/local/include/mlpack/methods/ann/dists/bernoulli_distribution.hpp:
-
-/usr/include/armadillo_bits/CubeToMatOp_bones.hpp:
-
-/usr/include/armadillo_bits/mtOp_meat.hpp:
-
-/usr/local/include/ensmallen_bits/demon_adam/demon_adam.hpp:
-
-/usr/include/c++/11/bits/deque.tcc:
-
-/usr/local/include/mlpack/methods/kmeans/pelleg_moore_kmeans_statistic.hpp:
-
-/usr/include/armadillo_bits/op_expmat_bones.hpp:
-
-/usr/include/armadillo_bits/op_log_det_bones.hpp:
-
-/usr/include/armadillo_bits/include_atlas.hpp:
-
-/usr/include/armadillo_bits/Cube_meat.hpp:
-
-/usr/local/include/mlpack/methods/gmm/diagonal_constraint.hpp:
-
-/usr/include/armadillo_bits/op_all_meat.hpp:
-
-/usr/local/include/ensmallen_bits/iqn/iqn.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_plus_tree_descent_heuristic_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/armadillo_bits/gmm_misc_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/local/include/mlpack/methods/ann/activation_functions/identity_function.hpp:
-
-/usr/include/c++/11/bits/stl_queue.h:
-
-/usr/local/include/mlpack/methods/decision_tree/all_categorical_split_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/armadillo_bits/Base_meat.hpp:
-
-/usr/local/include/mlpack/methods/kde/kde_rules.hpp:
-
-/usr/local/include/mlpack/methods/neighbor_search/sort_policies/furthest_neighbor_sort.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/softmax_impl.hpp:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/python3.10/codecs.h:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/usr/include/c++/11/exception:
-
-/usr/include/c++/11/bits/locale_facets.h:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/armadillo_bits/glue_times_bones.hpp:
-
-/usr/include/c++/11/typeinfo:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/local/include/mlpack/core/hpt/hpt.hpp:
-
-/usr/include/cereal/types/base_class.hpp:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/armadillo_bits/newarp_GenEigsSolver_bones.hpp:
-
-/usr/local/include/mlpack/methods/cf/decomposition_policies/block_krylov_svd_method.hpp:
-
-/usr/local/include/mlpack/methods/ann/init_rules/init_rules.hpp:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/cereal/external/rapidjson/internal/ieee754.h:
-
-/usr/local/include/mlpack/methods/kmeans/sample_initialization.hpp:
-
-/usr/include/armadillo_bits/glue_hypot_bones.hpp:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/python3.10/cpython/pyerrors.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/signal.h:
-
-/usr/include/armadillo_bits/fn_clamp.hpp:
-
-/usr/include/armadillo_bits/fn_var.hpp:
-
-/usr/include/armadillo_bits/op_inv_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/armadillo_bits/spglue_times_meat.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/hinge_embedding_loss.hpp:
-
-/usr/include/armadillo_bits/fn_nonzeros.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/radial_basis_function_impl.hpp:
-
-/usr/include/c++/11/bits/ostream_insert.h:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/r_tree_split.hpp:
-
-/usr/include/c++/11/fstream:
-
-/usr/local/include/mlpack/methods/ann/activation_functions/gaussian_function.hpp:
-
-/usr/local/include/mlpack/methods/amf/termination_policies/termination_policies.hpp:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/armadillo_bits/op_diagmat_meat.hpp:
-
-/usr/include/armadillo_bits/spop_norm_bones.hpp:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/armadillo_bits/fn_polyval.hpp:
-
-/usr/include/armadillo_bits/spglue_max_meat.hpp:
-
-/usr/local/include/mlpack/core/math/multiply_slices_impl.hpp:
-
-/usr/local/include/mlpack/methods/decision_tree/multiple_random_dimension_select.hpp:
-
-/usr/include/armadillo_bits/glue_affmul_meat.hpp:
-
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/armadillo_bits/op_index_max_bones.hpp:
-
-/usr/local/include/mlpack/methods/amf/termination_policies/max_iteration_termination.hpp:
-
-/usr/include/c++/11/initializer_list:
-
-/usr/include/armadillo_bits/op_sp_plus_bones.hpp:
-
-/usr/local/include/mlpack/methods/cf/normalization/user_mean_normalization.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/local/include/mlpack/methods/ann/layer/alpha_dropout_impl.hpp:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/armadillo_bits/SpCol_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/armadillo_bits/spglue_kron_bones.hpp:
-
-/usr/include/armadillo_bits/fn_trunc_exp.hpp:
-
-/usr/include/python3.10/cpython/compile.h:
-
-/usr/local/include/mlpack/methods/sparse_coding.hpp:
-
-/usr/include/armadillo_bits/op_dotext_bones.hpp:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/vr_class_reward_impl.hpp:
-
-/usr/include/armadillo_bits/op_toeplitz_meat.hpp:
-
-/usr/local/include/mlpack/methods/softmax_regression/softmax_regression.hpp:
-
-/usr/local/include/mlpack/methods/perceptron/initialization_methods/initialization_methods.hpp:
-
-/usr/local/include/ensmallen_bits/problems/drop_wave_function.hpp:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/local/include/mlpack/methods/ann/layer/max_pooling.hpp:
-
-/usr/include/armadillo_bits/typedef_mat.hpp:
-
-/usr/local/include/mlpack/methods/pca/pca.hpp:
-
-/usr/local/include/ensmallen_bits/fw/line_search/line_search_impl.hpp:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/margin_ranking_loss.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
-
-/usr/local/include/mlpack/methods/reinforcement_learning/replay/prioritized_replay.hpp:
-
-/usr/local/include/mlpack/methods/nystroem_method/nystroem_method_impl.hpp:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/local/include/mlpack/methods/lmnn/constraints_impl.hpp:
-
-/usr/include/errno.h:
-
-/usr/local/include/ensmallen_bits/cmaes/full_selection.hpp:
-
-/usr/include/armadillo_bits/auxlib_bones.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/python3.10/tracemalloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/11/bits/functional_hash.h:
-
-/usr/local/include/mlpack/methods/pca/decomposition_policies/exact_svd_method.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/cereal/external/rapidxml/rapidxml.hpp:
-
-/usr/include/c++/11/cerrno:
-
-/usr/local/include/mlpack/methods/pca/pca_impl.hpp:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/armadillo_bits/op_stddev_meat.hpp:
-
-/usr/include/python3.10/bltinmodule.h:
-
-/usr/local/include/mlpack/methods/hoeffding_trees/categorical_split_info.hpp:
-
-/usr/local/include/mlpack/methods/ann/layer/lstm.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/sched.h:
-
-/usr/local/include/mlpack/methods/dbscan/dbscan_impl.hpp:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/armadillo_bits/op_sort_index_bones.hpp:
-
-/usr/include/armadillo_bits/op_fft_bones.hpp:
-
-/usr/include/c++/11/vector:
-
-/usr/include/armadillo_bits/op_clamp_bones.hpp:
-
-/usr/include/python3.10/patchlevel.h:
-
-/usr/include/c++/11/cstddef:
-
-/usr/include/armadillo_bits/translate_arpack.hpp:
-
-/usr/include/armadillo_bits/access.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/python3.10/exports.h:
-
-/usr/local/include/mlpack/methods/hoeffding_trees/binary_numeric_split.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_bias_error.hpp:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_deque.h:
+/usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/c++/11/bits/std_abs.h:
 
@@ -5850,45 +5752,25 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
-/usr/include/c++/11/any:
+/usr/local/include/mlpack/methods/dbscan/dbscan_impl.hpp:
 
-/usr/include/armadillo:
+/usr/include/c++/11/bits/unique_lock.h:
 
-/usr/local/include/ensmallen_bits/problems/colville_function_impl.hpp:
+/usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/armadillo_bits/config.hpp:
+/usr/include/c++/11/bits/refwrap.h:
 
-/usr/include/armadillo_bits/eGlueCube_bones.hpp:
+/usr/include/cereal/external/rapidjson/encodedstream.h:
 
-/usr/include/armadillo_bits/op_chi2rnd_bones.hpp:
+/usr/local/include/mlpack/methods/amf/termination_policies/simple_tolerance_termination.hpp:
 
-/usr/local/include/mlpack/core.hpp:
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp:
+/usr/local/include/opencv4/opencv2/core/cvstd.hpp:
 
-/usr/include/armadillo_bits/spop_htrans_bones.hpp:
+/usr/include/c++/11/bits/basic_ios.tcc:
 
-/usr/include/c++/11/utility:
-
-/usr/include/armadillo_bits/field_bones.hpp:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/local/include/mlpack/methods/amf/termination_policies/incomplete_incremental_termination.hpp:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/local/include/mlpack/methods/kmeans/elkan_kmeans.hpp:
-
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/armadillo_bits/spglue_merge_bones.hpp:
-
-/usr/include/armadillo_bits/fn_normalise.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+/usr/include/armadillo_bits/fn_randn.hpp:
 
 /usr/local/include/mlpack/methods/matrix_completion/matrix_completion.hpp:
 
@@ -5898,33 +5780,411 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/local/include/mlpack/methods/ann/layer/elu.hpp:
+/usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+/usr/local/include/ensmallen_bits/function/static_checks.hpp:
 
-/usr/include/armadillo_bits/op_powmat_meat.hpp:
+/usr/include/armadillo_bits/glue_quantile_meat.hpp:
 
-/usr/include/python3.10/classobject.h:
+/usr/include/armadillo_bits/fn_eye.hpp:
 
-/usr/local/include/mlpack/methods/emst/emst.hpp:
+/usr/include/armadillo_bits/translate_lapack.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+/usr/include/c++/11/cxxabi.h:
 
-/usr/include/armadillo_bits/fn_sort_index.hpp:
+/usr/include/c++/11/bits/ptr_traits.h:
 
-/usr/include/armadillo_bits/Op_meat.hpp:
+/usr/local/include/ensmallen_bits/spalera_sgd/spalera_sgd_impl.hpp:
 
-/usr/local/include/mlpack/core/tree/enumerate_tree.hpp:
+/usr/include/armadillo_bits/spop_norm_meat.hpp:
 
-/usr/include/c++/11/bits/fstream.tcc:
+/usr/include/armadillo_bits/op_norm_bones.hpp:
 
-/usr/include/armadillo_bits/spglue_join_bones.hpp:
+/usr/include/c++/11/bits/quoted_string.h:
 
-/usr/include/c++/11/sstream:
+/usr/include/armadillo_bits/fn_roots.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/usr/local/include/mlpack/methods/reinforcement_learning/policy/greedy_policy.hpp:
 
-/usr/include/armadillo_bits/ProxyCube.hpp:
+/usr/include/string.h:
+
+/usr/local/include/ensmallen_bits/cmaes/full_selection.hpp:
+
+/usr/include/armadillo_bits/auxlib_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/local/include/mlpack/core/util/program_doc_impl.hpp:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/armadillo_bits/op_toeplitz_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/local/include/mlpack/methods/cf/decomposition_policies/svdplusplus_method.hpp:
+
+/usr/include/armadillo_bits/fn_histc.hpp:
+
+/usr/local/include/mlpack/methods/sparse_autoencoder/maximal_inputs.hpp:
+
+/usr/include/armadillo_bits/eglue_core_bones.hpp:
+
+/usr/local/include/mlpack/methods/amf/init_rules/average_init.hpp:
+
+/usr/include/armadillo_bits/op_diagvec_bones.hpp:
+
+/usr/include/armadillo_bits/xvec_htrans_bones.hpp:
+
+/usr/include/armadillo_bits/gmm_diag_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/armadillo_bits/op_dot_bones.hpp:
+
+/usr/include/armadillo_bits/op_inv_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/armadillo_bits/spglue_times_meat.hpp:
+
+/usr/include/armadillo_bits/op_max_bones.hpp:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/environment/continuous_mountain_car.hpp:
+
+/usr/include/armadillo_bits/mtOpCube_bones.hpp:
+
+/usr/include/armadillo_bits/op_min_bones.hpp:
+
+/usr/include/armadillo_bits/op_index_max_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/triplet_margin_loss.hpp:
+
+/usr/include/armadillo_bits/op_mean_bones.hpp:
+
+/usr/include/cereal/archives/json.hpp:
+
+/usr/include/armadillo_bits/op_median_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_table.h:
+
+/usr/include/armadillo_bits/op_sort_bones.hpp:
+
+/usr/include/armadillo_bits/SpSubview_col_list_meat.hpp:
+
+/usr/include/armadillo_bits/op_sort_index_bones.hpp:
+
+/usr/include/armadillo_bits/op_strans_bones.hpp:
+
+/usr/include/c++/11/cfloat:
+
+/usr/include/armadillo_bits/operator_div.hpp:
+
+/usr/include/armadillo_bits/fn_quantile.hpp:
+
+/usr/local/include/ensmallen_bits/sa/exponential_schedule.hpp:
+
+/usr/include/c++/11/algorithm:
+
+/usr/include/armadillo_bits/op_var_bones.hpp:
+
+/usr/include/armadillo_bits/spglue_relational_meat.hpp:
+
+/usr/local/include/mlpack/core/arma_extend/SpMat_extra_bones.hpp:
+
+/usr/include/armadillo_bits/op_repmat_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/linear3d.hpp:
+
+/usr/include/armadillo_bits/glue_polyfit_bones.hpp:
+
+/usr/include/armadillo_bits/op_cov_bones.hpp:
+
+/usr/include/armadillo_bits/op_shuffle_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/armadillo_bits/op_prod_bones.hpp:
+
+/usr/local/include/mlpack/core/cv/metrics/silhouette_score.hpp:
+
+/usr/include/armadillo_bits/arma_rng_cxx11.hpp:
+
+/usr/include/armadillo_bits/fn_cond.hpp:
+
+/usr/include/armadillo_bits/op_orth_null_bones.hpp:
+
+/usr/include/armadillo_bits/op_relational_bones.hpp:
+
+/usr/include/c++/11/bits/random.tcc:
+
+/usr/include/armadillo_bits/op_find_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/binary_cross_entropy_loss_impl.hpp:
+
+/usr/include/armadillo_bits/op_chol_bones.hpp:
+
+/usr/include/armadillo_bits/op_cx_scalar_bones.hpp:
+
+/usr/local/include/mlpack/core/math/range.hpp:
+
+/usr/include/armadillo_bits/auxlib_meat.hpp:
+
+/usr/local/include/mlpack/methods/hoeffding_trees/binary_numeric_split_info.hpp:
+
+/usr/include/armadillo_bits/mtGlueCube_bones.hpp:
+
+/usr/include/armadillo_bits/op_cumprod_bones.hpp:
+
+/usr/include/armadillo_bits/op_hist_bones.hpp:
+
+/usr/local/include/mlpack/methods/nystroem_method/nystroem_method.hpp:
+
+/usr/include/armadillo_bits/op_unique_bones.hpp:
+
+/usr/local/include/mlpack/core/data/save_image.hpp:
+
+/usr/include/armadillo_bits/op_cumsum_bones.hpp:
+
+/usr/include/armadillo_bits/fn_fft2.hpp:
+
+/usr/local/include/mlpack/methods/cf/neighbor_search_policies/neighbor_search_policies.hpp:
+
+/usr/include/armadillo_bits/op_pinv_meat.hpp:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+/usr/include/armadillo_bits/op_all_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_UpperHessenbergEigen_meat.hpp:
+
+/usr/include/armadillo_bits/op_normalise_bones.hpp:
+
+/usr/include/armadillo_bits/op_clamp_bones.hpp:
+
+/usr/local/include/mlpack/methods/kmeans/pelleg_moore_kmeans_statistic.hpp:
+
+/usr/include/armadillo_bits/op_log_det_bones.hpp:
+
+/usr/include/armadillo_bits/op_expmat_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/loss_functions/reconstruction_loss_impl.hpp:
+
+/usr/local/include/mlpack/core/cv/metrics/precision.hpp:
+
+/usr/include/armadillo_bits/subview_cube_each_meat.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
+/usr/include/armadillo_bits/hdf5_misc.hpp:
+
+/usr/include/armadillo_bits/op_logmat_bones.hpp:
+
+/usr/include/c++/11/functional:
+
+/usr/include/armadillo_bits/arma_ostream_bones.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/include/armadillo_bits/op_range_bones.hpp:
+
+/usr/local/include/mlpack/core.hpp:
+
+/usr/include/armadillo_bits/newarp_UpperHessenbergQR_meat.hpp:
+
+/usr/include/armadillo_bits/op_chi2rnd_bones.hpp:
+
+/usr/local/include/mlpack/methods/hoeffding_trees/hoeffding_trees.hpp:
+
+/usr/include/armadillo_bits/op_roots_bones.hpp:
+
+/usr/include/armadillo_bits/op_cond_bones.hpp:
+
+/usr/include/armadillo_bits/trimat_helper.hpp:
+
+/usr/include/armadillo_bits/op_sp_minus_bones.hpp:
+
+/usr/include/armadillo_bits/glue_mixed_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/armadillo_bits/fn_normalise.hpp:
+
+/usr/include/armadillo_bits/spglue_merge_bones.hpp:
+
+/usr/local/include/mlpack/core/kernels/example_kernel.hpp:
+
+/usr/local/include/mlpack/core/dists/regression_distribution.hpp:
+
+/usr/include/armadillo_bits/glue_join_meat.hpp:
+
+/usr/local/include/mlpack/methods/matrix_completion/matrix_completion_impl.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/include/armadillo_bits/spop_mean_meat.hpp:
+
+/usr/local/include/ensmallen_bits/sdp/sdp.hpp:
+
+/usr/include/armadillo_bits/glue_cor_bones.hpp:
+
+/usr/include/armadillo_bits/glue_kron_bones.hpp:
+
+/usr/local/include/ensmallen_bits/problems/himmelblau_function.hpp:
+
+/usr/include/armadillo_bits/op_sp_plus_meat.hpp:
+
+/usr/local/include/ensmallen_bits/adam/nadam_update.hpp:
+
+/usr/include/armadillo_bits/glue_join_bones.hpp:
+
+/usr/local/include/ensmallen_bits/sgdr/cyclical_decay.hpp:
+
+/usr/include/armadillo_bits/fn_dot.hpp:
+
+/usr/include/armadillo_bits/glue_relational_bones.hpp:
+
+/usr/local/include/mlpack/core/tree/tree.hpp:
+
+/usr/include/armadillo_bits/glue_solve_bones.hpp:
+
+/usr/include/armadillo_bits/glue_conv_bones.hpp:
+
+/usr/include/armadillo_bits/glue_hist_bones.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/armadillo_bits/glue_max_bones.hpp:
+
+/usr/include/armadillo_bits/operator_minus.hpp:
+
+/usr/local/include/mlpack/core/tree/cellbound_impl.hpp:
+
+/usr/include/armadillo_bits/op_index_max_meat.hpp:
+
+/usr/include/armadillo_bits/op_reshape_meat.hpp:
+
+/usr/local/include/mlpack/methods/kmeans/sample_initialization.hpp:
+
+/usr/include/armadillo_bits/glue_hypot_bones.hpp:
+
+/usr/include/armadillo_bits/glue_intersect_bones.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/hilbert_r_tree_auxiliary_information_impl.hpp:
+
+/usr/include/endian.h:
+
+/usr/include/armadillo_bits/glue_affmul_bones.hpp:
+
+/usr/include/armadillo_bits/fn_trunc_log.hpp:
+
+/usr/local/include/mlpack/core/data/tokenizers/tokenizers.hpp:
+
+/usr/include/armadillo_bits/glue_mvnrnd_bones.hpp:
+
+/usr/include/c++/11/bits/unordered_set.h:
+
+/usr/include/armadillo_bits/op_reshape_bones.hpp:
+
+/usr/include/armadillo_bits/fn_solve.hpp:
+
+/usr/include/armadillo_bits/glue_quantile_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_EigsSelect.hpp:
+
+/usr/local/include/mlpack/methods/reinforcement_learning/q_networks/categorical_dqn.hpp:
+
+/usr/include/armadillo_bits/spop_max_bones.hpp:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/armadillo_bits/spop_min_bones.hpp:
+
+/usr/include/armadillo_bits/spop_sum_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/core/bufferpool.hpp:
+
+/usr/include/armadillo_bits/spop_strans_bones.hpp:
+
+/usr/local/include/mlpack/methods/emst/union_find.hpp:
+
+/usr/include/armadillo_bits/spop_misc_bones.hpp:
+
+/usr/local/include/mlpack/methods/det/dtree_impl.hpp:
+
+/usr/local/include/mlpack/core/tree/cover_tree/traits.hpp:
+
+/usr/local/include/mlpack/core/tree/binary_space_tree/binary_space_tree.hpp:
+
+/usr/include/armadillo_bits/spop_var_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/base_layer.hpp:
+
+/usr/include/c++/11/deque:
+
+/usr/include/armadillo_bits/spop_symmat_bones.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/grouped_convolution_impl.hpp:
+
+/usr/local/include/mlpack/methods/ann/layer/batch_norm_impl.hpp:
+
+/usr/include/armadillo_bits/op_diagmat_bones.hpp:
+
+/usr/include/armadillo_bits/spop_reverse_bones.hpp:
+
+/usr/include/armadillo_bits/spop_vectorise_bones.hpp:
+
+/usr/include/armadillo_bits/spop_norm_bones.hpp:
+
+/usr/include/armadillo_bits/spglue_kron_bones.hpp:
+
+/usr/include/armadillo_bits/fn_trunc_exp.hpp:
+
+/usr/local/include/ensmallen_bits/adam/optimisticadam_update.hpp:
+
+/usr/include/armadillo_bits/spglue_min_bones.hpp:
+
+/usr/include/c++/11/set:
+
+/usr/include/armadillo_bits/spglue_max_bones.hpp:
+
+/usr/local/include/mlpack/methods/cf/normalization/item_mean_normalization.hpp:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/armadillo_bits/fn_symmat.hpp:
+
+/usr/include/armadillo_bits/spglue_relational_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_DenseGenMatProd_bones.hpp:
+
+/usr/include/armadillo_bits/fn_interp2.hpp:
+
+/usr/include/armadillo_bits/newarp_SparseGenMatProd_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_SparseGenRealShiftSolve_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_DoubleShiftQR_bones.hpp:
+
+/usr/include/armadillo_bits/newarp_GenEigsSolver_bones.hpp:
+
+/usr/local/include/mlpack/core/tree/hrectbound_impl.hpp:
+
+/usr/include/armadillo_bits/newarp_UpperHessenbergQR_bones.hpp:
+
+/usr/local/include/ensmallen_bits/ada_bound/ada_bound.hpp:
+
+/usr/local/include/ensmallen_bits/callbacks/grad_clip_by_value.hpp:
+
+/usr/local/include/mlpack/core/tree/rectangle_tree/x_tree_split_impl.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/armadillo_bits/op_repmat_meat.hpp:
 
 /usr/local/include/ensmallen_bits/problems/fw_test_function.hpp:
 
@@ -5938,10 +6198,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/Proxy.hpp:
 
-/usr/local/include/mlpack/core/data/detect_file_type_impl.hpp:
-
-/usr/include/python3.10/abstract.h:
-
 /usr/include/armadillo_bits/SpProxy.hpp:
 
 /usr/local/include/mlpack/methods/ann/layer/lstm_impl.hpp:
@@ -5954,21 +6210,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/spop_htrans_meat.hpp:
 
-/usr/include/armadillo_bits/fn_n_unique.hpp:
-
 /usr/include/armadillo_bits/operator_plus.hpp:
-
-/usr/include/armadillo_bits/operator_schur.hpp:
-
-/usr/local/include/ensmallen_bits/spalera_sgd/spalera_sgd_impl.hpp:
-
-/usr/include/armadillo_bits/op_norm_bones.hpp:
-
-/usr/include/armadillo_bits/spop_norm_meat.hpp:
-
-/usr/include/armadillo_bits/fn_speye.hpp:
-
-/usr/include/cereal/access.hpp:
 
 /usr/include/c++/11/cctype:
 
@@ -5983,8 +6225,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/armadillo_bits/operator_cube_times.hpp:
 
 /usr/include/armadillo_bits/spop_sum_meat.hpp:
-
-/usr/local/include/mlpack/core/data/save_image_impl.hpp:
 
 /usr/include/armadillo_bits/operator_cube_schur.hpp:
 
@@ -6016,21 +6256,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/operator_ostream.hpp:
 
-/usr/local/include/mlpack/methods/lsh/lsh_search.hpp:
-
-/usr/local/include/mlpack/core/math/log_add.hpp:
-
 /usr/include/armadillo_bits/fn_conv_to.hpp:
 
 /usr/include/armadillo_bits/fn_hess.hpp:
 
 /usr/include/armadillo_bits/fn_max.hpp:
-
-/usr/local/include/ensmallen_bits/nsga2/nsga2.hpp:
-
-/usr/local/include/mlpack/core/tree/spill_tree/spill_tree.hpp:
-
-/usr/local/include/mlpack/core/data/load_arff_impl.hpp:
 
 /usr/include/armadillo_bits/Cube_bones.hpp:
 
@@ -6072,8 +6302,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/spop_misc_meat.hpp:
 
-/usr/local/include/mlpack/core/data/imputation_methods/mean_imputation.hpp:
-
 /usr/include/armadillo_bits/spglue_schur_bones.hpp:
 
 /usr/include/armadillo_bits/fn_zeros.hpp:
@@ -6086,35 +6314,17 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_ones.hpp:
 
-/usr/local/include/ensmallen_bits/function/static_checks.hpp:
-
-/usr/include/armadillo_bits/glue_quantile_meat.hpp:
-
-/usr/include/armadillo_bits/fn_eye.hpp:
-
-/usr/include/armadillo_bits/translate_lapack.hpp:
-
-/usr/include/c++/11/cxxabi.h:
-
-/usr/include/python3.10/cpython/bytesobject.h:
-
 /usr/include/armadillo_bits/fn_misc.hpp:
-
-/usr/include/cereal/external/rapidjson/memorystream.h:
-
-/usr/local/include/mlpack/core/data/save.hpp:
 
 /usr/local/include/mlpack/methods/reinforcement_learning/q_learning.hpp:
 
 /usr/include/armadillo_bits/fn_find.hpp:
 
-/usr/local/include/mlpack/core/arma_extend/Mat_extra_bones.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/armadillo_bits/fn_find_unique.hpp:
+/usr/local/include/mlpack/core/arma_extend/Mat_extra_bones.hpp:
 
-/usr/include/python3.10/numpy/_neighborhood_iterator_imp.h:
+/usr/include/armadillo_bits/fn_find_unique.hpp:
 
 /usr/include/armadillo_bits/fn_norm.hpp:
 
@@ -6128,19 +6338,15 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_randu.hpp:
 
-/usr/local/include/mlpack/methods/ann/loss_functions/mean_squared_error_impl.hpp:
-
-/usr/include/armadillo_bits/fn_trig.hpp:
-
-/usr/local/include/mlpack/methods/lsh.hpp:
-
-/usr/include/cereal/archives/portable_binary.hpp:
-
 /usr/local/include/mlpack/methods/regularized_svd.hpp:
 
 /usr/include/armadillo_bits/fn_mean.hpp:
 
-/usr/local/include/mlpack/core/data/string_encoding_policies/string_encoding_policies.hpp:
+/usr/include/c++/11/math.h:
+
+/usr/include/armadillo_bits/field_meat.hpp:
+
+/usr/include/armadillo_bits/fn_stddev.hpp:
 
 /usr/include/armadillo_bits/fn_sort.hpp:
 
@@ -6150,13 +6356,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_strans.hpp:
 
-/usr/include/python3.10/numpy/ndarrayobject.h:
-
-/usr/include/python3.10/rangeobject.h:
-
 /usr/include/armadillo_bits/fn_chol.hpp:
-
-/usr/include/python3.10/bytearrayobject.h:
 
 /usr/local/include/mlpack/methods/ann/loss_functions/huber_loss.hpp:
 
@@ -6170,23 +6370,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_cov.hpp:
 
-/usr/local/include/mlpack/core/cv/metrics/accuracy_impl.hpp:
-
-/usr/local/include/mlpack/core/math/random.hpp:
-
-/usr/include/python3.10/cpython/traceback.h:
-
-/usr/include/python3.10/dictobject.h:
-
-/usr/local/include/mlpack/core/util/size_checks.hpp:
-
-/usr/local/include/mlpack/core/math/clamp.hpp:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/armadillo_bits/fn_cor.hpp:
-
-/usr/local/include/mlpack/core/data/confusion_matrix.hpp:
 
 /usr/include/armadillo_bits/fn_shift.hpp:
 
@@ -6204,8 +6390,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_rank.hpp:
 
-/usr/include/armadillo_bits/fn_kron.hpp:
-
 /usr/local/include/ensmallen_bits/sgd/update_policies/nesterov_momentum_update.hpp:
 
 /usr/include/armadillo_bits/fn_flip.hpp:
@@ -6218,11 +6402,23 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_conv.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
 /usr/include/armadillo_bits/spglue_schur_meat.hpp:
 
+/usr/local/include/mlpack/methods/ann/loss_functions/multilabel_softmargin_loss_impl.hpp:
+
+/usr/local/include/mlpack/core/util/param_data.hpp:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/armadillo_bits/fn_toeplitz.hpp:
+
 /usr/include/armadillo_bits/glue_polyval_meat.hpp:
+
+/usr/local/include/mlpack/methods/dbscan/random_point_selection.hpp:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/armadillo_bits/fn_trimat.hpp:
 
 /usr/local/include/mlpack/methods/bias_svd/bias_svd.hpp:
 
@@ -6258,12 +6454,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/spop_max_meat.hpp:
 
-/usr/local/include/mlpack/core/data/string_encoding_policies/tf_idf_encoding_policy.hpp:
-
-/usr/include/time.h:
-
-/usr/include/armadillo_bits/fn_inplace_strans.hpp:
-
 /usr/include/armadillo_bits/fn_inplace_trans.hpp:
 
 /usr/include/armadillo_bits/fn_interp1.hpp:
@@ -6273,14 +6463,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/ensmallen_bits/problems/colville_function.hpp:
 
 /usr/include/armadillo_bits/fn_qz.hpp:
-
-/usr/local/include/mlpack/methods/approx_kfn/drusilla_select.hpp:
-
-/usr/include/armadillo_bits/fn_sqrtmat.hpp:
-
-/usr/local/include/mlpack/core/metrics/bleu.hpp:
-
-/usr/include/armadillo_bits/glue_relational_meat.hpp:
 
 /usr/include/armadillo_bits/fn_logmat.hpp:
 
@@ -6292,17 +6474,19 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_normpdf.hpp:
 
+/usr/local/include/opencv4/opencv2/flann/heap.h:
+
 /usr/include/armadillo_bits/fn_randperm.hpp:
 
 /usr/local/include/mlpack/methods/kde/kde_stat.hpp:
 
 /usr/local/include/ensmallen_bits/demon_sgd/demon_sgd.hpp:
 
+/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
+
 /usr/include/armadillo_bits/op_trimat_meat.hpp:
 
 /usr/include/armadillo_bits/fn_powmat.hpp:
-
-/usr/include/python3.10/genericaliasobject.h:
 
 /usr/local/include/ensmallen_bits/sa/sa.hpp:
 
@@ -6312,8 +6496,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_sprandu.hpp:
 
-/usr/local/include/mlpack/core/data/confusion_matrix_impl.hpp:
-
 /usr/local/include/mlpack/methods/ann/layer/add_merge.hpp:
 
 /usr/include/armadillo_bits/eop_core_meat.hpp:
@@ -6322,6 +6504,8 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/fn_spsolve.hpp:
 
+/usr/local/include/opencv4/opencv2/flann/linear_index.h:
+
 /usr/include/armadillo_bits/fn_inv.hpp:
 
 /usr/include/armadillo_bits/fn_svds.hpp:
@@ -6329,6 +6513,10 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/armadillo_bits/band_helper.hpp:
+
+/usr/local/include/mlpack/core/data/imputation_methods/median_imputation.hpp:
+
+/usr/include/armadillo_bits/sympd_helper.hpp:
 
 /usr/include/armadillo_bits/mul_gemv.hpp:
 
@@ -6348,9 +6536,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/methods/kmeans/kill_empty_clusters.hpp:
 
-/usr/include/linux/limits.h:
-
 /usr/include/c++/11/bits/allocator.h:
+
+/usr/include/linux/limits.h:
 
 /usr/include/armadillo_bits/mtOpCube_meat.hpp:
 
@@ -6362,7 +6550,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/Glue_meat.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+/usr/local/include/opencv4/opencv2/flann/defines.h:
 
 /usr/include/c++/11/limits:
 
@@ -6382,33 +6570,17 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/eGlue_meat.hpp:
 
-/usr/include/armadillo_bits/eGlueCube_meat.hpp:
-
 /usr/include/armadillo_bits/mtGlueCube_meat.hpp:
 
 /usr/local/include/ensmallen_bits/spalera_sgd/spalera_stepsize.hpp:
 
 /usr/local/include/ensmallen_bits/lookahead/lookahead_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
 /usr/include/armadillo_bits/SpBase_meat.hpp:
-
-/usr/include/armadillo_bits/Gen_meat.hpp:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/c++/11/bits/stl_multiset.h:
-
-/usr/include/armadillo_bits/sympd_helper.hpp:
-
-/usr/local/include/mlpack/core/data/imputation_methods/median_imputation.hpp:
-
-/usr/local/include/mlpack/core/math/ccov.hpp:
 
 /usr/local/include/mlpack/core/tree/rectangle_tree/r_plus_plus_tree_auxiliary_information_impl.hpp:
 
@@ -6446,8 +6618,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/cereal/details/helpers.hpp:
 
-/usr/include/armadillo_bits/xvec_htrans_meat.hpp:
-
 /usr/include/armadillo_bits/spop_var_meat.hpp:
 
 /usr/include/armadillo_bits/SizeCube_meat.hpp:
@@ -6456,23 +6626,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/subview_cube_meat.hpp:
 
-/usr/local/include/mlpack/core/math/log_add_impl.hpp:
-
-/usr/local/include/mlpack/core/math/make_alias.hpp:
-
-/usr/include/armadillo_bits/SpValProxy_meat.hpp:
-
 /usr/local/include/mlpack/core/tree/binary_space_tree/ub_tree_split_impl.hpp:
 
 /usr/include/c++/11/cwchar:
 
 /usr/include/armadillo_bits/SpMat_meat.hpp:
-
-/usr/local/include/ensmallen_bits/sdp/lrsdp_function_impl.hpp:
-
-/usr/local/include/mlpack/core/cv/simple_cv_impl.hpp:
-
-/usr/include/armadillo_bits/SpMat_iterators_meat.hpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -6502,10 +6660,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_diagvec_meat.hpp:
 
-/usr/include/armadillo_bits/glue_mvnrnd_bones.hpp:
-
-/usr/local/include/mlpack/core/data/tokenizers/tokenizers.hpp:
-
 /usr/local/include/mlpack/methods/logistic_regression/logistic_regression_function.hpp:
 
 /usr/local/include/mlpack/methods/kmeans/elkan_kmeans_impl.hpp:
@@ -6518,18 +6672,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_htrans_meat.hpp:
 
-/usr/local/include/mlpack/core/util/binding_details.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/armadillo_bits/op_max_meat.hpp:
-
-/usr/include/python3.10/cpython/initconfig.h:
-
-/usr/local/include/ensmallen_bits/parallel_sgd/parallel_sgd_impl.hpp:
-
-/usr/include/c++/11/bits/align.h:
-
 /usr/include/armadillo_bits/op_min_meat.hpp:
 
 /usr/local/include/ensmallen_bits/problems/sphere_function_impl.hpp:
@@ -6538,13 +6680,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
 /usr/include/c++/11/system_error:
 
 /usr/include/armadillo_bits/op_mean_meat.hpp:
-
-/usr/local/include/mlpack/core/tree/binary_space_tree/traits.hpp:
-
-/usr/local/include/mlpack/core/data/extension.hpp:
 
 /usr/local/include/mlpack/methods/kmeans/kmeans.hpp:
 
@@ -6552,31 +6692,21 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_sort_index_meat.hpp:
 
-/usr/include/armadillo_bits/op_diff_bones.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
+/usr/include/armadillo_bits/op_diff_bones.hpp:
+
 /usr/include/armadillo_bits/op_sum_meat.hpp:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/usr/local/include/mlpack/core/util/prefixedoutstream.hpp:
 
 /usr/include/armadillo_bits/op_var_meat.hpp:
 
 /usr/include/cereal/types/common.hpp:
-
-/usr/include/python3.10/cpython/odictobject.h:
-
-/usr/include/armadillo_bits/op_repelem_meat.hpp:
 
 /usr/include/armadillo_bits/fn_eigs_gen.hpp:
 
 /usr/include/armadillo_bits/op_vectorise_meat.hpp:
 
 /usr/include/armadillo_bits/op_clamp_meat.hpp:
-
-/usr/include/python3.10/cpython/sysmodule.h:
 
 /usr/local/include/mlpack/core/cv/metrics/r2_score.hpp:
 
@@ -6589,8 +6719,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/local/include/mlpack/core/kernels/epanechnikov_kernel_impl.hpp:
 
 /usr/include/armadillo_bits/op_resize_meat.hpp:
-
-/usr/include/armadillo_bits/op_cov_meat.hpp:
 
 /usr/include/c++/11/bits/node_handle.h:
 
@@ -6606,13 +6734,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_shuffle_meat.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
 /usr/include/armadillo_bits/op_prod_meat.hpp:
-
-/usr/local/include/ensmallen_bits/problems/logistic_regression_function.hpp:
-
-/usr/local/include/mlpack/core/math/columns_to_blocks.hpp:
 
 /usr/include/armadillo_bits/fn_mvnrnd.hpp:
 
@@ -6625,6 +6747,10 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/cereal/external/rapidjson/stream.h:
 
 /usr/include/armadillo_bits/op_princomp_meat.hpp:
+
+/usr/local/include/opencv4/opencv2/core/async.hpp:
+
+/usr/local/include/opencv4/opencv2/dnn/dnn.hpp:
 
 /usr/include/armadillo_bits/op_misc_meat.hpp:
 
@@ -6646,8 +6772,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_nonzeros_meat.hpp:
 
-/usr/include/python3.10/context.h:
-
 /usr/local/include/mlpack/core/cereal/is_loading.hpp:
 
 /usr/include/armadillo_bits/op_diff_meat.hpp:
@@ -6660,19 +6784,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_range_meat.hpp:
 
-/usr/local/include/ensmallen_bits/sarah/sarah_impl.hpp:
-
-/usr/local/include/ensmallen_bits/problems/fonseca_fleming_function.hpp:
-
-/usr/include/armadillo_bits/op_chi2rnd_meat.hpp:
-
-/usr/include/c++/11/locale:
-
-/usr/local/include/mlpack/core/util/program_doc.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/armadillo_bits/op_wishrnd_meat.hpp:
 
@@ -6690,11 +6804,9 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/op_rank_meat.hpp:
 
-/usr/include/c++/11/bits/std_thread.h:
+/usr/include/armadillo_bits/fn_eig_pair.hpp:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
-
-/usr/include/armadillo_bits/fn_eig_pair.hpp:
 
 /usr/include/armadillo_bits/glue_times_meat.hpp:
 
@@ -6712,8 +6824,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/glue_cor_meat.hpp:
 
-/usr/local/include/mlpack/core/data/string_encoding_policies/policy_traits.hpp:
-
 /usr/local/include/ensmallen_bits/smorms3/smorms3_update.hpp:
 
 /usr/include/armadillo_bits/glue_cross_meat.hpp:
@@ -6723,8 +6833,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/armadillo_bits/glue_toeplitz_meat.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/armadillo_bits/glue_hist_meat.hpp:
 
@@ -6744,15 +6852,13 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/data/check_categorical_param.hpp:
 
+/usr/local/include/opencv4/opencv2/core/operations.hpp:
+
 /usr/include/armadillo_bits/glue_hypot_meat.hpp:
 
 /usr/include/armadillo_bits/gmm_misc_meat.hpp:
 
 /usr/include/armadillo_bits/gmm_diag_meat.hpp:
-
-/usr/include/armadillo_bits/debug.hpp:
-
-/usr/local/include/mlpack/core/math/lin_alg.hpp:
 
 /usr/include/armadillo_bits/spop_strans_meat.hpp:
 
@@ -6767,12 +6873,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 /usr/include/armadillo_bits/glue_polyfit_meat.hpp:
 
 /usr/include/armadillo_bits/spop_reverse_meat.hpp:
-
-/usr/include/python3.10/enumobject.h:
-
-/usr/include/armadillo_bits/spop_repmat_meat.hpp:
-
-/usr/include/c++/11/bits/stl_set.h:
 
 /usr/local/include/ensmallen_bits/ada_delta/ada_delta_impl.hpp:
 
@@ -6804,15 +6904,13 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/newarp_cx_attrib.hpp:
 
-/usr/include/python3.10/pyhash.h:
-
 /usr/local/include/ensmallen_bits/problems/zdt/zdt4_function.hpp:
 
 /usr/include/armadillo_bits/newarp_DenseGenMatProd_meat.hpp:
 
-/usr/include/armadillo_bits/newarp_SparseGenRealShiftSolve_meat.hpp:
+/usr/local/include/opencv4/opencv2/calib3d.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+/usr/include/armadillo_bits/newarp_SparseGenRealShiftSolve_meat.hpp:
 
 /usr/include/c++/11/cstdlib:
 
@@ -6822,13 +6920,7 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/armadillo_bits/newarp_SymEigsShiftSolver_meat.hpp:
 
-/usr/include/c++/11/stdexcept:
-
-/usr/local/include/mlpack/core/math/columns_to_blocks_impl.hpp:
-
 /usr/include/armadillo_bits/newarp_TridiagEigen_meat.hpp:
-
-/usr/include/python3.10/cellobject.h:
 
 /usr/local/include/mlpack/core/tree/binary_space_tree/ub_tree_split.hpp:
 
@@ -6838,11 +6930,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/util/arma_traits.hpp:
 
-/usr/local/include/mlpack/methods/neighbor_search/neighbor_search_rules_impl.hpp:
-
-/usr/local/include/mlpack/core/math/math.hpp:
-
 /usr/local/include/mlpack/prereqs.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/local/include/opencv4/opencv2/core.hpp:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -6852,37 +6944,15 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/cereal/cereal.hpp:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/local/include/mlpack/methods/gmm/no_constraint.hpp:
-
-/usr/include/armadillo_bits/arma_static_check.hpp:
-
-/usr/local/include/mlpack/core/data/map_policies/increment_policy.hpp:
-
-/usr/include/c++/11/bits/unique_ptr.h:
-
-/usr/local/include/mlpack/methods/ann/layer/noisylinear_impl.hpp:
-
-/usr/local/include/mlpack/core/util/prefixedoutstream_impl.hpp:
-
-/usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/local/include/mlpack/methods/svdplusplus/svdplusplus_function.hpp:
-
-/usr/include/assert.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
+/usr/local/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/include/cereal/specialize.hpp:
 
 /usr/local/include/mlpack/methods/ann/loss_functions/empty_loss_impl.hpp:
 
 /usr/include/armadillo_bits/spdiagview_bones.hpp:
+
+/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
 
 /usr/include/armadillo_bits/op_norm_meat.hpp:
 
@@ -6906,12 +6976,6 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/cereal/external/rapidjson/internal/stack.h:
 
-/usr/local/include/ensmallen_bits/callbacks/early_stop_at_min_loss.hpp:
-
-/usr/local/include/mlpack/core/dists/dists.hpp:
-
-/usr/include/cereal/external/rapidjson/internal/swap.h:
-
 /usr/include/cereal/external/rapidjson/internal/dtoa.h:
 
 /usr/local/include/ensmallen_bits/nsga2/nsga2_impl.hpp:
@@ -6930,7 +6994,11 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/include/cereal/external/base64.hpp:
 
-/usr/include/cereal/external/rapidxml/rapidxml_print.hpp:
+/usr/local/include/mlpack/core/util/forward.hpp:
+
+/usr/include/armadillo_bits/op_index_min_meat.hpp:
+
+/usr/include/c++/11/stack:
 
 /usr/include/cereal/types/tuple.hpp:
 
@@ -6942,208 +7010,8 @@ CMakeFiles/neural.dir/src/cnn_train.cpp.o: ../src/cnn_train.cpp \
 
 /usr/local/include/mlpack/core/arma_extend/serialize_armadillo.hpp:
 
-/usr/include/python3.10/objimpl.h:
+/usr/include/armadillo_bits/arrayops_bones.hpp:
 
 /usr/include/armadillo_bits/glue_atan2_bones.hpp:
 
-/usr/include/armadillo_bits/arrayops_bones.hpp:
-
 /usr/local/include/mlpack/core/cereal/pointer_wrapper.hpp:
-
-/usr/include/cereal/types/memory.hpp:
-
-/usr/include/cereal/types/polymorphic.hpp:
-
-/usr/local/include/mlpack/core/data/has_serialize.hpp:
-
-/usr/include/armadillo_bits/newarp_UpperHessenbergEigen_bones.hpp:
-
-/usr/local/include/mlpack/core/util/sfinae_utility.hpp:
-
-/usr/local/include/mlpack/methods/local_coordinate_coding/lcc_impl.hpp:
-
-/usr/local/include/mlpack/core/util/log.hpp:
-
-/usr/include/armadillo_bits/fn_range.hpp:
-
-/usr/local/include/mlpack/core/util/io.hpp:
-
-/usr/include/c++/11/list:
-
-/usr/include/armadillo_bits/restrictors.hpp:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/iomanip:
-
-/usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/usr/include/armadillo_bits/op_all_bones.hpp:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/local/include/mlpack/methods/dbscan/random_point_selection.hpp:
-
-/usr/include/armadillo_bits/fn_trimat.hpp:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/armadillo_bits/fn_roots.hpp:
-
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/dice_loss_impl.hpp:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/local/include/mlpack/core/metrics/non_maximal_suppression_impl.hpp:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/local/include/mlpack/core/util/version_impl.hpp:
-
-/usr/local/include/mlpack/methods/ann/loss_functions/multilabel_softmargin_loss_impl.hpp:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/armadillo_bits/fn_toeplitz.hpp:
-
-/usr/local/include/mlpack/core/util/param_data.hpp:
-
-/usr/local/include/mlpack/core/data/dataset_mapper_impl.hpp:
-
-/usr/local/include/mlpack/core/util/params_impl.hpp:
-
-/usr/include/armadillo_bits/op_index_min_meat.hpp:
-
-/usr/include/c++/11/stack:
-
-/usr/local/include/mlpack/core/util/forward.hpp:
-
-/usr/local/include/mlpack/core/data/load.hpp:
-
-/usr/local/include/mlpack/core/data/binarize.hpp:
-
-/usr/include/python3.10/floatobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/local/include/mlpack/core/data/dataset_mapper.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/python3.10/weakrefobject.h:
-
-/usr/local/include/mlpack/methods/ann/ffn_impl.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/local/include/mlpack/core/data/map_policies/datatype.hpp:
-
-/usr/local/include/mlpack/core/data/types.hpp:
-
-/usr/local/include/mlpack/core/data/load_csv.hpp:
-
-/usr/local/include/mlpack/core/data/load_numeric_csv.hpp:
-
-/usr/local/include/mlpack/core/data/load_categorical_csv.hpp:
-
-/usr/local/include/mlpack/core/data/load_arff.hpp:
-
-/usr/local/include/mlpack/core/data/load_impl.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/dual_tree_traverser_impl.hpp:
-
-/usr/local/include/mlpack/core/data/load_model_impl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/local/include/mlpack/core/data/map_policies/map_policies.hpp:
-
-/usr/local/include/mlpack/core/data/load_vec_impl.hpp:
-
-/usr/include/armadillo_bits/fn_fft2.hpp:
-
-/usr/include/armadillo_bits/op_cumsum_bones.hpp:
-
-/usr/local/include/mlpack/core/data/save_image.hpp:
-
-/usr/local/include/mlpack/methods/bayesian_linear_regression/bayesian_linear_regression.hpp:
-
-/usr/local/include/ensmallen_bits/katyusha/katyusha.hpp:
-
-/usr/local/include/mlpack/core/data/save_impl.hpp:
-
-/usr/local/include/mlpack/core/util/io_impl.hpp:
-
-/usr/local/include/mlpack/methods/nmf.hpp:
-
-/usr/local/include/mlpack/core/util/hyphenate_string.hpp:
-
-/usr/local/include/mlpack/core/data/data.hpp:
-
-/usr/local/include/mlpack/methods/decision_tree.hpp:
-
-/usr/local/include/mlpack/core/data/imputation_methods/imputation_methods.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/local/include/mlpack/core/data/imputation_methods/listwise_deletion.hpp:
-
-/usr/local/include/mlpack/core/data/map_policies/missing_policy.hpp:
-
-/usr/local/include/mlpack/core/data/scaler_methods/scaler_methods.hpp:
-
-/usr/include/armadillo_bits/op_find_meat.hpp:
-
-/usr/include/armadillo_bits/glue_kron_meat.hpp:
-
-/usr/local/include/mlpack/core/data/scaler_methods/max_abs_scaler.hpp:
-
-/usr/local/include/mlpack/core/data/scaler_methods/pca_whitening.hpp:
-
-/usr/local/include/mlpack/core/math/ccov_impl.hpp:
-
-/usr/local/include/mlpack/core/data/scaler_methods/standard_scaler.hpp:
-
-/usr/local/include/mlpack/methods/decision_tree/all_categorical_split.hpp:
-
-/usr/local/include/mlpack/core/tree/rectangle_tree/no_auxiliary_information.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/local/include/mlpack/core/data/scaler_methods/zca_whitening.hpp:
-
-/usr/local/include/mlpack/core/data/string_encoding_policies/dictionary_encoding_policy.hpp:
-
-/usr/local/include/mlpack/core/data/tokenizers/char_extract.hpp:
-
-/usr/local/include/mlpack/core/data/tokenizers/split_by_any_of.hpp:
-
-/usr/local/include/ensmallen_bits/problems/beale_function_impl.hpp:
-
-/usr/include/armadillo_bits/arma_rng_cxx98.hpp:
-
-/usr/local/include/mlpack/core/data/imputer.hpp:
-
-/usr/local/include/mlpack/core/cv/metrics/f1.hpp:
-
-/usr/local/include/mlpack/core/data/normalize_labels_impl.hpp:
-
-/usr/local/include/mlpack/core/data/one_hot_encoding.hpp:
-
-/usr/local/include/mlpack/core/data/one_hot_encoding_impl.hpp:
-
-/usr/local/include/mlpack/core/data/split_data.hpp:
-
-/usr/include/c++/11/stdlib.h:
-
-/usr/include/armadillo_bits/fn_stddev.hpp:
-
-/usr/include/armadillo_bits/field_meat.hpp:
-
-/usr/include/c++/11/math.h:
-
-/usr/local/include/mlpack/core/math/multiply_slices.hpp:
-
-/usr/local/include/mlpack/core/math/quantile.hpp:

@@ -1,5 +1,9 @@
 #include "../include/camera.h"
 
+//namespace declarations
+using namespace cv;
+using namespace std;
+
 static void on_low_H_thresh_trackbar(int, void *)
 {
     low_H = min(high_H - 1, low_H);
