@@ -101,8 +101,6 @@ neural: /usr/local/lib/libopencv_stitching.so.4.7.0
 neural: /usr/local/lib/libopencv_video.so.4.7.0
 neural: /usr/local/lib/libopencv_videoio.so.4.7.0
 neural: /lib/libdepthai-opencv.a
-neural: /usr/lib/libarmadillo.so
-neural: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 neural: /usr/local/lib/libopencv_imgcodecs.so.4.7.0
 neural: /usr/local/lib/libopencv_dnn.so.4.7.0
 neural: /usr/local/lib/libopencv_calib3d.so.4.7.0

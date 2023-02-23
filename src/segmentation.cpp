@@ -56,7 +56,7 @@ int main() {
 
     // Linking
     camRgb->preview.link(xoutRgb->input);
-
+    
     // Connect to device and start pipeline
     dai::Device device(pipeline, dai::UsbSpeed::SUPER);
 

@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Path to a file.
-ARMADILLO_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-ARMADILLO_LIBRARY:FILEPATH=/usr/lib/libarmadillo.so
-
 //Enable tests
 BACKWARD_TESTS:BOOL=ON
 
@@ -40,7 +34,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -258,9 +252,6 @@ MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
-//The directory containing a CMake configuration file for MLPACK.
-MLPACK_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/mlpack
-
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
@@ -344,10 +335,6 @@ usb-1.0_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/XLink/dependencie
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: ARMADILLO_INCLUDE_DIR
-ARMADILLO_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ARMADILLO_LIBRARY
-ARMADILLO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BACKWARD_DEFINITIONS
 BACKWARD_DEFINITIONS-ADVANCED:INTERNAL=1
 //BACKWARD_DEFINITIONS
@@ -519,8 +506,6 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
-//Details about finding Armadillo
-FIND_PACKAGE_MESSAGE_DETAILS_Armadillo:INTERNAL=[/usr/include][/usr/lib/libarmadillo.so][v10.8.2()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.7.0()]
 //Details about finding PythonLibs

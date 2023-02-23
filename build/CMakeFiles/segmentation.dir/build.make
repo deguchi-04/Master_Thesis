@@ -101,7 +101,6 @@ segmentation: /usr/local/lib/libopencv_stitching.so.4.7.0
 segmentation: /usr/local/lib/libopencv_video.so.4.7.0
 segmentation: /usr/local/lib/libopencv_videoio.so.4.7.0
 segmentation: /lib/libdepthai-opencv.a
-segmentation: /usr/lib/libarmadillo.so
 segmentation: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 segmentation: /usr/local/lib/libopencv_imgcodecs.so.4.7.0
 segmentation: /usr/local/lib/libopencv_dnn.so.4.7.0

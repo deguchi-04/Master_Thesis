@@ -13,8 +13,6 @@
                 "/usr/include/mlpack/**",
                 "/usr/include/include/**",
                 "/home/thaidy/ensmallen/**",
-                "/home/thaidy/ensmallen/include",
-                "/home/thaidy/ensmallen/include",
                 "/usr/include/python3.10"
             ],
             "defines": [],
@@ -23,9 +21,7 @@
             "cppStandard": "c++14",
             "intelliSenseMode": "linux-clang-x64",
             "compilerArgs": [
-                "-fopenmp",
-                "-I/home/thaidy/ensmallen/include",
-                "-larmadillo"
+                
             ]
         }
     ],

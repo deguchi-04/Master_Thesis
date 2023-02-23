@@ -5,10 +5,13 @@ project(Thesis)
 ## Packages used in src
 find_package(depthai CONFIG REQUIRED)
 find_package(OpenCV REQUIRED )
-find_package(Armadillo REQUIRED)
-find_package(MLPACK REQUIRED)
+# find_package(Armadillo REQUIRED)
+# find_package(MLPACK REQUIRED)
 find_package(PythonLibs REQUIRED)
 
+set(CMAKE_BUILD_TYPE Debug)
+
+set(CMAKE_BUILD_TYPE RelWithDebInfo)
 
 ## OpenMP to use multiple threads
 if(NOT TARGET OpenMP::OpenMP_CXX)
@@ -28,15 +31,13 @@ if(VALGRIND)
 endif()
 
 include (CTest)
-#include dirs in the project
-include_directories(${PYTHON_INCLUDE_DIRS})
-include_directories(${ARMADILLO_INCLUDE_DIRS}) 
-include_directories(${OpenCV_INCLUDE_DIRS})
+# #include dirs in the project
+include_directories(${OpenCV_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS} ${ARMADILLO_INCLUDE_DIRS})
 
 # executables 
 add_executable(segmentation src/segmentation.cpp )
 add_executable(neural src/cnn_train.cpp )
 
-target_link_libraries(segmentation PUBLIC ${OpenCV_LIBS} PRIVATE depthai::opencv INTERFACE Armadillo::Armadillo PUBLIC ${MLPACK_LIBRARY} PUBLIC OpenMP::OpenMP_CXX PUBLIC ${ARMADILLO_LIBRARIES} ${PYTHON_LIBRARIES})
-target_link_libraries(neural PUBLIC ${OpenCV_LIBS} PRIVATE depthai::opencv INTERFACE Armadillo::Armadillo PUBLIC ${MLPACK_LIBRARY} PUBLIC OpenMP::OpenMP_CXX PUBLIC ${ARMADILLO_LIBRARIES} ${PYTHON_LIBRARIES})
+target_link_libraries(segmentation PUBLIC ${OpenCV_LIBS} PRIVATE depthai::opencv ${PYTHON_LIBRARIES})
+target_link_libraries(neural PUBLIC ${OpenCV_LIBS} ${MLPACK_LIBRARY} depthai::opencv INTERFACE Armadillo::Armadillo  PUBLIC OpenMP::OpenMP_CXX PUBLIC ${ARMADILLO_LIBRARIES})
 
