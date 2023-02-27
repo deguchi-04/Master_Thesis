@@ -21,8 +21,8 @@ int main(int, char**){
     class_names.push_back(line);
   }
 
-  auto net = readNet(file_path + "frozen_inference_graph.pb",
-  file_path + "ssd_mobilenet_v2_coco.pbtxt.txt", "TensorFlow");
+  auto net = readNet(file_path + "opt.pb",
+  file_path + "opt.pbtxt", "TensorFlow");
 
   VideoCapture cap(0);
 
