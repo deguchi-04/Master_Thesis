@@ -6,8 +6,8 @@
 
 import tensorflow as tf
 
-optimized_graph_path = "opt.pb"
-output_pbtxt = "opt.pbtxt" # Read the graph.
+optimized_graph_path = "files/frozen_graph.pb"
+output_pbtxt = "files/opt.pbtxt" # Read the graph.
 with tf.compat.v1.gfile.FastGFile(optimized_graph_path, "rb") as f:
     graph_def = tf.compat.v1.GraphDef()
     graph_def.ParseFromString(f.read())# Remove Const nodes.

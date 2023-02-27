@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int, char**){
 
-  string file_path = "/home/thaidy/Documents/Master_Thesis/src/";
+  string file_path = "../src/files/";
   vector<string> class_names;
   ifstream ifs(string(file_path + "classes.txt").c_str());
   string line;
@@ -21,8 +21,8 @@ int main(int, char**){
     class_names.push_back(line);
   }
 
-  auto net = readNet(file_path + "opt.pb",
-  file_path + "opt.pbtxt", "TensorFlow");
+  auto net = readNet(file_path + "frozen_inference_graph.pb",
+  file_path + "ssd_mobilenet_v2_coco.pbtxt.txt", "TensorFlow");
 
   VideoCapture cap(0);
 

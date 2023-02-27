@@ -4,10 +4,10 @@ from tensorflow.python.framework.convert_to_constants import convert_variables_t
 import numpy as np
 
 #path of the directory where you want to save your model
-frozen_out_path = '/home/thaidy/Documents/Master_Thesis/src/'
+frozen_out_path = 'files/'
 # name of the .pb file
 frozen_graph_filename = "frozen_graph"
-model = tf.keras.models.load_model('fruits_fresh_cnn_1.h5')# Your model
+model = tf.keras.models.load_model('files/fruits_fresh_cnn_1.h5')# Your model
 
 # Convert Keras model to ConcreteFunction
 full_model = tf.function(lambda x: model(x))
