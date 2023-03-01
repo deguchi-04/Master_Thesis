@@ -214,8 +214,8 @@ int main(int argc, char **argv)
                   projectBasePath + "classes.txt", runOnGPU);
 
     std::vector<std::string> imageNames;
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/uva.png");
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/uva2.png");
+    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva.png");
+    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva2.png");
 
     for (int i = 0; i < imageNames.size(); ++i)
     {
