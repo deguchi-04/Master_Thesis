@@ -210,17 +210,17 @@ int main(int argc, char **argv)
     // To run Inference with yolov8/yolov5 (ONNX)
     //
     
-    Inference inf(projectBasePath + "last.onnx", cv::Size(640, 640),
+    Inference inf("/home/thaidy/Documents/Master_Thesis/src/files/best.onnx", cv::Size(640, 640),
                   projectBasePath + "classes.txt", runOnGPU);
 
     std::vector<std::string> imageNames;
     imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva.png");
     imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva2.png");
-
-    for (int i = 0; i < imageNames.size(); ++i)
-    {
-        cv::Mat frame = cv::imread(imageNames[i]);
-
+    VideoCapture cap(0);
+    Mat frame;
+    while(true) {
+        //cv::Mat frame = cv::imread(imageNames[i]);
+        cap.read(frame);
         // Inference starts here...
         std::vector<Detection> output = inf.runInference(frame);
 
@@ -252,7 +252,8 @@ int main(int argc, char **argv)
         cv::resize(frame, frame, cv::Size(frame.cols*scale, frame.rows*scale));
         cv::imshow("Inference", frame);
 
-        cv::waitKey(-1);
+        if (waitKey(5) >= 0)
+            break;
     }
 }
 
