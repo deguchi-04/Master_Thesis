@@ -216,7 +216,11 @@ int main(int argc, char **argv)
     std::vector<std::string> imageNames;
     imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva.png");
     imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva2.png");
+    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva22.jpg");
+    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva33.jpg");
+    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva244.jpg");
     VideoCapture cap(0);
+    // int i =0;
     Mat frame;
     while(true) {
         //cv::Mat frame = cv::imread(imageNames[i]);
@@ -251,7 +255,8 @@ int main(int argc, char **argv)
         float scale = 0.8;
         cv::resize(frame, frame, cv::Size(frame.cols*scale, frame.rows*scale));
         cv::imshow("Inference", frame);
-
+        // i++;
+        // waitKey(1000);
         if (waitKey(5) >= 0)
             break;
     }

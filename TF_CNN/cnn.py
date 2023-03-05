@@ -115,9 +115,12 @@ def main():
     # Visualize a few training images.
     plot(image_paths='/home/thaidy/Documents/YOLO-AUG.v3-ssd_end.yolov5pytorch/train/images/*.jpg', label_paths='/home/thaidy/Documents/YOLO-AUG.v3-ssd_end.yolov5pytorch/train/labels/*.txt', num_samples=4)
     # python3 train.py --data data/data.yaml --weights yolov5s.pt --img 640 --epochs 10 --batch-size 10 --freeze 10
-    # python3 export.py --weights runs/train/exp15/weights/last.pt --include pb
+    # python3 export.py --weights runs/train/exp15/weights/last.pt --include onnx --opset 12
     # python3 detect.py --weights runs/train/exp15/weights/last.pt --img 640 --conf 0.1 --source /home/thaidy/Documents/Master_Thesis/TF_CNN/files/uva.png
+    # python3 train.py --resume "/content/gdrive/MyDrive/Runs/Run_1Mar22/weights/last.pt"
     return
+
+
 
 if __name__ == "__main__":
     main()
