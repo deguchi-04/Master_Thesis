@@ -225,6 +225,7 @@ int main(int argc, char **argv)
     while(true) {
         //cv::Mat frame = cv::imread(imageNames[i]);
         cap.read(frame);
+        auto start = getTickCount();
         // Inference starts here...
         std::vector<Detection> output = inf.runInference(frame);
 
@@ -250,9 +251,12 @@ int main(int argc, char **argv)
             cv::putText(frame, classString, cv::Point(box.x + 5, box.y - 10), cv::FONT_HERSHEY_DUPLEX, 1, cv::Scalar(0, 0, 0), 2, 0);
         }
         // Inference ends here...
-
+        auto end = getTickCount();
         // This is only for preview purposes
         float scale = 0.8;
+        auto total = (end-start)/( getTickFrequency());
+        cv::putText(frame, "FPS: " + std::to_string(int(1/total)), cv::Point(50,50), FONT_HERSHEY_DUPLEX, 1, cv::Scalar(0,255,0),2,false);
+        cout << "time: " << total << endl;
         cv::resize(frame, frame, cv::Size(frame.cols*scale, frame.rows*scale));
         cv::imshow("Inference", frame);
         // i++;
