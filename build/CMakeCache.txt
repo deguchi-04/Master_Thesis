@@ -17,14 +17,11 @@
 //Enable tests
 BACKWARD_TESTS:BOOL=ON
 
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
-
 //The directory containing a CMake configuration file for BZip2.
-BZip2_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/BZip2
+BZip2_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/BZip2
 
 //The directory containing a CMake configuration file for Backward.
-Backward_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/backward
+Backward_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/backward
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -32,8 +29,9 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Release
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -108,8 +106,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -220,19 +218,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
-
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
-
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
-
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
-
 //Compile device code in 64 bit mode
 CUDA_64_BIT_DEVICE_CODE:BOOL=ON
 
@@ -247,7 +232,7 @@ CUDA_BUILD_CUBIN:BOOL=OFF
 CUDA_BUILD_EMULATION:BOOL=OFF
 
 //"cudart" library
-CUDA_CUDART_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcudart.so
+CUDA_CUDART_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcudart.so
 
 //"cuda" library (older versions only).
 CUDA_CUDA_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcuda.so
@@ -263,7 +248,7 @@ CUDA_HOST_COMPILATION_CPP:BOOL=ON
 CUDA_HOST_COMPILER:FILEPATH=/usr/bin/cc
 
 //Path to a program.
-CUDA_NVCC_EXECUTABLE:FILEPATH=/usr/bin/nvcc
+CUDA_NVCC_EXECUTABLE:FILEPATH=/usr/local/cuda/bin/nvcc
 
 //Semi-colon delimit multiple arguments. during all build types.
 CUDA_NVCC_FLAGS:STRING=
@@ -282,7 +267,7 @@ CUDA_NVCC_FLAGS_RELEASE:STRING=
 CUDA_NVCC_FLAGS_RELWITHDEBINFO:STRING=
 
 //"OpenCL" library
-CUDA_OpenCL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenCL.so
+CUDA_OpenCL_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libOpenCL.so
 
 //Propagate C/CXX_FLAGS and friends to the host compiler via -Xcompile
 CUDA_PROPAGATE_HOST_FLAGS:BOOL=ON
@@ -295,10 +280,10 @@ CUDA_SDK_ROOT_DIR:PATH=CUDA_SDK_ROOT_DIR-NOTFOUND
 CUDA_SEPARABLE_COMPILATION:BOOL=OFF
 
 //Path to a file.
-CUDA_TOOLKIT_INCLUDE:PATH=/usr/include
+CUDA_TOOLKIT_INCLUDE:PATH=/usr/local/cuda/include
 
 //Toolkit location.
-CUDA_TOOLKIT_ROOT_DIR:PATH=/usr
+CUDA_TOOLKIT_ROOT_DIR:PATH=/usr/local/cuda
 
 //Use the static version of the CUDA runtime library if available
 CUDA_USE_STATIC_CUDA_RUNTIME:BOOL=ON
@@ -310,88 +295,76 @@ CUDA_USE_STATIC_CUDA_RUNTIME:BOOL=ON
 CUDA_VERBOSE_BUILD:BOOL=OFF
 
 //Version of CUDA as computed from nvcc.
-CUDA_VERSION:STRING=11.5
+CUDA_VERSION:STRING=12.1
 
 //"cublas" library
-CUDA_cublas_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcublas.so
+CUDA_cublas_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcublas.so
 
 //"cudadevrt" library
-CUDA_cudadevrt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcudadevrt.a
+CUDA_cudadevrt_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcudadevrt.a
 
 //static CUDA runtime library
-CUDA_cudart_static_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcudart_static.a
+CUDA_cudart_static_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcudart_static.a
 
 //"cufft" library
-CUDA_cufft_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcufft.so
+CUDA_cufft_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcufft.so
 
 //"cupti" library
-CUDA_cupti_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcupti.so
+CUDA_cupti_LIBRARY:FILEPATH=CUDA_cupti_LIBRARY-NOTFOUND
 
 //"curand" library
-CUDA_curand_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurand.so
+CUDA_curand_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcurand.so
 
 //"cusolver" library
-CUDA_cusolver_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcusolver.so
+CUDA_cusolver_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcusolver.so
 
 //"cusparse" library
-CUDA_cusparse_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcusparse.so
+CUDA_cusparse_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcusparse.so
 
 //"nppc" library
-CUDA_nppc_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppc.so
+CUDA_nppc_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppc.so
+
+//"nppi" library
+CUDA_nppi_LIBRARY:FILEPATH=CUDA_nppi_LIBRARY-NOTFOUND
 
 //"nppial" library
-CUDA_nppial_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppial.so
+CUDA_nppial_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppial.so
 
 //"nppicc" library
-CUDA_nppicc_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppicc.so
+CUDA_nppicc_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppicc.so
 
 //"nppidei" library
-CUDA_nppidei_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppidei.so
+CUDA_nppidei_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppidei.so
 
 //"nppif" library
-CUDA_nppif_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppif.so
+CUDA_nppif_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppif.so
 
 //"nppig" library
-CUDA_nppig_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppig.so
+CUDA_nppig_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppig.so
 
 //"nppim" library
-CUDA_nppim_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppim.so
+CUDA_nppim_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppim.so
 
 //"nppist" library
-CUDA_nppist_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppist.so
+CUDA_nppist_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppist.so
 
 //"nppisu" library
-CUDA_nppisu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppisu.so
+CUDA_nppisu_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppisu.so
 
 //"nppitc" library
-CUDA_nppitc_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnppitc.so
+CUDA_nppitc_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnppitc.so
 
 //"npps" library
-CUDA_npps_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnpps.so
+CUDA_npps_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnpps.so
 
 //"nvToolsExt" library
-CUDA_nvToolsExt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnvToolsExt.so
+CUDA_nvToolsExt_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnvToolsExt.so
 
 //Path to a library.
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.a
 
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
-
 //The directory containing a CMake configuration file for FP16.
-FP16_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/FP16
-
-//Path to a program.
-GITCOMMAND:FILEPATH=/usr/bin/git
-
-//Command to build the project
-MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
+FP16_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/FP16
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
@@ -404,9 +377,6 @@ PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.10.so
 
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
-
-//Name of the computer/site where compile is being run
-SITE:STRING=thaidy-ASUS-TUF-Gaming-F15-FX506LHB-FX506LHB
 
 //Auto detect backward's stack details dependencies
 STACK_DETAILS_AUTO_DETECT:BOOL=FALSE
@@ -441,35 +411,32 @@ Thesis_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Thesis_SOURCE_DIR:STATIC=/home/thaidy/Documents/Master_Thesis
 
-//Path to a program.
-VALGRIND:FILEPATH=/usr/bin/valgrind
-
 //The directory containing a CMake configuration file for XLink.
-XLink_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/XLink
+XLink_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/XLink
 
 //The directory containing a CMake configuration file for ZLIB.
-ZLIB_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/ZLIB
+ZLIB_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/ZLIB
 
 //The directory containing a CMake configuration file for archive_static.
-archive_static_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/archive_static
+archive_static_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/archive_static
 
 //The directory containing a CMake configuration file for depthai.
-depthai_DIR:PATH=/usr/lib/cmake/depthai
+depthai_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai
 
 //The directory containing a CMake configuration file for libnop.
-libnop_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/libnop
+libnop_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/libnop
 
 //The directory containing a CMake configuration file for lzma.
-lzma_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/lzma
+lzma_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/lzma
 
 //The directory containing a CMake configuration file for nlohmann_json.
-nlohmann_json_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/nlohmann_json
+nlohmann_json_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/nlohmann_json
 
 //The directory containing a CMake configuration file for spdlog.
-spdlog_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/spdlog
+spdlog_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/spdlog
 
 //The directory containing a CMake configuration file for usb-1.0.
-usb-1.0_DIR:PATH=/usr/lib/cmake/depthai/dependencies/lib/cmake/XLink/dependencies/lib/cmake/usb-1.0
+usb-1.0_DIR:PATH=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/cmake/XLink/dependencies/lib/cmake/usb-1.0
 
 
 ########################
@@ -483,7 +450,7 @@ BACKWARD_DEFINITIONS:INTERNAL=BACKWARD_HAS_UNWIND=1;BACKWARD_HAS_LIBUNWIND=0;BAC
 //ADVANCED property for variable: BACKWARD_INCLUDE_DIRS
 BACKWARD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //_BACKWARD_INCLUDE_DIRS
-BACKWARD_INCLUDE_DIRS:INTERNAL=/usr/lib/cmake/depthai/dependencies/lib/backward
+BACKWARD_INCLUDE_DIRS:INTERNAL=/usr/local/include/depthai/lib/cmake/depthai/dependencies/lib/backward
 //ADVANCED property for variable: BACKWARD_LIBRARIES
 BACKWARD_LIBRARIES-ADVANCED:INTERNAL=1
 //BACKWARD_LIBRARIES
@@ -506,8 +473,6 @@ CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
-//ADVANCED property for variable: CMAKE_CTEST_COMMAND
-CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -544,6 +509,8 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -637,19 +604,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_64_BIT_DEVICE_CODE
 CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
-//List of intermediate files that are part of the cuda dependency
-// scanning.
-CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/hellocuda.dir//hellocuda_generated_hellocuda.cu.o.depend;/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/hellocuda.dir/kernels/hellocuda_generated_hellokernels.cu.o.depend
 //ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
 CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_BUILD_CUBIN
@@ -689,10 +645,10 @@ CUDA_SEPARABLE_COMPILATION-ADVANCED:INTERNAL=1
 CUDA_TOOLKIT_INCLUDE-ADVANCED:INTERNAL=1
 //This is the value of the last time CUDA_TOOLKIT_ROOT_DIR was
 // set successfully.
-CUDA_TOOLKIT_ROOT_DIR_INTERNAL:INTERNAL=/usr
+CUDA_TOOLKIT_ROOT_DIR_INTERNAL:INTERNAL=/usr/local/cuda
 //This is the value of the last time CUDA_TOOLKIT_TARGET_DIR was
 // set successfully.
-CUDA_TOOLKIT_TARGET_DIR_INTERNAL:INTERNAL=/usr
+CUDA_TOOLKIT_TARGET_DIR_INTERNAL:INTERNAL=/usr/local/cuda
 //ADVANCED property for variable: CUDA_VERBOSE_BUILD
 CUDA_VERBOSE_BUILD-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_VERSION
@@ -717,6 +673,8 @@ CUDA_cusparse_LIBRARY-ADVANCED:INTERNAL=1
 CUDA_make2cmake:INTERNAL=/usr/share/cmake-3.22/Modules/FindCUDA/make2cmake.cmake
 //ADVANCED property for variable: CUDA_nppc_LIBRARY
 CUDA_nppc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppi_LIBRARY
+CUDA_nppi_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_nppial_LIBRARY
 CUDA_nppial_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_nppicc_LIBRARY
@@ -743,28 +701,18 @@ CUDA_nvToolsExt_LIBRARY-ADVANCED:INTERNAL=1
 CUDA_parse_cubin:INTERNAL=/usr/share/cmake-3.22/Modules/FindCUDA/parse_cubin.cmake
 //Location of run_nvcc.cmake
 CUDA_run_nvcc:INTERNAL=/usr/share/cmake-3.22/Modules/FindCUDA/run_nvcc.cmake
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding CUDA
+FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda][/usr/local/cuda/bin/nvcc][/usr/local/cuda/include][/usr/local/cuda/lib64/libcudart_static.a][v12.1(12.1)]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v4.7.0()]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.10.so][/usr/include/python3.10][v3.10.6()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR
 PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY
 PYTHON_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
 PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 

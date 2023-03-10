@@ -63,7 +63,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -71,9 +70,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/array \
   /usr/include/c++/11/utility \
@@ -155,8 +152,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/cctype \
   /usr/include/ctype.h \
   /usr/include/c++/11/string \
@@ -171,7 +166,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -208,8 +202,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -426,65 +418,65 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
-  /include/depthai/depthai.hpp \
-  /include/depthai/utility/Initialization.hpp \
-  /include/depthai/device/CalibrationHandler.hpp \
-  /include/depthai-shared/common/CameraBoardSocket.hpp \
-  /include/depthai-shared/common/EepromData.hpp \
-  /include/depthai-shared/common/CameraInfo.hpp \
-  /include/depthai-shared/common/CameraModel.hpp \
-  /include/depthai-shared/common/Extrinsics.hpp \
-  /include/depthai-shared/common/Point3f.hpp \
-  /include/depthai-shared/utility/Serialization.hpp \
-  /usr/lib/cmake/depthai/dependencies/include/nop/serializer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/array.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/encoding.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/utility.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/traits/is_template_base_of.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/traits/void.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/status.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/result.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/enum.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/handle.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/handle.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/map.h \
+  /usr/local/include/depthai/include/depthai/depthai.hpp \
+  /usr/local/include/depthai/include/depthai/utility/Initialization.hpp \
+  /usr/local/include/depthai/include/depthai/device/CalibrationHandler.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraBoardSocket.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/EepromData.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraInfo.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraModel.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Extrinsics.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Point3f.hpp \
+  /usr/local/include/depthai/include/depthai-shared/utility/Serialization.hpp \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/serializer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/array.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/utility.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_template_base_of.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/void.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/status.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/result.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/enum.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/handle.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/handle.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/map.h \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/members.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/logical_buffer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/traits/is_detected.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/optional.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/optional.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/traits/is_comparable.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/pair.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/reference_wrapper.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/result.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/serializer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/string.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/table.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/table.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/macros.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/structure.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/compiler.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/sip_hash.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/bounded_reader.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/members.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/logical_buffer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_detected.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/optional.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/optional.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_comparable.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/pair.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/reference_wrapper.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/result.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/serializer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/string.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/table.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/table.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/macros.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/structure.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/compiler.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/sip_hash.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_reader.h \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/bounded_writer.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/tuple.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/value.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/variant.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/variant.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/types/detail/variant.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/base/vector.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/buffer_reader.h \
-  /usr/lib/cmake/depthai/dependencies/include/nop/utility/stream_writer.h \
-  /include/depthai-shared/utility/NlohmannJsonCompat.hpp \
-  /usr/lib/cmake/depthai/dependencies/include/nlohmann/json.hpp \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_writer.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/tuple.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/value.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/variant.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/variant.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/variant.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/vector.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/buffer_reader.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/stream_writer.h \
+  /usr/local/include/depthai/include/depthai-shared/utility/NlohmannJsonCompat.hpp \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nlohmann/json.hpp \
   /usr/include/c++/11/forward_list \
   /usr/include/c++/11/bits/forward_list.h \
   /usr/include/c++/11/bits/forward_list.tcc \
@@ -499,632 +491,268 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/include/c++/11/bits/mask_array.h \
   /usr/include/c++/11/bits/indirect_array.h \
   /usr/include/c++/11/cassert \
-  /include/depthai-shared/common/StereoRectification.hpp \
-  /include/depthai-shared/common/Point2f.hpp \
-  /include/depthai-shared/common/Size2f.hpp \
-  /include/depthai/utility/Path.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/StereoRectification.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Point2f.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Size2f.hpp \
+  /usr/local/include/depthai/include/depthai/utility/Path.hpp \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/bits/fs_path.h \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
-  /include/depthai/device/Device.hpp \
+  /usr/local/include/depthai/include/depthai/device/Device.hpp \
   /usr/include/c++/11/condition_variable \
-  /include/depthai/device/DataQueue.hpp \
+  /usr/local/include/depthai/include/depthai/device/DataQueue.hpp \
   /usr/include/c++/11/atomic \
-  /include/depthai/pipeline/datatype/ADatatype.hpp \
-  /include/depthai-shared/datatype/RawBuffer.hpp \
-  /include/depthai-shared/datatype/DatatypeEnum.hpp \
-  /include/depthai/utility/LockingQueue.hpp \
-  /include/depthai/xlink/XLinkConnection.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/ADatatype.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawBuffer.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/DatatypeEnum.hpp \
+  /usr/local/include/depthai/include/depthai/utility/LockingQueue.hpp \
+  /usr/local/include/depthai/include/depthai/xlink/XLinkConnection.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /usr/lib/cmake/depthai/dependencies/include/XLink/XLinkPublicDefines.h \
+  /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/XLink/XLinkPublicDefines.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /include/depthai-shared/xlink/XLinkConstants.hpp \
-  /include/depthai/device/DeviceBase.hpp \
-  /include/depthai/common/CameraBoardSocket.hpp \
-  /include/depthai/common/CameraFeatures.hpp \
-  /include/depthai-shared/common/CameraFeatures.hpp \
-  /include/depthai-shared/common/CameraImageOrientation.hpp \
-  /include/depthai-shared/common/CameraSensorType.hpp \
-  /include/depthai/common/CameraImageOrientation.hpp \
-  /include/depthai/common/CameraSensorType.hpp \
-  /include/depthai/common/UsbSpeed.hpp \
-  /include/depthai-shared/common/UsbSpeed.hpp \
-  /include/depthai/device/Version.hpp \
-  /include/depthai/openvino/OpenVINO.hpp \
-  /include/depthai-shared/common/TensorInfo.hpp \
-  /include/depthai/utility/Pimpl.hpp \
-  /include/depthai/xlink/XLinkStream.hpp \
-  /include/depthai-shared/common/ChipTemperature.hpp \
-  /include/depthai-shared/common/CpuUsage.hpp \
-  /include/depthai-shared/common/MemoryInfo.hpp \
-  /include/depthai-shared/device/BoardConfig.hpp \
-  /include/depthai-shared/common/optional.hpp \
-  /include/depthai-shared/3rdparty/tl/optional.hpp \
-  /include/depthai-shared/log/LogLevel.hpp \
-  /include/depthai-shared/log/LogMessage.hpp \
-  /include/depthai-shared/common/Timestamp.hpp \
-  /include/depthai/device/DeviceBootloader.hpp \
-  /include/depthai/device/CallbackHandler.hpp \
-  /include/depthai/pipeline/Pipeline.hpp \
+  /usr/local/include/depthai/include/depthai-shared/xlink/XLinkConstants.hpp \
+  /usr/local/include/depthai/include/depthai/device/DeviceBase.hpp \
+  /usr/local/include/depthai/include/depthai/common/CameraBoardSocket.hpp \
+  /usr/local/include/depthai/include/depthai/common/CameraFeatures.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraFeatures.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraImageOrientation.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CameraSensorType.hpp \
+  /usr/local/include/depthai/include/depthai/common/CameraImageOrientation.hpp \
+  /usr/local/include/depthai/include/depthai/common/CameraSensorType.hpp \
+  /usr/local/include/depthai/include/depthai/common/UsbSpeed.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/UsbSpeed.hpp \
+  /usr/local/include/depthai/include/depthai/device/Version.hpp \
+  /usr/local/include/depthai/include/depthai/openvino/OpenVINO.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/TensorInfo.hpp \
+  /usr/local/include/depthai/include/depthai/utility/Pimpl.hpp \
+  /usr/local/include/depthai/include/depthai/xlink/XLinkStream.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/ChipTemperature.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/CpuUsage.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/MemoryInfo.hpp \
+  /usr/local/include/depthai/include/depthai-shared/device/BoardConfig.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/optional.hpp \
+  /usr/local/include/depthai/include/depthai-shared/3rdparty/tl/optional.hpp \
+  /usr/local/include/depthai/include/depthai-shared/log/LogLevel.hpp \
+  /usr/local/include/depthai/include/depthai-shared/log/LogMessage.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Timestamp.hpp \
+  /usr/local/include/depthai/include/depthai/device/DeviceBootloader.hpp \
+  /usr/local/include/depthai/include/depthai/device/CallbackHandler.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/Pipeline.hpp \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /include/depthai/pipeline/AssetManager.hpp \
-  /include/depthai-shared/pipeline/Assets.hpp \
-  /include/depthai/pipeline/Node.hpp \
-  /include/depthai/utility/copyable_unique_ptr.hpp \
-  /include/depthai-shared/properties/Properties.hpp \
-  /include/depthai-shared/pipeline/PipelineSchema.hpp \
-  /include/depthai-shared/pipeline/NodeConnectionSchema.hpp \
-  /include/depthai-shared/pipeline/NodeObjInfo.hpp \
-  /include/depthai-shared/pipeline/NodeIoInfo.hpp \
-  /include/depthai-shared/properties/GlobalProperties.hpp \
-  /include/depthai-bootloader-shared/Config.hpp \
-  /include/depthai-bootloader-shared/Memory.hpp \
-  /include/depthai-bootloader-shared/NlohmannJsonCompat.hpp \
-  /include/depthai-bootloader-shared/Section.hpp \
-  /include/depthai-bootloader-shared/Type.hpp \
-  /include/depthai/pipeline/nodes.hpp \
-  /include/depthai/pipeline/node/AprilTag.hpp \
-  /include/depthai-shared/properties/AprilTagProperties.hpp \
-  /include/depthai-shared/datatype/RawAprilTagConfig.hpp \
-  /include/depthai/pipeline/datatype/AprilTagConfig.hpp \
-  /include/depthai/pipeline/datatype/Buffer.hpp \
-  /include/depthai/pipeline/node/ColorCamera.hpp \
-  /include/depthai/pipeline/datatype/CameraControl.hpp \
-  /include/depthai-shared/datatype/RawCameraControl.hpp \
-  /include/depthai-shared/properties/ColorCameraProperties.hpp \
-  /include/depthai-shared/common/FrameEvent.hpp \
-  /include/depthai/pipeline/node/DetectionNetwork.hpp \
-  /include/depthai/pipeline/node/NeuralNetwork.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/AssetManager.hpp \
+  /usr/local/include/depthai/include/depthai-shared/pipeline/Assets.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/Node.hpp \
+  /usr/local/include/depthai/include/depthai/utility/copyable_unique_ptr.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/Properties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/pipeline/PipelineSchema.hpp \
+  /usr/local/include/depthai/include/depthai-shared/pipeline/NodeConnectionSchema.hpp \
+  /usr/local/include/depthai/include/depthai-shared/pipeline/NodeObjInfo.hpp \
+  /usr/local/include/depthai/include/depthai-shared/pipeline/NodeIoInfo.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/GlobalProperties.hpp \
+  /usr/local/include/depthai/include/depthai-bootloader-shared/Config.hpp \
+  /usr/local/include/depthai/include/depthai-bootloader-shared/Memory.hpp \
+  /usr/local/include/depthai/include/depthai-bootloader-shared/NlohmannJsonCompat.hpp \
+  /usr/local/include/depthai/include/depthai-bootloader-shared/Section.hpp \
+  /usr/local/include/depthai/include/depthai-bootloader-shared/Type.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/nodes.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/AprilTag.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/AprilTagProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTagConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/AprilTagConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/Buffer.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/ColorCamera.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/CameraControl.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawCameraControl.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/ColorCameraProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/FrameEvent.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/DetectionNetwork.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/NeuralNetwork.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /include/depthai-shared/properties/NeuralNetworkProperties.hpp \
-  /include/depthai-shared/properties/DetectionNetworkProperties.hpp \
-  /include/depthai-shared/common/DetectionParserOptions.hpp \
-  /include/depthai-shared/common/DetectionNetworkType.hpp \
-  /include/depthai/pipeline/node/DetectionParser.hpp \
-  /include/depthai-shared/properties/DetectionParserProperties.hpp \
-  /include/depthai-shared/datatype/RawEdgeDetectorConfig.hpp \
-  /include/depthai-shared/datatype/RawImgFrame.hpp \
-  /include/depthai-shared/common/Rect.hpp \
-  /include/depthai/pipeline/node/EdgeDetector.hpp \
-  /include/depthai-shared/properties/EdgeDetectorProperties.hpp \
-  /include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp \
-  /include/depthai/pipeline/node/FeatureTracker.hpp \
-  /include/depthai-shared/properties/FeatureTrackerProperties.hpp \
-  /include/depthai-shared/datatype/RawFeatureTrackerConfig.hpp \
-  /include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp \
-  /include/depthai/pipeline/node/IMU.hpp \
-  /include/depthai-shared/properties/IMUProperties.hpp \
-  /include/depthai-shared/datatype/RawIMUData.hpp \
-  /include/depthai/pipeline/node/ImageManip.hpp \
-  /include/depthai/pipeline/datatype/ImageManipConfig.hpp \
-  /include/depthai-shared/datatype/RawImageManipConfig.hpp \
-  /include/depthai-shared/common/Colormap.hpp \
-  /include/depthai-shared/common/RotatedRect.hpp \
-  /include/depthai/pipeline/datatype/ImgFrame.hpp \
-  /include/depthai/build/config.hpp \
-  /include/depthai/common/CameraExposureOffset.hpp \
-  /include/depthai-shared/properties/ImageManipProperties.hpp \
-  /include/depthai/pipeline/node/MonoCamera.hpp \
-  /include/depthai-shared/properties/MonoCameraProperties.hpp \
-  /include/depthai/pipeline/node/ObjectTracker.hpp \
-  /include/depthai/pipeline/datatype/Tracklets.hpp \
-  /include/depthai-shared/datatype/RawTracklets.hpp \
-  /include/depthai-shared/datatype/RawImgDetections.hpp \
-  /include/depthai-shared/properties/ObjectTrackerProperties.hpp \
-  /include/depthai/pipeline/node/SPIIn.hpp \
-  /include/depthai-shared/properties/SPIInProperties.hpp \
-  /include/depthai/pipeline/node/SPIOut.hpp \
-  /include/depthai-shared/properties/SPIOutProperties.hpp \
-  /include/depthai/pipeline/node/Script.hpp \
-  /include/depthai-shared/properties/ScriptProperties.hpp \
-  /include/depthai-shared/common/ProcessorType.hpp \
-  /include/depthai/pipeline/node/SpatialDetectionNetwork.hpp \
-  /include/depthai-shared/properties/SpatialDetectionNetworkProperties.hpp \
-  /include/depthai-shared/datatype/RawSpatialLocationCalculatorConfig.hpp \
-  /include/depthai/pipeline/node/SpatialLocationCalculator.hpp \
-  /include/depthai-shared/properties/SpatialLocationCalculatorProperties.hpp \
-  /include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp \
-  /include/depthai/pipeline/node/StereoDepth.hpp \
-  /include/depthai-shared/properties/StereoDepthProperties.hpp \
-  /include/depthai-shared/datatype/RawStereoDepthConfig.hpp \
-  /include/depthai/pipeline/datatype/StereoDepthConfig.hpp \
-  /include/depthai/pipeline/node/SystemLogger.hpp \
-  /include/depthai-shared/properties/SystemLoggerProperties.hpp \
-  /include/depthai/pipeline/node/VideoEncoder.hpp \
-  /include/depthai-shared/properties/VideoEncoderProperties.hpp \
-  /include/depthai/pipeline/node/Warp.hpp \
-  /include/depthai-shared/properties/WarpProperties.hpp \
-  /include/depthai/pipeline/node/XLinkIn.hpp \
-  /include/depthai-shared/properties/XLinkInProperties.hpp \
-  /include/depthai/pipeline/node/XLinkOut.hpp \
-  /include/depthai-shared/properties/XLinkOutProperties.hpp \
-  /include/depthai/pipeline/datatypes.hpp \
-  /include/depthai/pipeline/datatype/AprilTags.hpp \
-  /include/depthai-shared/datatype/RawAprilTags.hpp \
-  /include/depthai/pipeline/datatype/IMUData.hpp \
-  /include/depthai/pipeline/datatype/ImgDetections.hpp \
-  /include/depthai/pipeline/datatype/NNData.hpp \
-  /include/depthai-shared/datatype/RawNNData.hpp \
-  /include/depthai/pipeline/datatype/SpatialImgDetections.hpp \
-  /include/depthai-shared/datatype/RawSpatialImgDetections.hpp \
-  /include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp \
-  /include/depthai-shared/datatype/RawSpatialLocations.hpp \
-  /include/depthai/pipeline/datatype/SystemInformation.hpp \
-  /include/depthai-shared/datatype/RawSystemInformation.hpp \
-  /include/depthai/pipeline/datatype/TrackedFeatures.hpp \
-  /include/depthai-shared/datatype/RawTrackedFeatures.hpp \
-  /usr/local/include/matplotlibcpp.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/include/python3.10/numpy/arrayobject.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /usr/include/python3.10/numpy/npy_interrupt.h \
-  /usr/include/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
-  /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
-  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
-  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
-  /usr/include/x86_64-linux-gnu/bits/signal_ext.h
-
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/usr/include/python3.10/numpy/npy_endian.h:
-
-/usr/include/python3.10/numpy/_numpyconfig.h:
-
-/usr/include/python3.10/numpy/numpyconfig.h:
-
-/usr/include/python3.10/numpy/npy_common.h:
-
-/usr/include/python3.10/numpy/ndarrayobject.h:
-
-/usr/include/python3.10/tracemalloc.h:
-
-/usr/include/python3.10/cpython/pyfpe.h:
-
-/usr/include/python3.10/cpython/fileutils.h:
+  /usr/local/include/depthai/include/depthai-shared/properties/NeuralNetworkProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/DetectionNetworkProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/DetectionParserOptions.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/DetectionNetworkType.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/DetectionParser.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/DetectionParserProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawEdgeDetectorConfig.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawImgFrame.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Rect.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/EdgeDetector.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/EdgeDetectorProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/FeatureTracker.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/FeatureTrackerProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawFeatureTrackerConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/IMU.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/IMUProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawIMUData.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/ImageManip.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/ImageManipConfig.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawImageManipConfig.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/Colormap.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/RotatedRect.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/ImgFrame.hpp \
+  /usr/local/include/depthai/include/depthai/build/config.hpp \
+  /usr/local/include/depthai/include/depthai/common/CameraExposureOffset.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/ImageManipProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/MonoCamera.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/MonoCameraProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/ObjectTracker.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/Tracklets.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawTracklets.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawImgDetections.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/ObjectTrackerProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/SPIIn.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/SPIInProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/SPIOut.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/SPIOutProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/Script.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/ScriptProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/common/ProcessorType.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/SpatialDetectionNetworkProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialLocationCalculatorConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/SpatialLocationCalculator.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/SpatialLocationCalculatorProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/StereoDepth.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/StereoDepthProperties.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawStereoDepthConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/StereoDepthConfig.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/SystemLogger.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/SystemLoggerProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/VideoEncoder.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/VideoEncoderProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/Warp.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/WarpProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/XLinkIn.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/XLinkInProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/node/XLinkOut.hpp \
+  /usr/local/include/depthai/include/depthai-shared/properties/XLinkOutProperties.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatypes.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/AprilTags.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTags.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/IMUData.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/ImgDetections.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/NNData.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawNNData.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialImgDetections.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialImgDetections.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialLocations.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/SystemInformation.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawSystemInformation.hpp \
+  /usr/local/include/depthai/include/depthai/pipeline/datatype/TrackedFeatures.hpp \
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp
 
-/usr/include/python3.10/fileutils.h:
 
-/usr/include/python3.10/numpy/_neighborhood_iterator_imp.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp:
 
-/usr/include/python3.10/pystrcmp.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawSystemInformation.hpp:
 
-/usr/include/python3.10/numpy/npy_cpu.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/SystemInformation.hpp:
 
-/usr/include/python3.10/eval.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialLocations.hpp:
 
-/usr/include/python3.10/bltinmodule.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp:
 
-/usr/include/python3.10/cpython/import.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawNNData.hpp:
 
-/usr/include/python3.10/import.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/NNData.hpp:
 
-/usr/include/python3.10/intrcheck.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/IMUData.hpp:
 
-/usr/include/python3.10/pylifecycle.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTags.hpp:
 
-/usr/include/python3.10/cpython/pythonrun.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/AprilTags.hpp:
 
-/usr/include/python3.10/cpython/compile.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/XLinkOut.hpp:
 
-/usr/include/python3.10/compile.h:
+/usr/local/include/depthai/include/depthai-shared/properties/VideoEncoderProperties.hpp:
 
-/usr/include/python3.10/modsupport.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/VideoEncoder.hpp:
 
-/usr/include/python3.10/context.h:
+/usr/local/include/depthai/include/depthai-shared/properties/SystemLoggerProperties.hpp:
 
-/usr/include/python3.10/pythread.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/StereoDepth.hpp:
 
-/usr/include/python3.10/cpython/pyerrors.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp:
 
-/usr/include/python3.10/codecs.h:
+/usr/local/include/depthai/include/depthai-shared/properties/SpatialLocationCalculatorProperties.hpp:
 
-/usr/include/python3.10/namespaceobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/SpatialLocationCalculator.hpp:
 
-/usr/include/python3.10/genericaliasobject.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialLocationCalculatorConfig.hpp:
 
-/usr/include/python3.10/abstract.h:
+/usr/local/include/depthai/include/depthai-shared/common/ProcessorType.hpp:
 
-/usr/include/python3.10/cpython/pystate.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/Script.hpp:
 
-/usr/include/python3.10/pystate.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/SPIOut.hpp:
 
-/usr/include/python3.10/cpython/initconfig.h:
+/usr/local/include/depthai/include/depthai-shared/properties/SPIInProperties.hpp:
 
-/usr/include/python3.10/iterobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/SPIIn.hpp:
 
-/usr/include/python3.10/cellobject.h:
+/usr/local/include/depthai/include/depthai-shared/properties/ObjectTrackerProperties.hpp:
 
-/usr/include/python3.10/sliceobject.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawImgDetections.hpp:
 
-/usr/include/python3.10/traceback.h:
+/usr/local/include/depthai/include/depthai-shared/properties/MonoCameraProperties.hpp:
 
-/usr/include/python3.10/pyframe.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/MonoCamera.hpp:
 
-/usr/include/python3.10/code.h:
+/usr/local/include/depthai/include/depthai/common/CameraExposureOffset.hpp:
 
-/usr/include/python3.10/pycapsule.h:
+/usr/local/include/depthai/include/depthai/build/config.hpp:
 
-/usr/include/python3.10/cpython/fileobject.h:
+/usr/local/include/depthai/include/depthai-shared/common/RotatedRect.hpp:
 
-/usr/include/python3.10/fileobject.h:
+/usr/local/include/depthai/include/depthai-shared/common/Colormap.hpp:
 
-/usr/include/python3.10/cpython/methodobject.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialImgDetections.hpp:
 
-/usr/include/python3.10/methodobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/ImageManipConfig.hpp:
 
-/usr/include/python3.10/cpython/dictobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/ImageManip.hpp:
 
-/usr/include/python3.10/dictobject.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawIMUData.hpp:
 
-/usr/include/python3.10/listobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialImgDetections.hpp:
 
-/usr/include/python3.10/tupleobject.h:
+/usr/local/include/depthai/include/depthai-shared/properties/IMUProperties.hpp:
 
-/usr/include/python3.10/complexobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp:
 
-/usr/include/python3.10/floatobject.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawFeatureTrackerConfig.hpp:
 
-/usr/include/python3.10/boolobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/FeatureTracker.hpp:
 
-/usr/include/python3.10/longobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp:
 
-/usr/include/python3.10/bytearrayobject.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/EdgeDetector.hpp:
 
-/usr/include/python3.10/objimpl.h:
+/usr/local/include/depthai/include/depthai-shared/common/Rect.hpp:
 
-/usr/include/python3.10/cpython/object.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawImgFrame.hpp:
 
-/usr/include/python3.10/cpython/pymem.h:
+/usr/local/include/depthai/include/depthai-shared/properties/DetectionParserProperties.hpp:
 
-/usr/include/python3.10/pymath.h:
+/usr/local/include/depthai/include/depthai-shared/common/DetectionNetworkType.hpp:
 
-/usr/include/python3.10/pymacro.h:
+/usr/local/include/depthai/include/depthai-shared/common/DetectionParserOptions.hpp:
 
-/usr/include/python3.10/exports.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/unistd.h:
-
-/usr/include/python3.10/pymacconfig.h:
-
-/usr/include/python3.10/funcobject.h:
-
-/usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
-
-/usr/include/python3.10/patchlevel.h:
-
-/usr/include/python3.10/Python.h:
-
-/usr/local/include/matplotlibcpp.h:
-
-/include/depthai-shared/datatype/RawTrackedFeatures.hpp:
-
-/include/depthai/pipeline/datatype/TrackedFeatures.hpp:
-
-/include/depthai/pipeline/datatype/SystemInformation.hpp:
-
-/include/depthai-shared/datatype/RawSpatialLocations.hpp:
-
-/include/depthai-shared/datatype/RawSpatialImgDetections.hpp:
-
-/include/depthai/pipeline/datatype/SpatialImgDetections.hpp:
-
-/include/depthai/pipeline/datatype/IMUData.hpp:
-
-/include/depthai-shared/datatype/RawAprilTags.hpp:
-
-/include/depthai/pipeline/datatype/AprilTags.hpp:
-
-/include/depthai-shared/properties/XLinkOutProperties.hpp:
-
-/include/depthai/pipeline/node/XLinkOut.hpp:
-
-/include/depthai-shared/properties/XLinkInProperties.hpp:
-
-/include/depthai/pipeline/node/XLinkIn.hpp:
-
-/include/depthai/pipeline/node/VideoEncoder.hpp:
-
-/include/depthai-shared/properties/SystemLoggerProperties.hpp:
-
-/include/depthai/pipeline/node/SystemLogger.hpp:
-
-/include/depthai-shared/datatype/RawStereoDepthConfig.hpp:
-
-/usr/include/python3.10/cpython/objimpl.h:
-
-/include/depthai-shared/properties/StereoDepthProperties.hpp:
-
-/usr/include/python3.10/unicodeobject.h:
-
-/include/depthai/pipeline/node/StereoDepth.hpp:
-
-/include/depthai-shared/properties/SpatialLocationCalculatorProperties.hpp:
-
-/include/depthai-shared/datatype/RawSpatialLocationCalculatorConfig.hpp:
-
-/include/depthai-shared/properties/SpatialDetectionNetworkProperties.hpp:
-
-/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp:
-
-/include/depthai-shared/common/ProcessorType.hpp:
-
-/include/depthai-shared/properties/ScriptProperties.hpp:
-
-/include/depthai/pipeline/node/Script.hpp:
-
-/include/depthai-shared/properties/SPIOutProperties.hpp:
-
-/include/depthai/pipeline/node/SPIOut.hpp:
-
-/include/depthai-shared/datatype/RawImgDetections.hpp:
-
-/include/depthai/pipeline/datatype/Tracklets.hpp:
-
-/include/depthai-shared/properties/MonoCameraProperties.hpp:
-
-/include/depthai/pipeline/node/MonoCamera.hpp:
-
-/include/depthai-shared/properties/ImageManipProperties.hpp:
-
-/include/depthai/common/CameraExposureOffset.hpp:
-
-/include/depthai/build/config.hpp:
-
-/include/depthai-shared/common/RotatedRect.hpp:
-
-/include/depthai-shared/datatype/RawImageManipConfig.hpp:
-
-/include/depthai/pipeline/datatype/ImageManipConfig.hpp:
-
-/include/depthai-shared/datatype/RawIMUData.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/python3.10/longintrepr.h:
-
-/include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp:
-
-/include/depthai-shared/datatype/RawFeatureTrackerConfig.hpp:
-
-/include/depthai-shared/properties/FeatureTrackerProperties.hpp:
-
-/include/depthai/pipeline/node/FeatureTracker.hpp:
-
-/usr/include/python3.10/cpython/bytearrayobject.h:
-
-/include/depthai-shared/properties/EdgeDetectorProperties.hpp:
-
-/include/depthai/pipeline/node/EdgeDetector.hpp:
-
-/include/depthai-shared/datatype/RawImgFrame.hpp:
-
-/include/depthai-shared/datatype/RawEdgeDetectorConfig.hpp:
-
-/include/depthai-shared/common/DetectionNetworkType.hpp:
-
-/include/depthai-shared/common/DetectionParserOptions.hpp:
-
-/include/depthai-shared/properties/DetectionNetworkProperties.hpp:
-
-/include/depthai-shared/properties/NeuralNetworkProperties.hpp:
+/usr/local/include/depthai/include/depthai-shared/properties/WarpProperties.hpp:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -1134,51 +762,37 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/fstream:
 
-/include/depthai/pipeline/node/NeuralNetwork.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/DetectionNetwork.hpp:
 
-/include/depthai/pipeline/node/DetectionNetwork.hpp:
+/usr/local/include/depthai/include/depthai-shared/properties/ColorCameraProperties.hpp:
 
-/include/depthai-shared/common/FrameEvent.hpp:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawCameraControl.hpp:
 
-/include/depthai-shared/properties/ColorCameraProperties.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/ColorCamera.hpp:
 
-/include/depthai-shared/datatype/RawCameraControl.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/AprilTagConfig.hpp:
 
-/include/depthai/pipeline/datatype/CameraControl.hpp:
+/usr/local/include/depthai/include/depthai-shared/properties/AprilTagProperties.hpp:
 
-/include/depthai/pipeline/datatype/Buffer.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/AprilTag.hpp:
 
-/usr/include/python3.10/pyhash.h:
+/usr/local/include/depthai/include/depthai-bootloader-shared/Type.hpp:
 
-/include/depthai/pipeline/node/SPIIn.hpp:
+/usr/local/include/depthai/include/depthai-bootloader-shared/Config.hpp:
 
-/include/depthai/pipeline/datatype/AprilTagConfig.hpp:
+/usr/local/include/depthai/include/depthai-shared/pipeline/NodeObjInfo.hpp:
 
-/include/depthai-shared/datatype/RawAprilTagConfig.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/datatypes.hpp:
 
-/include/depthai-bootloader-shared/Type.hpp:
+/usr/local/include/depthai/include/depthai-shared/pipeline/NodeConnectionSchema.hpp:
 
-/include/depthai-bootloader-shared/Section.hpp:
+/usr/local/include/depthai/include/depthai-shared/pipeline/PipelineSchema.hpp:
 
-/include/depthai-bootloader-shared/NlohmannJsonCompat.hpp:
+/usr/local/include/depthai/include/depthai/utility/copyable_unique_ptr.hpp:
 
-/include/depthai-shared/properties/GlobalProperties.hpp:
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
 
-/include/depthai-shared/pipeline/NodeIoInfo.hpp:
-
-/include/depthai-shared/pipeline/NodeObjInfo.hpp:
-
-/include/depthai-shared/properties/Properties.hpp:
-
-/usr/include/linux/types.h:
-
-/include/depthai/pipeline/AssetManager.hpp:
-
-/include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp:
-
-/usr/include/c++/11/unordered_set:
-
-/include/depthai/pipeline/nodes.hpp:
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -1190,21 +804,23 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/memory:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/include/depthai/xlink/XLinkStream.hpp:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/11/array:
 
-/usr/include/c++/11/tr1/bessel_function.tcc:
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
-/usr/include/python3.10/weakrefobject.h:
+/usr/include/c++/11/bits/valarray_array.tcc:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
@@ -1212,25 +828,23 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/core/fast_math.hpp:
 
-/usr/include/python3.10/pyport.h:
-
-/include/depthai-shared/common/TensorInfo.hpp:
+/usr/include/c++/11/bits/specfun.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/encoding.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/include/depthai-shared/common/StereoRectification.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/c++/11/bits/node_handle.h:
+/usr/local/include/depthai/include/depthai-shared/common/CameraFeatures.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/usr/local/include/depthai/include/depthai/pipeline/nodes.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/structure.h:
+/usr/local/include/depthai/include/depthai-bootloader-shared/Memory.hpp:
+
+/usr/local/include/depthai/include/depthai-shared/common/Timestamp.hpp:
 
 /usr/include/c++/11/cstring:
 
@@ -1242,8 +856,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/python3.10/numpy/utils.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1252,17 +864,13 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/cerrno:
 
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/include/depthai-shared/properties/SPIInProperties.hpp:
+/usr/local/include/depthai/include/depthai-shared/properties/XLinkInProperties.hpp:
 
 /usr/include/stdio.h:
 
 /usr/include/c++/11/cstdio:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/local/include/depthai/include/depthai-shared/properties/FeatureTrackerProperties.hpp:
 
 /usr/include/c++/11/string_view:
 
@@ -1274,19 +882,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/include/depthai-shared/common/Rect.hpp:
-
 /usr/include/c++/11/bits/fs_fwd.h:
-
-/include/depthai/pipeline/node/ImageManip.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/result.h:
+/usr/local/include/depthai/include/depthai-shared/properties/GlobalProperties.hpp:
 
 /usr/include/time.h:
 
@@ -1298,51 +898,49 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
-/include/depthai-shared/datatype/RawTracklets.hpp:
+/usr/local/include/opencv4/opencv2/core/neon_utils.hpp:
+
+/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/include/depthai-shared/common/CameraInfo.hpp:
-
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/python3.10/cpython/pytime.h:
-
-/include/depthai/pipeline/datatype/StereoDepthConfig.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/local/include/depthai/include/depthai/common/CameraBoardSocket.hpp:
 
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
 
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/DetectionParser.hpp:
 
-/include/depthai/pipeline/node/ColorCamera.hpp:
+/usr/local/include/depthai/include/depthai-shared/pipeline/NodeIoInfo.hpp:
 
 /usr/include/c++/11/clocale:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
+/usr/local/include/depthai/include/depthai-bootloader-shared/NlohmannJsonCompat.hpp:
+
 /usr/local/include/opencv4/opencv2/core/persistence.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
 
-/usr/include/python3.10/pyerrors.h:
-
-/include/depthai-shared/properties/DetectionParserProperties.hpp:
-
 /usr/local/include/opencv4/opencv2/core/traits.hpp:
 
-/usr/include/c++/11/bits/specfun.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/TrackedFeatures.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/local/include/opencv4/opencv2/dnn/version.hpp:
+/usr/include/c++/11/unordered_set:
 
 /usr/include/c++/11/debug/assertions.h:
 
-/include/depthai-shared/properties/AprilTagProperties.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/Node.hpp:
 
 /usr/include/c++/11/string:
 
@@ -1352,35 +950,25 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/locale:
 
-../include/camera.h:
-
 /usr/include/string.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/python3.10/setobject.h:
-
-/include/depthai-shared/common/Colormap.hpp:
-
-/usr/include/c++/11/bits/unordered_set.h:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
 /usr/include/c++/11/cstddef:
 
-/usr/include/python3.10/ceval.h:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/include/depthai/pipeline/Pipeline.hpp:
+/usr/include/c++/11/backward/auto_ptr.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/python3.10/descrobject.h:
-
-/usr/include/python3.10/moduleobject.h:
-
 /usr/include/c++/11/bits/align.h:
 
+/usr/local/include/depthai/include/depthai-shared/properties/NeuralNetworkProperties.hpp:
+
 /usr/local/include/opencv4/opencv2/flann/any.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/pair.h:
 
 /usr/include/c++/11/vector:
 
@@ -1394,35 +982,19 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
 
-/include/depthai/pipeline/datatype/ImgDetections.hpp:
-
 /usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/typeinfo:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/serializer.h:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
-/include/depthai-shared/utility/NlohmannJsonCompat.hpp:
-
 /usr/local/include/opencv4/opencv2/core/cvstd.hpp:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
-/include/depthai-shared/common/UsbSpeed.hpp:
-
 /usr/include/c++/11/bits/hashtable.h:
 
-/include/depthai/pipeline/node/DetectionParser.hpp:
-
 /usr/include/stdc-predef.h:
-
-/include/depthai-shared/pipeline/NodeConnectionSchema.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
@@ -1430,15 +1002,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/stringfwd.h:
 
+/usr/local/include/depthai/include/depthai-shared/common/MemoryInfo.hpp:
+
 /usr/include/c++/11/bits/memoryfwd.h:
 
-/include/depthai-shared/pipeline/Assets.hpp:
-
 /usr/include/c++/11/cmath:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/base/string.h:
-
-/usr/include/setjmp.h:
 
 /usr/include/math.h:
 
@@ -1460,47 +1028,35 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/dnn.hpp:
 
-/usr/include/c++/11/bits/refwrap.h:
-
-/include/depthai-shared/properties/IMUProperties.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/signal.h:
-
-/usr/include/python3.10/cpython/pydebug.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/usr/local/include/depthai/include/depthai-shared/properties/EdgeDetectorProperties.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/local/include/depthai/include/depthai/pipeline/node/SystemLogger.hpp:
+
+/usr/local/include/depthai/include/depthai/pipeline/datatype/CameraControl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/python3.10/cpython/unicodeobject.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h:
 
 /usr/include/c++/11/iterator:
 
-/include/depthai-shared/common/CameraImageOrientation.hpp:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawTracklets.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/11/bits/basic_string.h:
 
-/include/depthai/utility/copyable_unique_ptr.hpp:
-
 /usr/include/linux/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/status.h:
-
-/usr/include/python3.10/pystrtod.h:
-
-/usr/include/sched.h:
+/usr/local/include/depthai/include/depthai-shared/properties/SpatialDetectionNetworkProperties.hpp:
 
 /usr/include/wctype.h:
 
@@ -1510,59 +1066,61 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
+/usr/include/c++/11/typeinfo:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/members.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/serializer.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
+/usr/local/include/depthai/include/depthai-shared/properties/DetectionNetworkProperties.hpp:
+
 /usr/include/c++/11/bits/allocator.h:
 
 /usr/local/include/opencv4/opencv2/flann/logger.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/local/include/depthai/include/depthai-shared/common/EepromData.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/11/chrono:
 
-/include/depthai/pipeline/node/Warp.hpp:
-
 /usr/include/c++/11/bits/forward_list.tcc:
-
-/include/depthai/pipeline/node/SpatialLocationCalculator.hpp:
 
 /usr/include/features.h:
 
-/include/depthai/device/CallbackHandler.hpp:
-
 /usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
-
-/usr/include/python3.10/structseq.h:
-
-/include/depthai-shared/common/CameraModel.hpp:
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
 /usr/include/errno.h:
 
-/include/depthai/device/DeviceBootloader.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/IMU.hpp:
 
 /usr/include/c++/11/utility:
 
-/usr/include/c++/11/ios:
+/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
 
-/include/depthai-shared/properties/VideoEncoderProperties.hpp:
+/usr/include/c++/11/ios:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
-/usr/include/python3.10/pyconfig.h:
+/usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -1570,25 +1128,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTagConfig.hpp:
 
-/usr/include/python3.10/cpython/traceback.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
-/usr/include/python3.10/cpython/tupleobject.h:
-
-/include/depthai-shared/device/BoardConfig.hpp:
-
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -1600,49 +1150,37 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/table.h:
-
 /usr/include/c++/11/bits/exception.h:
-
-/include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
-/usr/include/python3.10/cpython/listobject.h:
-
-/usr/include/c++/11/system_error:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/features-time64.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/Buffer.hpp:
 
 /usr/include/c++/11/debug/debug.h:
-
-/include/depthai-shared/pipeline/PipelineSchema.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/c++/11/functional:
 
-/usr/include/python3.10/pythonrun.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h:
 
 /usr/include/c++/11/bits/concept_check.h:
+
+/usr/local/include/depthai/include/depthai-shared/datatype/RawEdgeDetectorConfig.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/11/limits:
 
-/usr/include/python3.10/rangeobject.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/c++/11/stdlib.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1652,17 +1190,25 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/photo.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/include/depthai/pipeline/datatype/NNData.hpp:
+/usr/local/include/depthai/include/depthai/openvino/OpenVINO.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
 /usr/local/include/opencv4/opencv2/core/version.hpp:
 
+/usr/local/include/depthai/include/depthai-shared/common/UsbSpeed.hpp:
+
+/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
+
+../include/camera.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/local/include/depthai/include/depthai/utility/Path.hpp:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
@@ -1674,43 +1220,31 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/python3.10/genobject.h:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/types/optional.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/include/depthai-bootloader-shared/Memory.hpp:
-
 /usr/include/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/locale.h:
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
+/usr/local/include/depthai/include/depthai/pipeline/datatype/ADatatype.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/include/depthai-shared/datatype/RawSystemInformation.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/optional.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/python3.10/cpython/pylifecycle.h:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-
 ../src/segmentation.cpp:
 
+/usr/local/include/depthai/include/depthai/common/UsbSpeed.hpp:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -1720,35 +1254,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/python3.10/sysmodule.h:
-
-/usr/include/c++/11/cfloat:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/base/macros.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/buffer_reader.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
 /usr/include/c++/11/stdexcept:
 
 /usr/local/include/opencv4/opencv2/flann/lsh_table.h:
-
-/usr/include/python3.10/cpython/sysmodule.h:
-
-/usr/include/python3.10/cpython/abstract.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -1760,13 +1276,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/type_traits:
 
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
 /usr/include/c++/11/pstl/pstl_config.h:
-
-/usr/include/python3.10/numpy/__multiarray_api.h:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/bounded_reader.h:
 
 /usr/local/include/opencv4/opencv2/core/affine.hpp:
 
@@ -1776,9 +1286,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/lib/cmake/depthai/dependencies/include/XLink/XLinkPublicDefines.h:
+/usr/local/include/depthai/include/depthai/device/DeviceBootloader.hpp:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
@@ -1792,25 +1300,25 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
+/usr/local/include/depthai/include/depthai-shared/common/CpuUsage.hpp:
+
 /usr/include/c++/11/bit:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/bits/std_mutex.h:
 
-/usr/include/python3.10/numpy/npy_interrupt.h:
+/usr/local/include/depthai/include/depthai-shared/common/CameraBoardSocket.hpp:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
+/usr/include/c++/11/codecvt:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
+/usr/include/assert.h:
 
-/usr/include/c++/11/cwchar:
+/usr/include/c++/11/bits/allocated_ptr.h:
 
-/usr/include/c++/11/climits:
+/usr/local/include/depthai/include/depthai/common/CameraImageOrientation.hpp:
 
-/usr/include/c++/11/new:
-
-/usr/include/c++/11/bits/sstream.tcc:
+/usr/local/include/depthai/include/depthai/pipeline/node/Warp.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -1818,55 +1326,67 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/stl_relops.h:
 
-/include/depthai/device/CalibrationHandler.hpp:
-
 /usr/include/c++/11/bits/invoke.h:
+
+/usr/local/include/depthai/include/depthai-shared/properties/ScriptProperties.hpp:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_template_base_of.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
-/usr/include/strings.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp2.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/utility.h:
+
+/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/alloca.h:
+/usr/include/c++/11/bits/refwrap.h:
 
-/include/depthai/utility/Path.hpp:
+/usr/include/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/local/include/opencv4/opencv2/core/bufferpool.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/map.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/sip_hash.h:
 
 /usr/include/c++/11/bits/move.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/python3.10/typeslots.h:
-
-/include/depthai/pipeline/node/AprilTag.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
 /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_writer.h:
+
 /usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/local/include/depthai/include/depthai-shared/datatype/RawStereoDepthConfig.hpp:
 
 /usr/local/include/opencv4/opencv2/core/saturate.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/types/detail/variant.h:
+/usr/include/c++/11/ext/atomicity.h:
+
+/usr/local/include/depthai/include/depthai/pipeline/node/NeuralNetwork.hpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
 /usr/include/c++/11/tuple:
 
+/usr/local/include/depthai/include/depthai-shared/xlink/XLinkConstants.hpp:
+
 /usr/local/include/opencv4/opencv2/core/base.hpp:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/reference_wrapper.h:
+
+/usr/include/c++/11/cwchar:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/tuple.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
@@ -1876,13 +1396,31 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
+/usr/local/include/depthai/include/depthai/common/CameraSensorType.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/local/include/depthai/include/depthai-shared/properties/ImageManipProperties.hpp:
+
+/usr/local/include/depthai/include/depthai-shared/common/StereoRectification.hpp:
+
+/usr/include/c++/11/forward_list:
 
 /usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/pthread.h:
+/usr/local/include/depthai/include/depthai-shared/properties/StereoDepthProperties.hpp:
 
-/include/depthai/common/UsbSpeed.hpp:
+/usr/include/c++/11/new:
+
+/usr/include/c++/11/climits:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/pthread.h:
 
 /usr/local/include/opencv4/opencv2/opencv_modules.hpp:
 
@@ -1896,8 +1434,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
-/usr/include/python3.10/cpython/odictobject.h:
-
 /usr/local/include/opencv4/opencv2/core/matx.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -1907,10 +1443,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/base/variant.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -1923,6 +1455,8 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/c++/11/algorithm:
+
+/usr/local/include/depthai/include/depthai/device/DataQueue.hpp:
 
 /usr/include/c++/11/backward/binders.h:
 
@@ -1940,47 +1474,13 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/video/background_segm.hpp:
 
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/queue:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
-
-/usr/include/c++/11/bits/valarray_array.tcc:
-
-/usr/include/python3.10/cpython/ceval.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/usr/include/c++/11/forward_list:
-
-/usr/include/python3.10/cpython/picklebufobject.h:
-
-/include/depthai-shared/datatype/RawBuffer.hpp:
-
-/usr/local/include/opencv4/opencv2/core/vsx_utils.hpp:
-
-/usr/include/c++/11/codecvt:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/include/assert.h:
-
 /usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/local/include/opencv4/opencv2/core/check.hpp:
+
+/usr/local/include/depthai/include/depthai-shared/properties/Properties.hpp:
+
+/usr/local/include/depthai/include/depthai/device/CallbackHandler.hpp:
 
 /usr/local/include/opencv4/opencv2/core/types.hpp:
 
@@ -1994,37 +1494,27 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/sstream:
 
-/include/depthai-shared/properties/WarpProperties.hpp:
-
-/include/depthai-shared/common/Point2f.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/structure.h:
 
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/python3.10/pymem.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
 /usr/local/include/opencv4/opencv2/features2d.hpp:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/handle.h:
-
 /usr/include/c++/11/bits/locale_classes.tcc:
-
-/include/depthai/common/CameraBoardSocket.hpp:
 
 /usr/include/c++/11/streambuf:
 
 /usr/include/c++/11/cwctype:
 
-/include/depthai-shared/properties/ObjectTrackerProperties.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/stream_writer.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
@@ -2032,33 +1522,35 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/ostream:
 
-/include/depthai-shared/datatype/RawNNData.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/ImgDetections.hpp:
+
+/usr/include/c++/11/bits/node_handle.h:
+
+/usr/local/include/depthai/include/depthai-shared/common/optional.hpp:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
-/include/depthai/pipeline/node/IMU.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/ObjectTracker.hpp:
 
 /usr/local/include/opencv4/opencv2/core/utility.hpp:
 
 /usr/include/c++/11/mutex:
 
-/usr/include/c++/11/ratio:
+/usr/local/include/depthai/include/depthai-shared/common/Point2f.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+/usr/include/c++/11/ratio:
 
 /usr/include/c++/11/condition_variable:
 
 /usr/include/c++/11/thread:
 
+/usr/local/include/depthai/include/depthai-shared/properties/XLinkOutProperties.hpp:
+
 /usr/include/c++/11/ctime:
 
 /usr/local/include/opencv4/opencv2/core/optim.hpp:
 
-/include/depthai/device/Version.hpp:
-
 /usr/local/include/opencv4/opencv2/core/ovx.hpp:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/base/table.h:
 
 /usr/local/include/opencv4/opencv2/videoio.hpp:
 
@@ -2066,19 +1558,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/highgui.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/types/result.h:
-
-/usr/include/c++/11/bits/stl_set.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/Tracklets.hpp:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/base/tuple.h:
-
-/usr/include/python3.10/classobject.h:
-
-/usr/include/python3.10/bytesobject.h:
 
 /usr/include/c++/11/bits/gslice_array.h:
 
@@ -2086,15 +1570,13 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/map:
 
-/include/depthai-shared/common/Timestamp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/local/include/opencv4/opencv2/opencv.hpp:
 
 /usr/local/include/opencv4/opencv2/core/cuda.hpp:
 
 /usr/include/c++/11/bits/gslice.h:
+
+/usr/local/include/depthai/include/depthai-shared/datatype/DatatypeEnum.hpp:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
@@ -2102,17 +1584,13 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/miniflann.hpp:
 
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/XLink/XLinkPublicDefines.h:
+
+/usr/local/include/depthai/include/depthai-shared/3rdparty/tl/optional.hpp:
+
 /usr/local/include/opencv4/opencv2/flann/defines.h:
 
-/usr/include/python3.10/osmodule.h:
-
-/usr/include/linux/close_range.h:
-
 /usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/x86_64-linux-gnu/asm/types.h:
-
-/include/depthai/pipeline/Node.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/config.h:
 
@@ -2124,13 +1602,9 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/stl_tree.h:
 
-/usr/include/c++/11/bits/stl_map.h:
-
 /usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/local/include/opencv4/opencv2/video.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/local/include/opencv4/opencv2/dnn/layer.hpp:
 
@@ -2138,15 +1612,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/result_set.h:
 
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/variant.h:
+
 /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/random.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h:
-
 /usr/local/include/opencv4/opencv2/flann.hpp:
 
-/include/depthai/common/CameraSensorType.hpp:
+/usr/include/c++/11/bits/fs_path.h:
+
+/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp:
 
@@ -2156,15 +1632,15 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/params.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/reference_wrapper.h:
-
-/usr/include/python3.10/memoryobject.h:
-
 /usr/local/include/opencv4/opencv2/flann/nn_index.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/11/set:
+
+/usr/local/include/depthai/include/depthai-shared/common/FrameEvent.hpp:
+
+/usr/local/include/depthai/include/depthai/common/CameraFeatures.hpp:
 
 /usr/local/include/opencv4/opencv2/core/hal/interface.h:
 
@@ -2176,17 +1652,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
 
+/usr/include/c++/11/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/features-time64.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/table.h:
+
 /usr/include/c++/11/bits/postypes.h:
 
 /usr/local/include/opencv4/opencv2/flann/dist.h:
-
-/usr/include/c++/11/bits/fs_path.h:
-
-/usr/local/include/opencv4/opencv2/flann/flann_base.hpp:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/sip_hash.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/local/include/opencv4/opencv2/flann/heap.h:
 
@@ -2194,35 +1670,35 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/allocator.h:
 
-/include/depthai/pipeline/datatype/ImgFrame.hpp:
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/value.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/local/include/opencv4/opencv2/flann/composite_index.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/include/depthai-shared/datatype/DatatypeEnum.hpp:
-
-/include/depthai-shared/common/CameraSensorType.hpp:
-
 /usr/local/include/opencv4/opencv2/flann/linear_index.h:
 
-/usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/types/handle.h:
-
-/include/depthai-shared/common/MemoryInfo.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding.h:
 
 /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/serializer.h:
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/local/include/depthai/include/depthai-shared/log/LogLevel.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
+
+/usr/local/include/depthai/include/depthai-shared/utility/Serialization.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
@@ -2234,6 +1710,10 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
 
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/string.h:
+
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/locale_conv.h:
@@ -2242,13 +1722,9 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
 
 /usr/include/c++/11/bits/indirect_array.h:
-
-/include/depthai-shared/common/EepromData.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/index_testing.h:
 
@@ -2256,11 +1732,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/sampling.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/traits/is_template_base_of.h:
+/usr/local/include/depthai/include/depthai-bootloader-shared/Section.hpp:
 
-/usr/include/python3.10/cpython/pyctype.h:
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
-/include/depthai/openvino/OpenVINO.hpp:
+/usr/local/include/depthai/include/depthai-shared/utility/NlohmannJsonCompat.hpp:
 
 /usr/local/include/opencv4/opencv2/ml.hpp:
 
@@ -2268,17 +1744,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/enum.h:
-
-/include/depthai/utility/Pimpl.hpp:
-
 /usr/local/include/opencv4/opencv2/objdetect/face.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp:
 
-/include/depthai-shared/common/optional.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/CameraSensorType.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/status.h:
 
 /usr/include/c++/11/bits/mask_array.h:
 
@@ -2294,17 +1770,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h:
-
 /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
-/usr/include/python3.10/numpy/arrayobject.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
 /usr/include/c++/11/list:
+
+/usr/local/include/depthai/include/depthai/pipeline/datatype/StereoDepthConfig.hpp:
+
+/usr/local/include/depthai/include/depthai/device/Version.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -2312,115 +1788,121 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/deque:
 
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/local/include/depthai/include/depthai/xlink/XLinkStream.hpp:
+
 /usr/include/c++/11/bits/deque.tcc:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp:
 
-/usr/local/include/opencv4/opencv2/video/tracking.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/node/XLinkIn.hpp:
 
 /usr/include/c++/11/cassert:
 
-/include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp:
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
 
-/include/depthai/depthai.hpp:
+/usr/local/include/depthai/include/depthai/depthai.hpp:
 
-/usr/include/c++/11/bits/shared_ptr_base.h:
+/usr/local/include/depthai/include/depthai/utility/Pimpl.hpp:
 
-/include/depthai-shared/common/CameraBoardSocket.hpp:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/include/depthai-shared/common/Extrinsics.hpp:
+/usr/local/include/depthai/include/depthai/utility/Initialization.hpp:
 
-/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
+/usr/local/include/depthai/include/depthai/device/CalibrationHandler.hpp:
 
-/include/depthai-shared/common/Point3f.hpp:
+/usr/include/c++/11/cfloat:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+/usr/local/include/depthai/include/depthai-shared/common/CameraInfo.hpp:
 
-/include/depthai-shared/utility/Serialization.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/CameraModel.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/local/include/depthai/include/depthai-shared/common/Extrinsics.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/array.h:
+/usr/local/include/depthai/include/depthai-shared/common/Point3f.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/utility.h:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawImageManipConfig.hpp:
 
-/usr/include/python3.10/warnings.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/array.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/traits/void.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/void.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/result.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/enum.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/handle.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/map.h:
 
 /usr/include/c++/11/numeric:
 
-/usr/include/python3.10/cpython/bytesobject.h:
+/usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/members.h:
+/usr/local/include/depthai/include/depthai/pipeline/Pipeline.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/statx.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/logical_buffer.h:
 
-/include/depthai/utility/Initialization.hpp:
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/logical_buffer.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h:
+/usr/local/include/depthai/include/depthai/pipeline/datatype/ImgFrame.hpp:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/traits/is_detected.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_detected.h:
 
-/usr/include/python3.10/numpy/ndarraytypes.h:
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/c++/11/bits/valarray_array.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_comparable.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/optional.h:
+/usr/include/sched.h:
 
-/usr/include/python3.10/cpython/code.h:
+/usr/local/include/depthai/include/depthai-shared/pipeline/Assets.hpp:
 
-/include/depthai/pipeline/node/ObjectTracker.hpp:
+/usr/include/c++/11/bits/stream_iterator.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/traits/is_comparable.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/result.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/pair.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/serializer.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/compiler.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/table.h:
 
-/usr/include/python3.10/enumobject.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/macros.h:
 
-/usr/include/python3.10/object.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/compiler.h:
 
-/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
+/usr/include/c++/11/bits/stl_set.h:
 
-/include/depthai-shared/log/LogMessage.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_reader.h:
 
-/include/depthai/pipeline/datatypes.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/variant.h:
 
-/usr/include/c++/11/bits/shared_ptr.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/variant.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/bounded_writer.h:
+/usr/include/c++/11/bits/stl_map.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/value.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/vector.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/base/vector.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/buffer_reader.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nop/utility/stream_writer.h:
+/usr/include/c++/11/bits/shared_ptr_base.h:
 
-/usr/lib/cmake/depthai/dependencies/include/nlohmann/json.hpp:
-
-/usr/lib/cmake/depthai/dependencies/include/nop/types/variant.h:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nlohmann/json.hpp:
 
 /usr/include/c++/11/valarray:
 
+/usr/include/c++/11/bits/valarray_array.h:
+
 /usr/include/c++/11/bits/slice_array.h:
 
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/handle.h:
+
 /usr/include/c++/11/bits/valarray_after.h:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/local/include/opencv4/opencv2/core/cuda_types.hpp:
-
-/include/depthai-shared/common/Size2f.hpp:
-
-/include/depthai-shared/log/LogLevel.hpp:
-
-/include/depthai-bootloader-shared/Config.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
@@ -2428,46 +1910,42 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/fs_dir.h:
 
+/usr/local/include/depthai/include/depthai/utility/LockingQueue.hpp:
+
 /usr/include/c++/11/bits/fs_ops.h:
 
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+/usr/local/include/depthai/include/depthai-shared/properties/SPIOutProperties.hpp:
 
-/include/depthai/device/Device.hpp:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/include/depthai/device/DataQueue.hpp:
-
-/usr/include/asm-generic/int-ll64.h:
+/usr/local/include/depthai/include/depthai/device/Device.hpp:
 
 /usr/include/c++/11/atomic:
 
-/include/depthai/utility/LockingQueue.hpp:
+/usr/local/include/depthai/include/depthai-shared/datatype/RawBuffer.hpp:
 
-/include/depthai/xlink/XLinkConnection.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/Size2f.hpp:
 
-/include/depthai-shared/xlink/XLinkConstants.hpp:
+/usr/local/include/depthai/include/depthai/xlink/XLinkConnection.hpp:
 
-/usr/local/include/opencv4/opencv2/core/neon_utils.hpp:
+/usr/local/include/depthai/include/depthai/device/DeviceBase.hpp:
 
-/include/depthai/pipeline/datatype/ADatatype.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/CameraImageOrientation.hpp:
 
-/include/depthai/device/DeviceBase.hpp:
+/usr/include/locale.h:
 
-/include/depthai/common/CameraFeatures.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/TensorInfo.hpp:
 
-/usr/include/c++/11/limits:
+/usr/local/include/opencv4/opencv2/dnn/version.hpp:
 
-/include/depthai-shared/common/CameraFeatures.hpp:
+/usr/local/include/depthai/include/depthai-shared/common/ChipTemperature.hpp:
 
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+/usr/local/include/depthai/include/depthai-shared/device/BoardConfig.hpp:
 
-/include/depthai/common/CameraImageOrientation.hpp:
+/usr/local/include/depthai/include/depthai-shared/log/LogMessage.hpp:
 
-/usr/include/c++/11/ext/concurrence.h:
+/usr/include/c++/11/bits/stl_vector.h:
 
-/include/depthai-shared/common/ChipTemperature.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/optional.h:
 
-/include/depthai-shared/common/CpuUsage.hpp:
+/usr/include/c++/11/bits/unordered_set.h:
 
-/include/depthai-shared/3rdparty/tl/optional.hpp:
+/usr/local/include/depthai/include/depthai/pipeline/AssetManager.hpp:

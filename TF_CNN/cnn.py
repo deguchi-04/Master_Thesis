@@ -2,10 +2,8 @@ import os
 import glob as glob
 import matplotlib.pyplot as plt
 import cv2
-import requests
 import random
 import numpy as np
-import shutil
 import cv2
 
 ### Code based on Ines dos Santos Code and in the YOLOv5 tutorial

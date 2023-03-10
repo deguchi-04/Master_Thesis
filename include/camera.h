@@ -15,7 +15,7 @@
 #include <depthai/depthai.hpp> //This include works but appear here to be wrong
 
 //matplotlib interpreter for c++
-#include "matplotlibcpp.h"
+//#include "matplotlibcpp.h"
 
 
 //constant values declaration
