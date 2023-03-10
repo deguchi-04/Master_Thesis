@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 //DepthAi includes (for the native camera functions)
-#include <depthai/depthai.hpp> //This include works but appear here to be wrong
+#include <depthai/depthai.hpp> 
 
 //matplotlib interpreter for c++
 #include "matplotlibcpp.h"
