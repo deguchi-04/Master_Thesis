@@ -3,9 +3,8 @@
 
 CMakeFiles/neural.dir/src/cnn_train.cpp.o
  /home/thaidy/Documents/Master_Thesis/software_spray/src/cnn_train.cpp
- /home/thaidy/Documents/Master_Thesis/src/cnn_train.cpp
  /usr/include/stdc-predef.h
- /home/thaidy/Documents/Master_Thesis/include/cnn.h
+ /home/thaidy/Documents/Master_Thesis/software_spray/include/cnn.h
  /usr/include/c++/11/fstream
  /usr/include/c++/11/istream
  /usr/include/c++/11/ios

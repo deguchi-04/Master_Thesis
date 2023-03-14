@@ -14,9 +14,9 @@ double getAverage(std::vector<T> const& v) {
 
 int main(int argc, char **argv)
 {
-    std::string projectBasePath = "/home/thaidy/Documents/Master_Thesis/src/files/";
+    std::string projectBasePath = "../src/files/";
     
-    bool runOnGPU = false;
+    bool runOnGPU = true;
 
      // Create pipeline
     dai::Pipeline pipeline;
@@ -67,15 +67,15 @@ int main(int argc, char **argv)
     // To run Inference with yolov8/yolov5 (ONNX)
     //
     
-    Inference inf("/home/thaidy/Documents/Master_Thesis/src/files/best.onnx", cv::Size(640, 640),
+    Inference inf("../src/files/best.onnx", cv::Size(640, 640),
                   projectBasePath + "classes.txt", runOnGPU);
 
     std::vector<std::string> imageNames;
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva.png");
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva2.png");
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva22.jpg");
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva33.jpg");
-    imageNames.push_back("/home/thaidy/Documents/Master_Thesis/src/files/uva244.jpg");
+    imageNames.push_back("../src/files/uva.png");
+    imageNames.push_back("../src/files/uva2.png");
+    imageNames.push_back("../src/files/uva22.jpg");
+    imageNames.push_back("../src/files/uva33.jpg");
+    imageNames.push_back("../src/files/uva244.jpg");
     VideoCapture cap(0);
     vector<int> avgfps;
     vector<float> avgtime;
@@ -122,7 +122,7 @@ int main(int argc, char **argv)
         avgfps.push_back(round(int(1/total)));
         avgtime.push_back(total);
         cv::resize(frame, frame, cv::Size(frame.cols*scale, frame.rows*scale));
-        cv::imwrite("/home/thaidy/result/result" + to_string(i) + ".png", frame);
+        //cv::imwrite("/home/thaidy/result/result" + to_string(i) + ".png", frame);
         cv::imshow("Inference", frame);
         
         i++;

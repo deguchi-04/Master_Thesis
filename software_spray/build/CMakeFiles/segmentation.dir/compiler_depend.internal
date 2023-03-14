@@ -3,9 +3,8 @@
 
 CMakeFiles/segmentation.dir/src/segmentation.cpp.o
  /home/thaidy/Documents/Master_Thesis/software_spray/src/segmentation.cpp
- /home/thaidy/Documents/Master_Thesis/src/segmentation.cpp
  /usr/include/stdc-predef.h
- /home/thaidy/Documents/Master_Thesis/include/camera.h
+ /home/thaidy/Documents/Master_Thesis/software_spray/include/camera.h
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/cvdef.h
  /usr/local/include/opencv4/opencv2/core/version.hpp
@@ -656,7 +655,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o
  /usr/local/include/depthai/include/depthai-shared/datatype/RawSystemInformation.hpp
  /usr/local/include/depthai/include/depthai/pipeline/datatype/TrackedFeatures.hpp
  /usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp
- /home/thaidy/Documents/Master_Thesis/include/matplotlibcpp.h
+ /home/thaidy/Documents/Master_Thesis/software_spray/include/matplotlibcpp.h
  /usr/include/python3.10/Python.h
  /usr/include/python3.10/patchlevel.h
  /usr/include/python3.10/pyconfig.h
