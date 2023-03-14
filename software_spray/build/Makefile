@@ -142,6 +142,19 @@ neural/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural.dir/build.make CMakeFiles/neural.dir/build
 .PHONY : neural/fast
 
+#=============================================================================
+# Target rules for targets named dep
+
+# Build rule for target.
+dep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep
+.PHONY : dep
+
+# fast build rule for target.
+dep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/build
+.PHONY : dep/fast
+
 src/cnn_train.o: src/cnn_train.cpp.o
 .PHONY : src/cnn_train.o
 
@@ -165,6 +178,30 @@ src/cnn_train.s: src/cnn_train.cpp.s
 src/cnn_train.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neural.dir/build.make CMakeFiles/neural.dir/src/cnn_train.cpp.s
 .PHONY : src/cnn_train.cpp.s
+
+src/cnn_with_depthai.o: src/cnn_with_depthai.cpp.o
+.PHONY : src/cnn_with_depthai.o
+
+# target to build an object file
+src/cnn_with_depthai.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o
+.PHONY : src/cnn_with_depthai.cpp.o
+
+src/cnn_with_depthai.i: src/cnn_with_depthai.cpp.i
+.PHONY : src/cnn_with_depthai.i
+
+# target to preprocess a source file
+src/cnn_with_depthai.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.i
+.PHONY : src/cnn_with_depthai.cpp.i
+
+src/cnn_with_depthai.s: src/cnn_with_depthai.cpp.s
+.PHONY : src/cnn_with_depthai.s
+
+# target to generate assembly for a file
+src/cnn_with_depthai.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.s
+.PHONY : src/cnn_with_depthai.cpp.s
 
 src/segmentation.o: src/segmentation.cpp.o
 .PHONY : src/segmentation.o
@@ -198,11 +235,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dep"
 	@echo "... neural"
 	@echo "... segmentation"
 	@echo "... src/cnn_train.o"
 	@echo "... src/cnn_train.i"
 	@echo "... src/cnn_train.s"
+	@echo "... src/cnn_with_depthai.o"
+	@echo "... src/cnn_with_depthai.i"
+	@echo "... src/cnn_with_depthai.s"
 	@echo "... src/segmentation.o"
 	@echo "... src/segmentation.i"
 	@echo "... src/segmentation.s"
