@@ -4,21 +4,17 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/python3.10",
-                "/usr/local/include/opencv4/**",
-                "/home/thaidy/Luxonis/depthai-core/**",
-                "/usr/local/include/depthai/**",
-                "/home/thaidy/matplotlib-cpp/**"
-
+                "/usr/local/include/depthai/lib/cmake/depthai/dependencies/include",
+                "/usr/local/include/depthai/lib/cmake/depthai/dependencies/include",
+                "/usr/local/include/depthai/include/depthai-shared/3rdparty",
+                "/usr/local/include/opencv4",
+                "/usr/local/include/depthai/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "linux-clang-x64",
-            "compilerArgs": [
-                
-            ]
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4

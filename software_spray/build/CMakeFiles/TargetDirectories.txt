@@ -1,0 +1,4 @@
+/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/segmentation.dir
+/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/neural.dir
+/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/edit_cache.dir
+/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/rebuild_cache.dir

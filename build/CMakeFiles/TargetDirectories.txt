@@ -1,4 +1,0 @@
-/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/segmentation.dir
-/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/neural.dir
-/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/edit_cache.dir
-/home/thaidy/Documents/Master_Thesis/build/CMakeFiles/rebuild_cache.dir
