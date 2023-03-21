@@ -13,9 +13,7 @@ include_directories(${OpenCV_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS} depthai::openc
 
 # executables 
 add_executable(segmentation src/segmentation.cpp )
-add_executable(neural src/cnn_train.cpp )
 add_executable(dep src/cnn_with_depthai.cpp )
 
 target_link_libraries(segmentation PUBLIC ${OpenCV_LIBS} depthai::opencv PRIVATE  ${PYTHON_LIBRARIES})
-target_link_libraries(neural PUBLIC ${OpenCV_LIBS}  depthai::opencv )
 target_link_libraries(dep PUBLIC ${OpenCV_LIBS}  depthai::opencv )
