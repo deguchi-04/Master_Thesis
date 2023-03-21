@@ -14,8 +14,6 @@
 //DepthAi includes (for the native camera functions)
 #include <depthai/depthai.hpp> 
 
-//matplotlib interpreter for c++
-#include "matplotlibcpp.h"
 
 
 //constant values declaration
