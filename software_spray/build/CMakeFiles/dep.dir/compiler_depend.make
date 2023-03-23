@@ -3,6 +3,7 @@
 
 CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
   /usr/include/stdc-predef.h \
+  ../include/inference.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/type_traits \
@@ -783,6 +784,8 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/result_set.h:
 
+/usr/local/include/opencv4/opencv2/flann/nn_index.h:
+
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/pair.h:
 
 /usr/include/c++/11/bits/align.h:
@@ -792,8 +795,6 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/std_abs.h:
-
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/serializer.h:
 
 /usr/local/include/depthai/include/depthai/pipeline/node/ImageManip.hpp:
 
@@ -987,21 +988,17 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/11/bits/nested_exception.h:
+/usr/include/c++/11/initializer_list:
 
 /usr/include/c++/11/iosfwd:
 
-/usr/include/c++/11/initializer_list:
+/usr/include/c++/11/bits/nested_exception.h:
 
 /usr/local/include/depthai/include/depthai/pipeline/datatype/Tracklets.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp:
 
 /usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h:
-
-/usr/include/c++/11/iterator:
 
 /usr/include/c++/11/debug/assertions.h:
 
@@ -1087,11 +1084,23 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/optional.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/11/limits:
+/usr/local/include/depthai/include/depthai/utility/Path.hpp:
+
+/usr/local/include/depthai/include/depthai/pipeline/node/DetectionNetwork.hpp:
+
+/usr/local/include/depthai/include/depthai-shared/properties/XLinkOutProperties.hpp:
+
+/usr/include/c++/11/ctime:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/sched.h:
 
@@ -1105,49 +1114,11 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTagConfig.hpp:
-
 /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/common/CameraSensorType.hpp:
 
 /usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/utility:
-
-/usr/local/include/depthai/include/depthai/pipeline/node/IMU.hpp:
-
-/usr/include/c++/11/tuple:
-
-/usr/local/include/depthai/include/depthai-shared/xlink/XLinkConstants.hpp:
-
-/usr/include/c++/11/type_traits:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/local/include/depthai/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp:
-
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/utility.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/local/include/depthai/include/depthai/openvino/OpenVINO.hpp:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h:
-
-/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/result.h:
-
-/usr/local/include/depthai/include/depthai-shared/common/CameraModel.hpp:
-
-/usr/include/c++/11/cstring:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -1171,9 +1142,23 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/local/include/depthai/include/depthai-bootloader-shared/Type.hpp:
 
-/usr/include/c++/11/bits/stringfwd.h:
+/usr/local/include/depthai/include/depthai/pipeline/node/SpatialDetectionNetwork.hpp:
 
-/usr/local/include/depthai/include/depthai-shared/common/DetectionNetworkType.hpp:
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/local/include/depthai/include/depthai/openvino/OpenVINO.hpp:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/member_pointer.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/result.h:
+
+/usr/local/include/depthai/include/depthai-shared/common/CameraModel.hpp:
+
+/usr/include/c++/11/cstring:
 
 /usr/include/c++/11/unordered_map:
 
@@ -1191,6 +1176,10 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/c++/11/bits/forward_list.tcc:
 
+/usr/include/c++/11/limits:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/status.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -1203,6 +1192,10 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/c++/11/map:
 
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h:
+
+/usr/include/c++/11/iterator:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
@@ -1211,19 +1204,41 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/utility:
+
+/usr/local/include/depthai/include/depthai/pipeline/node/IMU.hpp:
+
+/usr/include/c++/11/tuple:
+
+/usr/local/include/depthai/include/depthai-shared/xlink/XLinkConstants.hpp:
+
+/usr/include/c++/11/type_traits:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/local/include/depthai/include/depthai-shared/common/DetectionNetworkType.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/serializer.h:
+
+/usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTagConfig.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/optional.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/local/include/depthai/include/depthai-shared/datatype/RawEdgeDetectorConfig.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/local/include/depthai/include/depthai-shared/properties/EdgeDetectorProperties.hpp:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -1234,6 +1249,12 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 /usr/include/c++/11/cfloat:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
+
+../include/inference.h:
+
+/usr/local/include/depthai/include/depthai-shared/properties/SPIOutProperties.hpp:
+
+/usr/local/include/depthai/include/depthai/device/Device.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -1253,23 +1274,9 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+/usr/local/include/depthai/include/depthai-shared/properties/EdgeDetectorProperties.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/local/include/depthai/include/depthai/utility/Path.hpp:
-
-/usr/local/include/depthai/include/depthai/pipeline/node/DetectionNetwork.hpp:
-
-/usr/local/include/depthai/include/depthai-shared/properties/XLinkOutProperties.hpp:
-
-/usr/include/c++/11/ctime:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -1468,6 +1475,8 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/c++/11/backward/binders.h:
+
+/usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/serializer.h:
 
 /usr/include/c++/11/memory:
 
@@ -1702,10 +1711,6 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 /usr/local/include/depthai/include/depthai-shared/properties/AprilTagProperties.hpp:
 
 /usr/include/c++/11/bits/fs_ops.h:
-
-/usr/local/include/depthai/include/depthai-shared/properties/SPIOutProperties.hpp:
-
-/usr/local/include/depthai/include/depthai/device/Device.hpp:
 
 /usr/include/c++/11/deque:
 
@@ -1944,5 +1949,3 @@ CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: ../src/cnn_with_depthai.cpp \
 /usr/local/include/opencv4/opencv2/flann/general.h:
 
 /usr/local/include/opencv4/opencv2/flann/params.h:
-
-/usr/local/include/opencv4/opencv2/flann/nn_index.h:

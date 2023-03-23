@@ -653,356 +653,8 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
   /usr/local/include/depthai/include/depthai/pipeline/datatype/SystemInformation.hpp \
   /usr/local/include/depthai/include/depthai-shared/datatype/RawSystemInformation.hpp \
   /usr/local/include/depthai/include/depthai/pipeline/datatype/TrackedFeatures.hpp \
-  /usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp \
-  ../include/matplotlibcpp.h \
-  /usr/include/python3.10/Python.h \
-  /usr/include/python3.10/patchlevel.h \
-  /usr/include/python3.10/pyconfig.h \
-  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
-  /usr/include/python3.10/pymacconfig.h \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/python3.10/pyport.h \
-  /usr/include/inttypes.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/x86_64-linux-gnu/sys/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
-  /usr/include/x86_64-linux-gnu/bits/statx.h \
-  /usr/include/linux/stat.h \
-  /usr/include/linux/types.h \
-  /usr/include/x86_64-linux-gnu/asm/types.h \
-  /usr/include/asm-generic/types.h \
-  /usr/include/asm-generic/int-ll64.h \
-  /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
-  /usr/include/asm-generic/bitsperlong.h \
-  /usr/include/linux/posix_types.h \
-  /usr/include/linux/stddef.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
-  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
-  /usr/include/asm-generic/posix_types.h \
-  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /usr/include/python3.10/exports.h \
-  /usr/include/python3.10/pymacro.h \
-  /usr/include/python3.10/pymath.h \
-  /usr/include/python3.10/pymem.h \
-  /usr/include/python3.10/cpython/pymem.h \
-  /usr/include/python3.10/object.h \
-  /usr/include/python3.10/cpython/object.h \
-  /usr/include/python3.10/objimpl.h \
-  /usr/include/python3.10/cpython/objimpl.h \
-  /usr/include/python3.10/typeslots.h \
-  /usr/include/python3.10/pyhash.h \
-  /usr/include/python3.10/cpython/pydebug.h \
-  /usr/include/python3.10/bytearrayobject.h \
-  /usr/include/python3.10/cpython/bytearrayobject.h \
-  /usr/include/python3.10/bytesobject.h \
-  /usr/include/python3.10/cpython/bytesobject.h \
-  /usr/include/python3.10/unicodeobject.h \
-  /usr/include/python3.10/cpython/unicodeobject.h \
-  /usr/include/python3.10/longobject.h \
-  /usr/include/python3.10/longintrepr.h \
-  /usr/include/python3.10/boolobject.h \
-  /usr/include/python3.10/floatobject.h \
-  /usr/include/python3.10/complexobject.h \
-  /usr/include/python3.10/rangeobject.h \
-  /usr/include/python3.10/memoryobject.h \
-  /usr/include/python3.10/tupleobject.h \
-  /usr/include/python3.10/cpython/tupleobject.h \
-  /usr/include/python3.10/listobject.h \
-  /usr/include/python3.10/cpython/listobject.h \
-  /usr/include/python3.10/dictobject.h \
-  /usr/include/python3.10/cpython/dictobject.h \
-  /usr/include/python3.10/cpython/odictobject.h \
-  /usr/include/python3.10/enumobject.h \
-  /usr/include/python3.10/setobject.h \
-  /usr/include/python3.10/methodobject.h \
-  /usr/include/python3.10/cpython/methodobject.h \
-  /usr/include/python3.10/moduleobject.h \
-  /usr/include/python3.10/funcobject.h \
-  /usr/include/python3.10/classobject.h \
-  /usr/include/python3.10/fileobject.h \
-  /usr/include/python3.10/cpython/fileobject.h \
-  /usr/include/python3.10/pycapsule.h \
-  /usr/include/python3.10/code.h \
-  /usr/include/python3.10/cpython/code.h \
-  /usr/include/python3.10/pyframe.h \
-  /usr/include/python3.10/traceback.h \
-  /usr/include/python3.10/cpython/traceback.h \
-  /usr/include/python3.10/sliceobject.h \
-  /usr/include/python3.10/cellobject.h \
-  /usr/include/python3.10/iterobject.h \
-  /usr/include/python3.10/cpython/initconfig.h \
-  /usr/include/python3.10/genobject.h \
-  /usr/include/python3.10/pystate.h \
-  /usr/include/python3.10/cpython/pystate.h \
-  /usr/include/python3.10/abstract.h \
-  /usr/include/python3.10/cpython/abstract.h \
-  /usr/include/python3.10/descrobject.h \
-  /usr/include/python3.10/genericaliasobject.h \
-  /usr/include/python3.10/warnings.h \
-  /usr/include/python3.10/weakrefobject.h \
-  /usr/include/python3.10/structseq.h \
-  /usr/include/python3.10/namespaceobject.h \
-  /usr/include/python3.10/cpython/picklebufobject.h \
-  /usr/include/python3.10/cpython/pytime.h \
-  /usr/include/python3.10/codecs.h \
-  /usr/include/python3.10/pyerrors.h \
-  /usr/include/python3.10/cpython/pyerrors.h \
-  /usr/include/python3.10/pythread.h \
-  /usr/include/python3.10/context.h \
-  /usr/include/python3.10/modsupport.h \
-  /usr/include/python3.10/compile.h \
-  /usr/include/python3.10/cpython/compile.h \
-  /usr/include/python3.10/pythonrun.h \
-  /usr/include/python3.10/cpython/pythonrun.h \
-  /usr/include/python3.10/pylifecycle.h \
-  /usr/include/python3.10/cpython/pylifecycle.h \
-  /usr/include/python3.10/ceval.h \
-  /usr/include/python3.10/cpython/ceval.h \
-  /usr/include/python3.10/sysmodule.h \
-  /usr/include/python3.10/cpython/sysmodule.h \
-  /usr/include/python3.10/osmodule.h \
-  /usr/include/python3.10/intrcheck.h \
-  /usr/include/python3.10/import.h \
-  /usr/include/python3.10/cpython/import.h \
-  /usr/include/python3.10/bltinmodule.h \
-  /usr/include/python3.10/eval.h \
-  /usr/include/python3.10/cpython/pyctype.h \
-  /usr/include/python3.10/pystrtod.h \
-  /usr/include/python3.10/pystrcmp.h \
-  /usr/include/python3.10/fileutils.h \
-  /usr/include/python3.10/cpython/fileutils.h \
-  /usr/include/python3.10/cpython/pyfpe.h \
-  /usr/include/python3.10/tracemalloc.h \
-  /usr/include/python3.10/numpy/arrayobject.h \
-  /usr/include/python3.10/numpy/ndarrayobject.h \
-  /usr/include/python3.10/numpy/ndarraytypes.h \
-  /usr/include/python3.10/numpy/npy_common.h \
-  /usr/include/python3.10/numpy/numpyconfig.h \
-  /usr/include/python3.10/numpy/_numpyconfig.h \
-  /usr/include/python3.10/numpy/npy_endian.h \
-  /usr/include/python3.10/numpy/npy_cpu.h \
-  /usr/include/python3.10/numpy/utils.h \
-  /usr/include/python3.10/numpy/_neighborhood_iterator_imp.h \
-  /usr/include/python3.10/numpy/__multiarray_api.h \
-  /usr/include/python3.10/numpy/npy_interrupt.h \
-  /usr/include/setjmp.h \
-  /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
-  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
-  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
-  /usr/include/x86_64-linux-gnu/bits/signal_ext.h
+  /usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp
 
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/usr/include/python3.10/numpy/__multiarray_api.h:
-
-/usr/include/python3.10/numpy/npy_endian.h:
-
-/usr/include/python3.10/numpy/_numpyconfig.h:
-
-/usr/include/python3.10/numpy/numpyconfig.h:
-
-/usr/include/python3.10/numpy/ndarrayobject.h:
-
-/usr/include/python3.10/tracemalloc.h:
-
-/usr/include/python3.10/cpython/pyfpe.h:
-
-/usr/include/python3.10/fileutils.h:
-
-/usr/include/python3.10/numpy/_neighborhood_iterator_imp.h:
-
-/usr/include/python3.10/pystrcmp.h:
-
-/usr/include/python3.10/cpython/pyctype.h:
-
-/usr/include/python3.10/cpython/import.h:
-
-/usr/include/python3.10/import.h:
-
-/usr/include/python3.10/intrcheck.h:
-
-/usr/include/python3.10/cpython/pylifecycle.h:
-
-/usr/include/python3.10/pylifecycle.h:
-
-/usr/include/python3.10/cpython/pythonrun.h:
-
-/usr/include/python3.10/cpython/compile.h:
-
-/usr/include/python3.10/compile.h:
-
-/usr/include/python3.10/modsupport.h:
-
-/usr/include/python3.10/pythread.h:
-
-/usr/include/python3.10/codecs.h:
-
-/usr/include/python3.10/cpython/picklebufobject.h:
-
-/usr/include/python3.10/structseq.h:
-
-/usr/include/python3.10/abstract.h:
-
-/usr/include/python3.10/cpython/pystate.h:
-
-/usr/include/python3.10/genobject.h:
-
-/usr/include/python3.10/cpython/initconfig.h:
-
-/usr/include/python3.10/iterobject.h:
-
-/usr/include/python3.10/cellobject.h:
-
-/usr/include/python3.10/sliceobject.h:
-
-/usr/include/python3.10/pyframe.h:
-
-/usr/include/python3.10/cpython/code.h:
-
-/usr/include/python3.10/code.h:
-
-/usr/include/python3.10/pycapsule.h:
-
-/usr/include/python3.10/cpython/fileobject.h:
-
-/usr/include/python3.10/cpython/methodobject.h:
-
-/usr/include/python3.10/cpython/dictobject.h:
-
-/usr/include/python3.10/dictobject.h:
-
-/usr/include/python3.10/listobject.h:
-
-/usr/include/python3.10/cpython/tupleobject.h:
-
-/usr/include/python3.10/tupleobject.h:
-
-/usr/include/python3.10/complexobject.h:
-
-/usr/include/python3.10/floatobject.h:
-
-/usr/include/python3.10/boolobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/python3.10/longintrepr.h:
-
-/usr/include/python3.10/longobject.h:
-
-/usr/include/python3.10/unicodeobject.h:
-
-/usr/include/python3.10/cpython/bytearrayobject.h:
-
-/usr/include/python3.10/cpython/objimpl.h:
-
-/usr/include/python3.10/objimpl.h:
-
-/usr/include/python3.10/cpython/pymem.h:
-
-/usr/include/python3.10/pymacro.h:
-
-/usr/include/python3.10/exports.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/sys/time.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/unistd.h:
-
-/usr/include/python3.10/pymacconfig.h:
-
-/usr/include/python3.10/funcobject.h:
-
-/usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
-
-/usr/include/python3.10/patchlevel.h:
-
-/usr/include/python3.10/Python.h:
-
-/usr/include/python3.10/bytearrayobject.h:
-
-../include/matplotlibcpp.h:
 
 /usr/local/include/depthai/include/depthai-shared/datatype/RawTrackedFeatures.hpp:
 
@@ -1015,8 +667,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorData.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/datatype/RawNNData.hpp:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/local/include/depthai/include/depthai/pipeline/datatype/NNData.hpp:
 
@@ -1036,19 +686,13 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/include/depthai/pipeline/node/StereoDepth.hpp:
 
-/usr/include/python3.10/traceback.h:
-
 /usr/local/include/depthai/include/depthai/pipeline/datatype/SpatialLocationCalculatorConfig.hpp:
-
-/usr/include/asm-generic/types.h:
 
 /usr/local/include/depthai/include/depthai-shared/properties/SpatialLocationCalculatorProperties.hpp:
 
 /usr/local/include/depthai/include/depthai/pipeline/node/SpatialLocationCalculator.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/datatype/RawSpatialLocationCalculatorConfig.hpp:
-
-/usr/include/python3.10/bltinmodule.h:
 
 /usr/local/include/depthai/include/depthai-shared/common/ProcessorType.hpp:
 
@@ -1088,23 +732,15 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/include/depthai-shared/properties/IMUProperties.hpp:
 
-/usr/include/python3.10/pyport.h:
-
 /usr/local/include/depthai/include/depthai/pipeline/datatype/FeatureTrackerConfig.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/datatype/RawFeatureTrackerConfig.hpp:
 
 /usr/local/include/depthai/include/depthai/pipeline/node/FeatureTracker.hpp:
 
-/usr/include/python3.10/fileobject.h:
-
 /usr/local/include/depthai/include/depthai/pipeline/datatype/EdgeDetectorConfig.hpp:
 
-/usr/include/python3.10/cpython/pyerrors.h:
-
 /usr/local/include/depthai/include/depthai/pipeline/node/EdgeDetector.hpp:
-
-/usr/include/python3.10/pyhash.h:
 
 /usr/local/include/depthai/include/depthai-shared/common/Rect.hpp:
 
@@ -1127,8 +763,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/c++/11/fstream:
 
 /usr/local/include/depthai/include/depthai/pipeline/node/DetectionNetwork.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/local/include/depthai/include/depthai-shared/properties/ColorCameraProperties.hpp:
 
@@ -1188,8 +822,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
-/usr/include/python3.10/weakrefobject.h:
-
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -1223,8 +855,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/python3.10/numpy/utils.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -1276,8 +906,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/python3.10/cpython/pytime.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/local/include/depthai/include/depthai/common/CameraBoardSocket.hpp:
@@ -1299,8 +927,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/opencv4/opencv2/core/persistence.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/python3.10/pyerrors.h:
 
 /usr/local/include/opencv4/opencv2/core/traits.hpp:
 
@@ -1330,19 +956,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/cstddef:
 
-/usr/include/python3.10/cpython/ceval.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
-/usr/include/python3.10/ceval.h:
-
 /usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/python3.10/descrobject.h:
-
-/usr/include/python3.10/moduleobject.h:
 
 /usr/include/c++/11/bits/align.h:
 
@@ -1390,8 +1008,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/cmath:
 
-/usr/include/setjmp.h:
-
 /usr/include/math.h:
 
 /usr/include/c++/11/bits/charconv.h:
@@ -1412,12 +1028,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/dnn.hpp:
 
-/usr/include/signal.h:
-
-/usr/include/python3.10/cpython/pydebug.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -1431,8 +1041,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai/pipeline/datatype/CameraControl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/include/python3.10/cpython/unicodeobject.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/detail/logical_buffer.h:
 
@@ -1484,8 +1092,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
 /usr/include/c++/11/chrono:
 
 /usr/include/c++/11/bits/forward_list.tcc:
@@ -1502,10 +1108,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/utility:
 
-/usr/include/python3.10/enumobject.h:
-
-/usr/include/python3.10/object.h:
-
 /usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
 
 /usr/include/c++/11/ios:
@@ -1516,13 +1118,9 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/atomic_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/python3.10/pyconfig.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -1533,8 +1131,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai-shared/datatype/RawAprilTagConfig.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/python3.10/cpython/traceback.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
@@ -1566,13 +1162,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/functional:
 
-/usr/include/python3.10/numpy/npy_cpu.h:
-
-/usr/include/python3.10/eval.h:
-
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/encoding_byte.h:
-
-/usr/include/python3.10/pythonrun.h:
 
 /usr/include/c++/11/bits/concept_check.h:
 
@@ -1586,15 +1176,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/python3.10/rangeobject.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/c++/11/stdlib.h:
 
 /usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1616,8 +1202,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 ../include/camera.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
@@ -1635,8 +1219,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/wchar.h:
 
@@ -1672,8 +1254,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
@@ -1685,10 +1265,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/c++/11/stdexcept:
 
 /usr/local/include/opencv4/opencv2/flann/lsh_table.h:
-
-/usr/include/python3.10/cpython/sysmodule.h:
-
-/usr/include/python3.10/cpython/abstract.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -1709,8 +1285,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/usr/include/python3.10/genericaliasobject.h:
 
 /usr/local/include/depthai/include/depthai/device/DeviceBootloader.hpp:
 
@@ -1754,8 +1328,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/invoke.h:
 
-/usr/include/python3.10/pystate.h:
-
 /usr/local/include/depthai/include/depthai-shared/properties/ScriptProperties.hpp:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_template_base_of.h:
@@ -1784,13 +1356,9 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/move.h:
 
-/usr/include/python3.10/typeslots.h:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
-
-/usr/include/python3.10/numpy/npy_common.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_writer.h:
 
@@ -1807,8 +1375,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai/pipeline/node/NeuralNetwork.hpp:
 
 /usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/c++/11/tuple:
 
@@ -1833,8 +1399,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai/common/CameraSensorType.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/linux/stat.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -1869,8 +1433,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/linux/errno.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/python3.10/cpython/odictobject.h:
 
 /usr/local/include/opencv4/opencv2/core/matx.hpp:
 
@@ -1916,8 +1478,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/core/check.hpp:
 
-/usr/include/python3.10/methodobject.h:
-
 /usr/local/include/depthai/include/depthai-shared/properties/Properties.hpp:
 
 /usr/local/include/depthai/include/depthai/device/CallbackHandler.hpp:
@@ -1940,10 +1500,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/python3.10/pymem.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
 /usr/local/include/opencv4/opencv2/features2d.hpp:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
@@ -1957,8 +1513,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
-/usr/include/python3.10/context.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/stream_writer.h:
 
@@ -1986,8 +1540,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/ratio:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
 /usr/include/c++/11/condition_variable:
 
 /usr/include/c++/11/thread:
@@ -2012,17 +1564,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp:
 
-/usr/include/python3.10/classobject.h:
-
-/usr/include/python3.10/bytesobject.h:
-
 /usr/include/c++/11/bits/gslice_array.h:
 
 /usr/local/include/opencv4/opencv2/imgcodecs.hpp:
 
 /usr/include/c++/11/map:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/local/include/opencv4/opencv2/opencv.hpp:
 
@@ -2044,13 +1590,7 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/defines.h:
 
-/usr/include/python3.10/osmodule.h:
-
-/usr/include/linux/close_range.h:
-
 /usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/local/include/opencv4/opencv2/flann/config.h:
 
@@ -2092,8 +1632,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/params.h:
 
-/usr/include/python3.10/memoryobject.h:
-
 /usr/local/include/opencv4/opencv2/flann/nn_index.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
@@ -2113,8 +1651,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/usr/include/python3.10/cpython/listobject.h:
 
 /usr/include/c++/11/system_error:
 
@@ -2186,8 +1722,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/include/c++/11/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
 
 /usr/include/c++/11/bits/indirect_array.h:
@@ -2240,8 +1774,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
 
-/usr/include/python3.10/numpy/arrayobject.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
 /usr/include/c++/11/list:
@@ -2276,23 +1808,17 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/include/depthai/utility/Pimpl.hpp:
 
-/usr/include/python3.10/numpy/npy_interrupt.h:
-
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/local/include/depthai/include/depthai/utility/Initialization.hpp:
 
 /usr/local/include/depthai/include/depthai/device/CalibrationHandler.hpp:
 
-/usr/include/python3.10/sysmodule.h:
-
 /usr/include/c++/11/cfloat:
 
 /usr/local/include/depthai/include/depthai-shared/common/CameraInfo.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/common/CameraModel.hpp:
-
-/usr/include/python3.10/namespaceobject.h:
 
 /usr/local/include/depthai/include/depthai-shared/common/Extrinsics.hpp:
 
@@ -2306,8 +1832,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/result.h:
 
-/usr/include/python3.10/cpython/bytesobject.h:
-
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/enum.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/handle.h:
@@ -2316,15 +1840,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/map.h:
 
-/usr/include/python3.10/warnings.h:
-
 /usr/include/c++/11/numeric:
 
 /usr/local/include/opencv4/opencv2/video/tracking.hpp:
 
 /usr/local/include/depthai/include/depthai/pipeline/Pipeline.hpp:
-
-/usr/include/python3.10/cpython/object.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/logical_buffer.h:
 
@@ -2340,8 +1860,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/traits/is_comparable.h:
 
-/usr/include/python3.10/pystrtod.h:
-
 /usr/include/sched.h:
 
 /usr/local/include/depthai/include/depthai-shared/pipeline/Assets.hpp:
@@ -2356,15 +1874,11 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/base/macros.h:
 
-/usr/include/python3.10/pymath.h:
-
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/compiler.h:
 
 /usr/include/c++/11/bits/stl_set.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/utility/bounded_reader.h:
-
-/usr/include/python3.10/cpython/fileutils.h:
 
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nop/types/variant.h:
 
@@ -2381,8 +1895,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/lib/cmake/depthai/dependencies/include/nlohmann/json.hpp:
 
 /usr/include/c++/11/valarray:
-
-/usr/include/python3.10/numpy/ndarraytypes.h:
 
 /usr/include/c++/11/bits/valarray_array.h:
 
@@ -2405,8 +1917,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai-shared/properties/SPIOutProperties.hpp:
 
 /usr/local/include/depthai/include/depthai/device/Device.hpp:
-
-/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/c++/11/atomic:
 
@@ -2431,8 +1941,6 @@ CMakeFiles/segmentation.dir/src/segmentation.cpp.o: ../src/segmentation.cpp \
 /usr/local/include/depthai/include/depthai-shared/device/BoardConfig.hpp:
 
 /usr/local/include/depthai/include/depthai-shared/log/LogMessage.hpp:
-
-/usr/include/python3.10/setobject.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
 

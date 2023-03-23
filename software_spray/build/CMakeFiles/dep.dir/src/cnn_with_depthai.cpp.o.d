@@ -1,7 +1,9 @@
 CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o: \
  /home/thaidy/Documents/Master_Thesis/software_spray/src/cnn_with_depthai.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
+ /usr/include/stdc-predef.h \
+ /home/thaidy/Documents/Master_Thesis/software_spray/src/../include/inference.h \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
