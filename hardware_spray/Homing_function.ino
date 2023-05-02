@@ -18,9 +18,13 @@
 // Define the number of steps per revolution for the stepper motors
 #define STEPS_PER_REV 200
 
-// Define the steps per revolution for each stepper motor
-#define PAN_STEPS_PER_REV 1540
-#define TILT_STEPS_PER_REV 200
+// Define gear ratios
+#define panGearRatio 8.47
+#define tiltGearRatio 3.05
+
+// Define stepper motor steps per revolution
+#define stepsPerRevolution 200
+
 
 // Define the maximum degrees of pan and tilt
 #define MAX_PAN_DEGREES 180
@@ -33,50 +37,47 @@ AccelStepper tiltStepper(AccelStepper::DRIVER, TILT_STEP_PIN, TILT_DIR_PIN);
 // Initialize variables for current pan and tilt positions
 int currentPanPos = 0;
 int currentTiltPos = 0;
-
 int h = 0;
 
-
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7
 
 // Function to home the pan and tilt stepper motors
 void homeStepperMotors() {
   // Set the sleep pins to HIGH to enable the stepper motors
   digitalWrite(PAN_SLEEP_PIN, HIGH);
   digitalWrite(TILT_SLEEP_PIN, HIGH);
+  
   if(analogRead(PAN_HALL_SENSOR) > HALL_THRESHOLD) {
     // Home the pan stepper motor
-  while (analogRead(PAN_HALL_SENSOR) > HALL_THRESHOLD) {
-   
-    Serial.println(analogRead(PAN_HALL_SENSOR));
-    panStepper.setSpeed(500);
-    panStepper.runSpeed();
-    
-  }
-  panStepper.setCurrentPosition(0);
-  delay(1000);
-     // Apply offset
-    panStepper.move(15);
-    panStepper.runToPosition();
-    
+    while (analogRead(PAN_HALL_SENSOR) > HALL_THRESHOLD) {
+      panStepper.setSpeed(-500);
+      panStepper.runSpeed();
+      
+    }
+    panStepper.setCurrentPosition(0);
+    delay(1000);
+    // Apply offset
+    panStepper.move(-15);
+    panStepper.runToPosition();  
   }
   
   if(analogRead(TILT_HALL_SENSOR) > HALL_THRESHOLD) {
     // Home the tilt stepper motor
     while (analogRead(TILT_HALL_SENSOR) > HALL_THRESHOLD) {
-      
-      tiltStepper.setSpeed(500);
+      tiltStepper.setSpeed(-500);
       tiltStepper.runSpeed();
     }
     tiltStepper.setCurrentPosition(0);
     delay(1000);
-     // Apply offset
-    tiltStepper.move(8);
+    // Apply offset
+    tiltStepper.move(-8);
     tiltStepper.runToPosition();
-    
-      
     }
+    
     delay(1000);
-  // Set the sleep pins to LOW to disable the stepper motors
+    // Set the sleep pins to LOW to disable the stepper motors
     digitalWrite(PAN_SLEEP_PIN, LOW);
     digitalWrite(TILT_SLEEP_PIN, LOW);
     
@@ -85,62 +86,75 @@ void homeStepperMotors() {
     currentTiltPos = 0;
 }
 
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7
+
 void setup() {
+  // Initialize the serial communication
+  Serial.begin(9600);
   // Set the sleep pins to LOW to disable the stepper motors
   digitalWrite(PAN_SLEEP_PIN, LOW);
   digitalWrite(TILT_SLEEP_PIN, LOW);
   
   // Set the initial speed and acceleration for the pan and tilt stepper motors
   panStepper.setMaxSpeed(1500);
-  panStepper.setAcceleration(1000);
+  panStepper.setAcceleration(4000);
   tiltStepper.setMaxSpeed(1500);
-  tiltStepper.setAcceleration(1000);
+  tiltStepper.setAcceleration(4000);
   
   // Home the stepper motors
   homeStepperMotors();
-  
-  // Initialize the serial communication
-  Serial.begin(9600);
 }
+
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////7
+
 
 void loop() {
   // Wait for user input from the serial monitor
   if (Serial.available() > 0) {
-    // Read the input values for pan and tilt positions
-    float panPos = Serial.parseInt();
-    float tiltPos = -1*Serial.parseInt();
-    h = Serial.parseInt();
-
-    if(h == -1000){
+    String input = Serial.readStringUntil('\n');
+    input.trim();
+    if (input == "home") {
+      // Home the stepper motors
       homeStepperMotors();
+    } else {
+      // Parse the input values for pan and tilt positions
+      int commaIndex = input.indexOf(' ');
+      if (commaIndex == -1) {
+        // Invalid input format
+        Serial.println("Invalid input format");
+      } else {
+        String panPosString = input.substring(0, commaIndex);
+        String tiltPosString = input.substring(commaIndex + 1);
+        panPosString.trim();
+        tiltPosString.trim();
+        float panPos = panPosString.toFloat();
+        float tiltPos = tiltPosString.toFloat();
+        
+        // Set the sleep pins to HIGH to enable the stepper motors
+        digitalWrite(PAN_SLEEP_PIN, HIGH);
+        digitalWrite(TILT_SLEEP_PIN, HIGH);
+        
+        // Move the pan and tilt stepper motors to the desired positions
+        int panSteps =  panPos * stepsPerRevolution * panGearRatio / 360;
+        panStepper.move(panSteps);
+        Serial.print("Moving pan to position: ");
+        Serial.println(panPos);
+        panStepper.runToPosition();
+        
+        int tiltSteps = tiltPos* stepsPerRevolution * tiltGearRatio / 360;
+        tiltStepper.move(tiltSteps);
+        Serial.print("Moving tilt to position: ");
+        Serial.println(tiltPos);
+        tiltStepper.runToPosition();
+       
+        // Update the current positions to be the desired positions
+        currentPanPos = panPos;
+        currentTiltPos = tiltPos;
+      }
     }
-  
-
-// Calculate the number of steps needed to move the pan and tilt stepper motors
-
-  // Set the sleep pins to HIGH to enable the stepper motors
-  digitalWrite(PAN_SLEEP_PIN, HIGH);
-  digitalWrite(TILT_SLEEP_PIN, HIGH);
-  
-  // Move the pan and tilt stepper motors to the desired positions
-  int panSteps = 200*panPos/55;
-  //int panSteps= map(panPos, 0, MAX_PAN_DEGREES, 0, PAN_STEPS_PER_REV);
-  
-  panStepper.move(panSteps);
-  Serial.println(panPos);
-  Serial.println(panSteps);
-  panStepper.runToPosition();
-  //int tiltSteps = map(tiltPos, 0, MAX_TILT_DEGREES, 0, TILT_STEPS_PER_REV);
-  int tiltSteps = 200*tiltPos/115;
-  tiltStepper.move(tiltSteps);
-  Serial.println("");
-  Serial.println(tiltPos);
-  Serial.println(tiltSteps);
-  tiltStepper.runToPosition();
-  
-  // Update the current positions to be the desired positions
-  currentPanPos = panPos;
-  currentTiltPos = tiltPos;
-
-}
+  }
 }
