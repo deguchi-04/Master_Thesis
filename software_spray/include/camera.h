@@ -14,8 +14,6 @@
 //DepthAi includes (for the native camera functions)
 #include <depthai/depthai.hpp> 
 
-
-
 //constant values declaration
 const int max_value_H = 360 / 2;
 const int max_value = 255;
