@@ -30,6 +30,7 @@
 #define MAX_PAN_DEGREES 180
 #define MAX_TILT_DEGREES 180
 
+#define pi 3.1415
 // Create AccelStepper objects for pan and tilt stepper motors
 AccelStepper panStepper(AccelStepper::DRIVER, PAN_STEP_PIN, PAN_DIR_PIN);
 AccelStepper tiltStepper(AccelStepper::DRIVER, TILT_STEP_PIN, TILT_DIR_PIN);
@@ -59,7 +60,7 @@ void homeStepperMotors() {
     panStepper.setCurrentPosition(0);
     delay(1000);
     // Apply offset
-    panStepper.move(-15);
+    panStepper.move(-60);
     panStepper.runToPosition();  
   }
   
@@ -98,10 +99,10 @@ void setup() {
   digitalWrite(TILT_SLEEP_PIN, LOW);
   
   // Set the initial speed and acceleration for the pan and tilt stepper motors
-  panStepper.setMaxSpeed(1500);
-  panStepper.setAcceleration(4000);
-  tiltStepper.setMaxSpeed(1500);
-  tiltStepper.setAcceleration(4000);
+  panStepper.setMaxSpeed(500);
+  panStepper.setAcceleration(2000);
+  tiltStepper.setMaxSpeed(500);
+  tiltStepper.setAcceleration(2000);
   
   // Home the stepper motors
   homeStepperMotors();
@@ -119,41 +120,70 @@ void loop() {
     input.trim();
     if (input == "home") {
       // Home the stepper motors
+      Serial.println("homing...");
       homeStepperMotors();
     } else {
-      // Parse the input values for pan and tilt positions
-      int commaIndex = input.indexOf(',');
-      if (commaIndex == -1) {
+      // Parse the input values for centerX, centerY, idStr, comLaserX, and comLaserY positions
+      int commaIndex1 = input.indexOf(',');
+      int commaIndex2 = input.indexOf(',', commaIndex1 + 1);
+      int commaIndex3 = input.indexOf(',', commaIndex2 + 1);
+      int commaIndex4 = input.indexOf(',', commaIndex3 + 1);
+
+      if (commaIndex1 == -1 || commaIndex2 == -1 || commaIndex3 == -1 || commaIndex4 == -1) {
         // Invalid input format
         Serial.println("Invalid input format");
       } else {
-        String panPosString = input.substring(0, commaIndex);
-        String tiltPosString = input.substring(commaIndex + 1);
-        panPosString.trim();
-        tiltPosString.trim();
-        float panPos = panPosString.toFloat();
-        float tiltPos = tiltPosString.toFloat();
+        int centerX = input.substring(0, commaIndex1).toInt();
+        int centerY = input.substring(commaIndex1 + 1, commaIndex2).toInt();
+        int idStr = input.substring(commaIndex2 + 1, commaIndex3).toInt();
+        int comLaserX = input.substring(commaIndex3 + 1, commaIndex4).toInt();
+        int comLaserY = input.substring(commaIndex4 + 1).toInt();
+        Serial.print("Point: ");
+        Serial.print(centerX);
+        Serial.print(",");
+        Serial.println(centerY);
         
+        Serial.print("Point Laser: ");
+        Serial.print(comLaserX);
+        Serial.print(",");
+        Serial.println(comLaserY);
+
+        Serial.print("Id: ");
+        Serial.println(idStr);
+
         // Set the sleep pins to HIGH to enable the stepper motors
         digitalWrite(PAN_SLEEP_PIN, HIGH);
         digitalWrite(TILT_SLEEP_PIN, HIGH);
+
+        // Calculate the pan and tilt angles based on the (centerX, centerY) coordinates
+        int panAngle = -25 - atan((centerX - 320) / 600.0) * 180.0 / PI; // 320 is the center of the image, 600 is the focal length
+        int tiltAngle = 85 + atan((320 - centerY) / 600.0) * 180.0 / PI;
+
+        Serial.println("Angle");
+        Serial.print(panAngle);
+        Serial.print(",");
+        Serial.println(tiltAngle);
+
+        int movePan = panAngle - currentPanPos;
+        int moveTilt = tiltAngle - currentTiltPos;
+        Serial.println(" ");
+        Serial.println("pos");
+        Serial.print(movePan);
+        Serial.print(",");
+        Serial.println(moveTilt);
         
         // Move the pan and tilt stepper motors to the desired positions
-        int panSteps =  panPos * stepsPerRevolution * panGearRatio / 360;
+        int panSteps = movePan * stepsPerRevolution * panGearRatio / 360;
         panStepper.move(panSteps);
-        Serial.print("Moving pan to position: ");
-        Serial.println(panPos);
         panStepper.runToPosition();
-        
-        int tiltSteps = tiltPos* stepsPerRevolution * tiltGearRatio / 360;
+
+        int tiltSteps = moveTilt * stepsPerRevolution * tiltGearRatio / 360;
         tiltStepper.move(tiltSteps);
-        Serial.print("Moving tilt to position: ");
-        Serial.println(tiltPos);
         tiltStepper.runToPosition();
-       
+
         // Update the current positions to be the desired positions
-        currentPanPos = panPos;
-        currentTiltPos = tiltPos;
+        currentPanPos = panAngle;
+        currentTiltPos = tiltAngle;
       }
     }
   }
