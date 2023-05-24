@@ -58,7 +58,16 @@ The **segmentation.cpp** code was used to find the best mask possible to segment
 
 - [@deguchi-04](https://github.com/deguchi-04)
 
+## :memo: Cite this work
 
+     @article{article,
+     author = {Deguchi, Thaidy},
+     year = {2023},
+     month = {06},
+     pages = {},
+     title = {Master in Electrical and Computer Engineering, EN Vision-based Smart Sprayer for Precision Farming}
+     }
+     
 ## 🚀 About Me
 Currently enrolled in the Master in Electrotechnical Engineering and Computers course at Faculty of Engineering of U.Porto. My main specializing area is Computer Vision and Machine Learning. Developing the master thesis at INESC TEC.
 
