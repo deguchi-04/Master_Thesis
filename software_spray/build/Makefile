@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thaidy/Documents/Master_Thesis/software_spray
+CMAKE_SOURCE_DIR = /home/thaidy/Documents/Thesis/Master_Thesis/software_spray
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thaidy/Documents/Master_Thesis/software_spray/build
+CMAKE_BINARY_DIR = /home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles /home/thaidy/Documents/Master_Thesis/software_spray/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles /home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,37 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named segmentation
+# Target rules for targets named seg
 
 # Build rule for target.
-segmentation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 segmentation
-.PHONY : segmentation
+seg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seg
+.PHONY : seg
 
 # fast build rule for target.
-segmentation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segmentation.dir/build.make CMakeFiles/segmentation.dir/build
-.PHONY : segmentation/fast
+seg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/build
+.PHONY : seg/fast
 
 #=============================================================================
-# Target rules for targets named dep
+# Target rules for targets named inf
 
 # Build rule for target.
-dep: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep
-.PHONY : dep
+inf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inf
+.PHONY : inf
 
 # fast build rule for target.
-dep/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/build
-.PHONY : dep/fast
+inf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inf.dir/build.make CMakeFiles/inf.dir/build
+.PHONY : inf/fast
 
 src/cnn_with_depthai.o: src/cnn_with_depthai.cpp.o
 .PHONY : src/cnn_with_depthai.o
 
 # target to build an object file
 src/cnn_with_depthai.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inf.dir/build.make CMakeFiles/inf.dir/src/cnn_with_depthai.cpp.o
 .PHONY : src/cnn_with_depthai.cpp.o
 
 src/cnn_with_depthai.i: src/cnn_with_depthai.cpp.i
@@ -155,7 +155,7 @@ src/cnn_with_depthai.i: src/cnn_with_depthai.cpp.i
 
 # target to preprocess a source file
 src/cnn_with_depthai.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inf.dir/build.make CMakeFiles/inf.dir/src/cnn_with_depthai.cpp.i
 .PHONY : src/cnn_with_depthai.cpp.i
 
 src/cnn_with_depthai.s: src/cnn_with_depthai.cpp.s
@@ -163,7 +163,7 @@ src/cnn_with_depthai.s: src/cnn_with_depthai.cpp.s
 
 # target to generate assembly for a file
 src/cnn_with_depthai.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dep.dir/build.make CMakeFiles/dep.dir/src/cnn_with_depthai.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inf.dir/build.make CMakeFiles/inf.dir/src/cnn_with_depthai.cpp.s
 .PHONY : src/cnn_with_depthai.cpp.s
 
 src/segmentation.o: src/segmentation.cpp.o
@@ -171,7 +171,7 @@ src/segmentation.o: src/segmentation.cpp.o
 
 # target to build an object file
 src/segmentation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segmentation.dir/build.make CMakeFiles/segmentation.dir/src/segmentation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/src/segmentation.cpp.o
 .PHONY : src/segmentation.cpp.o
 
 src/segmentation.i: src/segmentation.cpp.i
@@ -179,7 +179,7 @@ src/segmentation.i: src/segmentation.cpp.i
 
 # target to preprocess a source file
 src/segmentation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segmentation.dir/build.make CMakeFiles/segmentation.dir/src/segmentation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/src/segmentation.cpp.i
 .PHONY : src/segmentation.cpp.i
 
 src/segmentation.s: src/segmentation.cpp.s
@@ -187,7 +187,7 @@ src/segmentation.s: src/segmentation.cpp.s
 
 # target to generate assembly for a file
 src/segmentation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/segmentation.dir/build.make CMakeFiles/segmentation.dir/src/segmentation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/src/segmentation.cpp.s
 .PHONY : src/segmentation.cpp.s
 
 # Help Target
@@ -198,8 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dep"
-	@echo "... segmentation"
+	@echo "... inf"
+	@echo "... seg"
 	@echo "... src/cnn_with_depthai.o"
 	@echo "... src/cnn_with_depthai.i"
 	@echo "... src/cnn_with_depthai.s"

@@ -1,4 +1,4 @@
-/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/segmentation.dir
-/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/dep.dir
-/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/edit_cache.dir
-/home/thaidy/Documents/Master_Thesis/software_spray/build/CMakeFiles/rebuild_cache.dir
+/home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles/seg.dir
+/home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles/inf.dir
+/home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles/edit_cache.dir
+/home/thaidy/Documents/Thesis/Master_Thesis/software_spray/build/CMakeFiles/rebuild_cache.dir
