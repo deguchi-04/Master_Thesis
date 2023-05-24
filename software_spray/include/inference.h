@@ -3,13 +3,14 @@
 
 #include <chrono>
 #include <iostream>
+#include <unordered_map>
 
 // Includes common necessary includes for development using depthai library
 #include "depthai/depthai.hpp"
 
 static const std::vector<std::string> labelMap = {"grape_bunch"};
+static std::atomic<bool> fullFrameTracking{false};
 
-static std::atomic<bool> syncNN{true};
 
 using namespace std;
 using namespace std::chrono;
@@ -21,7 +22,5 @@ double getAverage(std::vector<T> const& v) {
     }
     return std::accumulate(v.begin(), v.end(), 0.0) / v.size();
 }
-
-
 
 #endif
