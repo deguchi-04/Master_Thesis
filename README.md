@@ -9,6 +9,9 @@ Precision Sprayer Software Development
 
 The main objective was to develop a perception algorithm to identify and segment grapes in a vineyard. After the grape localization, the code must command the hardware to point the spray in the grape direction. The hardware will also point a laser to the fruit. The code must segment the laser color from the image in order to validate the grape position. After all these steps, the hardware must perform the spray action only in the grapes. Development in partnership with INESC-TEC.
 
+![graphic](https://github.com/deguchi-04/Master_Thesis/assets/78708477/61a16b9b-90f2-4a63-ad21-002ee60095e9)
+
+
 ## :gear: Hardware
 - OAK-1 Camera
 - INESC TEC Pixel Driver 3
