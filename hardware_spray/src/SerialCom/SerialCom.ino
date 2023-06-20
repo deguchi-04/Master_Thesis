@@ -158,6 +158,16 @@ void processGrape(const Grape& grape) {
 
   processedIDs[bufferIndex] = grape.id;
   bufferIndex = (bufferIndex + 1) % BUFFER_SIZE;
+  if (bufferIndex >= 590) {
+    int remainingDataSize = bufferIndex - 580;
+    memset(processedIDs, 0, 580 * sizeof(*processedIDs)); // Set data before position 590 to zero
+  
+    // Move data after position 590 to the beginning of the buffer
+    memmove(processedIDs, &processedIDs[580], remainingDataSize * sizeof(*processedIDs));
+  
+    bufferIndex = remainingDataSize+10; // Update the bufferIndex
+  }
+
 }
 
 Scheduler scheduler;
