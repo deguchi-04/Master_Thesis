@@ -52,7 +52,9 @@ The **segmentation.cpp** code was used to find the best mask possible to segment
 
 ## :movie_camera: Video Demo
 
-**por o video aqui
+https://github.com/deguchi-04/Master_Thesis/assets/78708477/750d1487-e63e-41a3-9d2b-4841989a2ed2
+
+
 
 ## :pencil2: Authors
 
