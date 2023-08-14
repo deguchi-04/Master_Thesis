@@ -71,7 +71,7 @@ https://github.com/deguchi-04/Master_Thesis/assets/78708477/b8a32e26-82f1-4599-a
      author = {Deguchi, Thaidy},
      year = {2023},
      month = {06},
-     pages = {104},
+     pages = {99},
      title = {Master in Electrotechnical Engineering and Computers course at Faculty of Engineering of U.Porto, EN Vision-based Smart Sprayer for Precision Farming}
      abstract = {Nowadays, it is known that one of the main discussion subjects is sustainability. Climate change, limited resources, and population growth impose us to manage better our agricultural methods to reduce food waste and soil degradation. Since the emergence of agriculture, humankind started to use chemicals to fight plagues and consequently the losses in the farms, which, from the nineteenth century,  evolved into what we know as pesticides today. However, this practice could damage the soil because the product is not directly applied to the target. The precision agriculture method uses AI and image processing to control the number of chemicals used in a given type of plant, reducing the losses and maximizing resource usage. Based on the previous studies analyzed in this master thesis, it is clear that the most recent approaches were functional; however, there is potential to improve the sprayer system's precision, accuracy, and mechanical aspects. This work will compile, study, execute, and test these improvements.To achieve the objective of this dissertation work, that is, developing a functional algorithm to detect and spray pesticide only in grapes in a crop, and also a sprayer with two degrees of freedom, this work aims to do: A systematic review of the already existent algorithms today; Improvement of the previous codes, and consequently, their results and accuracy; Study and design a structure for the precision spray with two degrees of freedom; Test and validation of the work developed.}
      issn = {},
@@ -79,5 +79,5 @@ https://github.com/deguchi-04/Master_Thesis/assets/78708477/b8a32e26-82f1-4599-a
      }
      
 ## 🚀 About Me
-Currently enrolled in the Master in Electrotechnical Engineering and Computers course at Faculty of Engineering of U.Porto. My main specializing area is Computer Vision and Machine Learning. Developing the master thesis at INESC TEC.
+Currently enrolled in the Master in Electrotechnical Engineering and Computers course at Faculty of Engineering of U.Porto. My main specializing area is Computer Vision and Machine Learning. Developing the master thesis at INESC TEC. https://hdl.handle.net/10216/152130
 
